@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>大光物资商城实体店街景</title>
+<style type="text/css">
+*{
+    margin:0px;
+    padding:0px;
+}
+body, button, input, select, textarea {
+    font: 12px/16px Verdana, Helvetica, Arial, sans-serif;
+}
+p{
+    width:603px;
+    padding-top:3px;
+    overflow:hidden;
+}
+.btn{
+    width:142px;
+}
+#pano_container{
+	min-width:600px;
+	min-height:767px;
+}
+</style>
+<script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp&key=d84d6d83e0e51e481e50454ccbe8986b"></script>
+<script>
+function init() {
+	// 创建街景
+	pano = new qq.maps.Panorama(document.getElementById('pano_container'), {
+		"pano": '29011006150315140327800',pov:{   //视角
+                heading:77.6,  //偏航角
+                pitch:19.9     //俯仰角
+            },     //此处街景id在  http://lbs.qq.com/tool/streetview/index.html   处可取得
+	});
+}
+</script>
+</head>
+
+<body onLoad="init();">
+
+<div id="pano_container"></div>
+<p>创建一个简单的街景。</p>
+</body>
+</html>
