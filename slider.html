@@ -39,25 +39,25 @@
 					
 					//幻灯片初始化 
 
+				function checkout (){
 							sImg.src = arrayImg[num];
 							sCation.innerHTML = arrayText[num];
-				
+				};
+					checkout();
 
 					prev.onclick = function(){
 						  num --;
 							if(num==-1){
 								num = arrayImg.length - 1;
 							}
-							sImg.src = arrayImg[num];
-							sCation.innerHTML = arrayText[num];
+							checkout();
 					};
 					next.onclick = function(){
 						  num ++;
 							if(num == arrayImg.length - 1){
 								num = 0;
-							}
-							sImg.src = arrayImg[num];
-							sCation.innerHTML = arrayText[num];
+									}
+						checkout();
 					};
 					
 
