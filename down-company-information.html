@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<link rel="stylesheet" href="css/style.css" type="text/css">
+			<title>quick-start</title>
+		</head>
+		<body>
+<link href="//cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+		<div class="one" style="width:655px;">
+	<div class="header-bar" style="width:100%;background-color:gray;text-align:center;">
+		<h2 style="width:25%;background-color:#B2251D;color:#fff;padding:15px 5px;position:relative;left:5%;">
+			关于大光五金</h2>
+	</div>
+<div id="slider" style="width:100%;margin: -20px auto 0px;">	
+				<div id="pn" style="position:relative;top:219px;margin: 0px;font-size: 3em;font-weight:bold;">	
+					<a href="javascript:;" id="prev" title="上一张图片"><i id="pIcon" class="fa fa-angle-left" style="color:gray;"></i></a>
+					<a href="javascript:;" id="next" title="下一张图片" style="float:right"><i id="nIcon" class="fa fa-angle-right" style="color:gray;"></i></a>
+				</div>
+				<div id="slider-img" style="width:595px;margin:0px auto;">
+					<img id="slider-img1" width="100%" style="filter: brightness(200%);-webkit-filter:brightness(200%);" src="http://dag1688.aliapp.com/wp-content/uploads/2015/11/dag-1.jpg"/> 
+				</div>	
+				<div id="slider-cation" style="
+				width: 595px;
+				margin: 0px auto;
+				background: rgb(178, 37, 29) none repeat scroll 0% 0%;
+				color: white;
+				padding: 15px 0px;
+				text-align: center;
+				font-size: large;">
+				</div>
+			</div>
+
+			<script>
+				window.onload = function(){
+					var prev = document.getElementById('prev');
+					var next = document.getElementById('next');
+					var sImg = document.getElementById('slider-img1');
+					var sCation = document.getElementById('slider-cation');
+					var arrayImg = ['http://dag1688.aliapp.com/wp-content/uploads/2015/11/dag-1.jpg','http://dag1688.aliapp.com/wp-content/uploads/2015/11/dag-2.jpg','http://dag1688.aliapp.com/wp-content/uploads/2015/11/dag-3.jpg','http://dag1688.aliapp.com/wp-content/uploads/2015/11/dag-4.jpg'];
+					var arrayText = ['大光五金旗舰店实拍','国际国内一线品牌代理商','30年五金机电行业服务经验','贵州省各大工矿企业优秀供应商'];
+					var num = 0;
+					
+					document.getElementById('pIcon').onmouseover = function () {
+						document.getElementById('pIcon').style.color = "green";
+};
+					document.getElementById('pIcon').onmouseout = function () {
+						document.getElementById('pIcon').style.color = "gray";
+};
+					document.getElementById('nIcon').onmouseover = function () {
+						document.getElementById('nIcon').style.color = "green";
+};
+					document.getElementById('nIcon').onmouseout = function () {
+						document.getElementById('nIcon').style.color = "gray";
+};
+					//幻灯片初始化 
+
+				function checkout (){
+							sImg.src = arrayImg[num];
+							sCation.innerHTML = arrayText[num];
+				};
+					checkout();
+
+					prev.onclick = function(){
+						  num --;
+							if(num==-1){
+								num = 3;
+							}
+							checkout();
+					};
+					next.onclick = function(){
+						  num ++;
+							if(num == 4){
+								num = 0;
+									}
+						checkout();
+					};
+					
+
+					};
+
+			</script>
+</div>
+<div class="dag-main" style="padding:10px;">
+	<div class="main-one" style="width:655px">
+		<img src="http://dag1688.aliapp.com/wp-content/uploads/2015/11/正方形LOGO.png" style="float:left;padding: 5px 5px 5px 0px;" />
+		<p style="padding-top:15px;text-indent:2em;font-size:1.3em;font-family:'Microsoft YaHei';">
+			我公司是在改革大潮中崛起，伴随着市场调节不断发展壮大&gt;的民营企业集团。集五金产销，机电设备。汽车贸易等经营项目于一体，自1985年7月15日成立以来，坚持在困难中求生存，改革中寻活力，竞争中谋发展，立足贵州，面向全国， 走向世界。致力营造恪守信用，讲求信誉，注意信义的企业文化。先后在上海，嘉兴，香港等地设立分公司。1995年荣登全国500家最大私营企业排行榜，名列第326位，在贵州一&gt;枝独秀，连年荣获贵阳市纳税先进企业，&ldquo;重合同、守信用&rdquo;等多种殊荣。</p>
+	</div>
+	<div class="main-two" style="width:655px">
+		<p style="text-indent:2em;font-size:1.3em;font-family:'Microsoft YaHei';">
+			1999年10月9日，经过近两年的筹备，全国工商联五金商会正式成立 ，选举我司董事长吴石川为首任会长，商会秘书处设在我司，2002年4月，我司董事长吴石川再次当选为全国工商联五金商会会长，秘书处迁至北京。</p>
+		<p style="text-indent:2em;font-size:1.3em;font-family:'Microsoft YaHei';">
+			源于更多国家、社会，企事业单位和广大消费者的社会责任感，我公司从&ldquo;货买源头&rdquo;入手，坚持&ldquo;人无我有、人有我新、人新我精&rdquo;的产品导向，向客户提供全国乃&gt;至全世界的名优五金产品，素以品种齐全，质量可靠，价格合理，服务周到赢得广大消费者的信赖，并给予高度评价：&ldquo;大光五金，样样精品&rdquo;，&ldquo;货比百家，不如走大光一家&rdquo;。价&gt;格透明，诚信无欺，是我司一以贯之的经营理念，所有商品价格一律向消费者公开，只赚取合理的商业利润，在贵州省乃至西南五金界树立鲜明一帜。</p>
+	</div>
+	<div class="main-three" style="padding-top:15px;width:655px">
+		<iframe frameborder="0" height="655px" scrolling="no" src="http://www.dag1688.com/zhuanti/dagmap/wechat-map.html" width="655px"></iframe><iframe frameborder="0" height="655px" scrolling="no" src="http://www.dag1688.com/zhuanti/dagmap/streetview.html" width="655px"></iframe></div>
+</div>
+		
+</body>
+	</html>
+									

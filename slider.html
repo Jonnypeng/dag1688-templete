@@ -8,13 +8,14 @@
 			</style>
 		</head>
 		<body> 
+			<link href="//cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
 			<div id="slider" style="width:655px;margin:0px auto;">	
-				<div id="pn" style="position:relative;top:219px;margin: 0px -5px;">	
-					<a href="javascript:;" id="prev"><img src="http://www.dag1688.com/fileRepository/product/others/ImQyiYD0Sc-t0ZHojuQ_Dg.png" ></a>
-					<a href="javascript:;" id="next"><img src="http://www.dag1688.com/fileRepository/product/others/xUyMD_CkQiim4ZuVSzM4aA.png" style="float:right;"/></a>
+				<div id="pn" style="position:relative;top:219px;margin: 0px;font-size: 3em;font-weight:bold;">	
+					<a href="javascript:;" id="prev" title="上一张图片"><i id="pIcon" class="fa fa-angle-left" style="color:gray;"></i></a>
+					<a href="javascript:;" id="next" title="下一张图片" style="float:right"><i id="nIcon" class="fa fa-angle-right" style="color:gray;"></i></a>
 				</div>
 				<div id="slider-img" style="width:595px;margin:0px auto;">
-					<img id="slider-img1" width="100%"/> 
+					<img id="slider-img1" width="100%" style="filter: brightness(200%);-webkit-filter:brightness(200%);" src="http://dag1688.aliapp.com/wp-content/uploads/2015/11/dag-1.jpg"/> 
 				</div>	
 				<div id="slider-cation" style="
 				width: 595px;
@@ -33,10 +34,22 @@
 					var next = document.getElementById('next');
 					var sImg = document.getElementById('slider-img1');
 					var sCation = document.getElementById('slider-cation');
-					var arrayImg = ['http://www.dag1688.com/fileTemp/UmnJz9o2S82UF6mbL32M4A.jpg','http://www.dag1688.com/fileTemp/35QvGvWdS-e5AsbPMdfW9Q.jpg','http://www.dag1688.com/fileTemp/ibFdJYRfRGC-xJd39g3rVg.jpg','http://www.dag1688.com/fileTemp/wIS8UBJFRwe6Iiub0LctXw.jpg'];
+					var arrayImg = ['http://dag1688.aliapp.com/wp-content/uploads/2015/11/dag-1.jpg','http://dag1688.aliapp.com/wp-content/uploads/2015/11/dag-2.jpg','http://dag1688.aliapp.com/wp-content/uploads/2015/11/dag-3.jpg','http://dag1688.aliapp.com/wp-content/uploads/2015/11/dag-4.jpg'];
 					var arrayText = ['大光五金旗舰店实拍','国际国内一线品牌代理商','30年五金机电行业服务经验','贵州省各大工矿企业优秀供应商'];
 					var num = 0;
 					
+					document.getElementById('pIcon').onmouseover = function () {
+						document.getElementById('pIcon').style.color = "green";
+};
+					document.getElementById('pIcon').onmouseout = function () {
+						document.getElementById('pIcon').style.color = "gray";
+};
+					document.getElementById('nIcon').onmouseover = function () {
+						document.getElementById('nIcon').style.color = "green";
+};
+					document.getElementById('nIcon').onmouseout = function () {
+						document.getElementById('nIcon').style.color = "gray";
+};
 					//幻灯片初始化 
 
 				function checkout (){
@@ -48,13 +61,13 @@
 					prev.onclick = function(){
 						  num --;
 							if(num==-1){
-								num = arrayImg.length - 1;
+								num = 3;
 							}
 							checkout();
 					};
 					next.onclick = function(){
 						  num ++;
-							if(num == arrayImg.length - 1){
+							if(num == 4){
 								num = 0;
 									}
 						checkout();
