@@ -25,7 +25,7 @@ body, button, input, select, textarea {
 <script>
 var init = function() {
     var center = new qq.maps.LatLng(26.5528119820,106.7057687046);
-var map = new qq.maps.Map(
+		var map = new qq.maps.Map(
     document.getElementById("container"),
     {
         center: center,
@@ -41,6 +41,7 @@ var marker = new qq.maps.Label({
     position: center,
     map: map,
     content:'大光五金旗舰店'
+		
 });
     
 }
@@ -49,5 +50,17 @@ var marker = new qq.maps.Label({
 </head>
 <body onload="init()">
 <div style="width:300x;height:800px;max-width:100%;" id="container"></div>
+<div id="dagcard" style="display:none;position:absolute;bottom:100px;left:100px;text-align:center;width:300px;height:100px;background:#B2251D;color:#FFF;">服务热线:0851-85757788;0851-85770626<br />门市电话:0851-85757779;0851-85756800</div>
+<script>
+var dagcard = document.getElementById('dagcard');
+window.onload.function(){
+    document.getElementById("container").onmouseover = function(){
+					dagcard.style.dislpay = "bolck";
+};
+    document.getElementById("container").onmouseout = function(){
+					dagcard.style.dislpay = "none";
+};
+};
+</script>
 </body>
 </html>
