@@ -35,6 +35,7 @@
 			height:200px;
 			position:relative;
 			animation:30s linear 0s normal none infinite running twomove;
+			animation-direction:alternate;
 			-webkit-animation:30s linear 0s normal none infinite running twomove;
 			-webkit-animation-direction:alternate;
 		}
@@ -53,6 +54,13 @@
 			100%{top:-3174px;left:0px;}
 		}
 			</style>
+			<script>
+			<!--[if lte IE 9]> 
+						dbimg.src = "http://dag1688.aliapp.com/wp-content/uploads/2015/11/brandleft.jpg";
+						dbimg.style.position = "relative"; 
+						dbimg.style.bottom = "110px"; 
+			<![endif]-->
+			</script>
 		</head>
 		<body>
 				<div id="dagbody">
@@ -63,26 +71,6 @@
 								<img id="dbimg" src="http://dag1688.aliapp.com/wp-content/uploads/2015/11/brand.jpg" width="100%;"/>	
 						</div>
 				</div>
-		<script>
-			window.onload = function()	{
-			var dbimg = document.getElementById('dbimg');
-			var dagbrand = document.getElementById('dagbrand');
-
-			dbimg.onmouseover = function(){
-				dagbrand.style.animation = "5s linear 0s normal none infinite running twomove";
-				dagbrand.style.animationDirection = "alternate";
-			};
-			dbimg.onmouseout = function(){
-				dagbrand.style.animation = "30s linear 0s normal none infinite running twomove";
-				dagbrand.style.animationDirection = "alternate";
-			};
-			<!--[if lte IE 9]> 
-						dbimg.src = "http://dag1688.aliapp.com/wp-content/uploads/2015/11/brandleft.jpg";
-						dbimg.style.position = "relative"; 
-						dbimg.style.bottom = "110px"; 
-			<![endif]-->
-					};
-		</script>
 		</body>
 	</html>
 									
