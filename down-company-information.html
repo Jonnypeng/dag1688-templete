@@ -53,6 +53,21 @@
 					document.getElementById('nIcon').onmouseout = function () {
 						document.getElementById('nIcon').style.color = "gray";
 };
+					sImg.onmouseover = function(){
+						sImg.style.filter = "brightness(100%)";
+						sImg.style[-webkit-filter] = "brightness(100%)"; 
+						sImg.style[-moz-filter] = "brightness(100%)"; 
+						sImg.style[-o-filter] = "brightness(100%)";
+						sImg.style[-ms-filter] = "brightness(100%)";
+					};
+					
+					sImg.onmouseout = function(){
+						sImg.style.filter = "brightness(200%)";
+						sImg.style[-webkit-filter] = "brightness(200%)"; 
+						sImg.style[-moz-filter] = "brightness(200%)"; 
+						sImg.style[-o-filter] = "brightness(200%)";
+						sImg.style[-ms-filter] = "brightness(200%)";
+					};
 					//幻灯片初始化 
 
 				function checkout (){
