@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<link rel="stylesheet" href="css/style.css" type="text/css">
+			<title>quick-start</title>
+			<style>
+		#dagbody {
+				margin:200px auto 0px;
+				width:655px;
+				height:200px;
+				overflow:hidden;
+		}
+		#daglog	 {
+			position:relative;
+			left:475px;
+			width:150px;
+			text-align:center;
+			height:100px;
+			padding:5px;
+		}
+		#dagad{
+			font-family:"Microsoft YaHei";
+			font-size:1.2em;
+			font-weight:bold;
+			color:#B2251D;
+			position:relative;
+			bottom:15px;
+			letter-spacing:1px;
+		}
+		#dagad:link{text-decoration:none;}
+		#dagad:hover{color:green;}
+		#dagbrand {
+			width:458px;
+			height:200px;
+			position:relative;
+			animation:30s linear 0s normal none infinite running twomove;
+			-webkit-animation:30s linear 0s normal none infinite running twomove;
+			-webkit-animation-direction:alternate;
+		}
+		@keyframes twomove{
+			0%{top:0%;left:0px;}
+			25%{top:-793px;left:0px;}
+			50%{top:-1587px;left:0px;}
+			75% {top:-2380px;left:0px;}
+			100%{top:-3174px;left:0px;}
+		}
+		@-webkit-keyframes twomove{
+			0%{top:0%;left:0px;}
+			25%{top:-793px;left:0px;}
+			50%{top:-1587px;left:0px;}
+			75% {top:-2380px;left:0px;}
+			100%{top:-3174px;left:0px;}
+		}
+			</style>
+		</head>
+		<body>
+				<div id="dagbody">
+						<div id="daglog">
+								<img src="http://dag1688.aliapp.com/wp-content/uploads/2015/11/%E6%AD%A3%E6%96%B9%E5%BD%A2LOGO.png" width="100%"><br /><a id="dagad" href="http://www.dag1688.com/products_brand.html" target="_blank">只为高品质代言</a>
+						</div>
+						<div id="dagbrand">
+								<img id="dbimg" src="http://dag1688.aliapp.com/wp-content/uploads/2015/11/brand.jpg" width="100%;"/>	
+						</div>
+				</div>
+		<script>
+			window.onload = function()	{
+			var dbimg = document.getElementById('dbimg');
+			var dagbrand = document.getElementById('dagbrand');
+
+			dbimg.onmouseover = function(){
+				dagbrand.style.animation = "5s linear 0s normal none infinite running twomove";
+				dagbrand.style.animationDirection = "alternate";
+			};
+			dbimg.onmouseout = function(){
+				dagbrand.style.animation = "30s linear 0s normal none infinite running twomove";
+				dagbrand.style.animationDirection = "alternate";
+			};
+			<!--[if lte IE 9]> 
+						dbimg.src = "http://dag1688.aliapp.com/wp-content/uploads/2015/11/brandleft.jpg";
+						dbimg.style.position = "relative"; 
+						dbimg.style.bottom = "110px"; 
+			<![endif]-->
+					};
+		</script>
+		</body>
+	</html>
+									
