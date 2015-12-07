@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title></title>
+</head>
+<body>
+		<div style="width:655px;">
+			<h2 style="color: rgb(255, 255, 255); position: absolute; left: 80%;"><span>大光物资商城</span></h2>
+			<video width="100%" controls="controls" id="sata-video"></video>
+		</div>	        
+		<div id="video-control" style="width:655px;">
+		        <button style="padding:5px;" onclick="prevVideo()">上一个视频</button>
+		        <button style="padding:5px;float:right"	onclick="nextVideo()">下一个视频</button>
+		</div>
+		<script>
+				window.onload = function(){
+				var vNum = 0 ;
+				var video = ["http://cloud.video.taobao.com/play/u/2641537651/p/1/e/6/t/1/32909393.mp4", "http://cloud.video.taobao.com/play/u/2641537651/p/1/e/6/t/1/32908002.mp4", "http://cloud.video.taobao.com/play/u/2641537651/p/1/e/6/t/1/32907915.mp4", "http://cloud.video.taobao.com/play/u/2641537651/p/1/e/6/t/1/32907859.mp4", "http://cloud.video.taobao.com/play/u/2641537651/p/1/e/6/t/1/32907780.mp4", "http://cloud.video.taobao.com/play/u/2641537651/p/1/e/6/t/1/32907728.mp4", "http://cloud.video.taobao.com/play/u/2641537651/p/1/e/6/t/1/32907642.mp4", "http://cloud.video.taobao.com/play/u/2641537651/p/1/e/6/t/1/32907611.mp4", "http://cloud.video.taobao.com/play/u/2641537651/p/1/e/6/t/1/32907421.mp4"];
+				var sataVideo = document.getElementById("sata-video");	
+				sataVideo.src = video[vNum];
+				function prevVideo(){
+					vNum++;
+				var video = ["http://cloud.video.taobao.com/play/u/2641537651/p/1/e/6/t/1/32909393.mp4", "http://cloud.video.taobao.com/play/u/2641537651/p/1/e/6/t/1/32908002.mp4", "http://cloud.video.taobao.com/play/u/2641537651/p/1/e/6/t/1/32907915.mp4", "http://cloud.video.taobao.com/play/u/2641537651/p/1/e/6/t/1/32907859.mp4", "http://cloud.video.taobao.com/play/u/2641537651/p/1/e/6/t/1/32907780.mp4", "http://cloud.video.taobao.com/play/u/2641537651/p/1/e/6/t/1/32907728.mp4", "http://cloud.video.taobao.com/play/u/2641537651/p/1/e/6/t/1/32907642.mp4", "http://cloud.video.taobao.com/play/u/2641537651/p/1/e/6/t/1/32907611.mp4", "http://cloud.video.taobao.com/play/u/2641537651/p/1/e/6/t/1/32907421.mp4"];
+				var sataVideo = document.getElementById("sata-video");	
+				sataVideo.src = video[vNum];
+				};
+				};
+		</script>
+</body>
+</html>
