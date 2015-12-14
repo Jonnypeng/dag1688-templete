@@ -1,4 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title></title>
 <link href="http://dag1688.aliapp.com/styles/sataheader.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
 <p>
 	<img src="/fileRepository/product/others/zNbhTYqjTD2krjCGkee6lQ.jpg" style="margin-bottom:15px" /></p>
 <p>
@@ -9,30 +16,8 @@
 			<span>大光物资商城</span></h2>
 		<video controls="controls" id="sata-video" style="background-color:#B2251D;" width="100%"></video></div>
 	<div id="video-control" style="width:655px;">
-		<table style="width:655px;text-align:center;">
-			<tbody>
-				<tr>
-					<td id="zhonghezutao" style="width:25%">
-						<button href="javascript:;" style="width: 100%; border: 0px none; padding: 10px 0px; color: white; background-color: rgb(0, 99, 71);">综合组套工具</button></td>
-					<td id="qianlei" style="width:25%">
-						<button href="javascript:;" style="width: 100%; border: 0px none; padding: 10px 0px; color: white; background-color: rgb(0, 99, 71);">钳类工具</button></td>
-					<td id="taotong" style="width:25%">
-						<button href="javascript:;" style="width: 100%; border: 0px none; padding: 10px 0px; color: white; background-color: rgb(0, 99, 71);">套筒工具</button></td>
-					<td id="qidong" style="width:25%">
-						<button href="javascript:;" style="width: 100%; border: 0px none; padding: 10px 0px; color: white; background-color: rgb(0, 99, 71);">气动工具</button></td>
-				</tr>
-				<tr>
-					<td id="gongjuxiang" style="width:25%;vertical-align:middle;">
-						<button href="javascript:;" style="width: 100%; border: 0px none; padding: 10px 0px; color: white; background-color: rgb(0, 99, 71);">工具箱</button></td>
-					<td id="qiegegongju" style="width:25%;vertical-align:middle;">
-						<button href="javascript:;" style="width: 100%; border: 0px none; padding: 10px 0px; color: white; background-color: rgb(0, 99, 71);">切割工具</button></td>
-					<td id="neiliujiao" style="width:25%;vertical-align:middle;">
-						<button href="javascript:;" style="width: 100%; border: 0px none; padding: 10px 0px; color: white; background-color: rgb(0, 99, 71);">内六角工具</button></td>
-					<td id="banshou" style="width:25%;vertical-align:middle;">
-						<button href="javascript:;" style="width: 100%; border: 0px none; padding: 10px 0px; color: white; background-color: rgb(0, 99, 71);">扳手</button></td>
-				</tr>
-			</tbody>
-		</table>
+		<button style="padding:10px">上一个视频</button>
+		<button style="padding:10px;float:right">下一个视频</button>
 	</div>
 </div>
 <!--[if lt IE 9]>
@@ -40,6 +25,50 @@
 		document.getElementById('sata-video-box').style.display = "none";
 		document.getElementById('video-control').style.display = "none";
 	</script>
-<![endif]--><script src="http://dag1688.aliapp.com/javascript/sata-header.js"></script>
+<![endif]-->
+<script>
+// 设置视频区域
+				var	sVideo = document.getElementById('sata-video'); 
+				
+				// 设置视频对象
+				var video =	[ "http://cloud.video.taobao.com/play/u/2641537651/p/1/e/6/t/1/32907421.mp4", "http://cloud.video.taobao.com/play/u/2641537651/p/1/e/6/t/1/32908002.mp4", "http://cloud.video.taobao.com/play/u/2641537651/p/1/e/6/t/1/32907915.mp4", "http://cloud.video.taobao.com/play/u/2641537651/p/1/e/6/t/1/32907859.mp4", "http://cloud.video.taobao.com/play/u/2641537651/p/1/e/6/t/1/32907780.mp4", "http://cloud.video.taobao.com/play/u/2641537651/p/1/e/6/t/1/32907728.mp4", "http://cloud.video.taobao.com/play/u/2641537651/p/1/e/6/t/1/32907642.mp4", "http://cloud.video.taobao.com/play/u/2641537651/p/1/e/6/t/1/32907611.mp4"] 
+				//设置按钮对象
+				
+				//设置初始化状态
+				sVideo.src =	video.zhonghezutao; 
+
+
+				//设置按钮动作对象
+				zhonghezutao.onclick = function(){
+				sVideo.src =	video.zhonghezutao; 
+				};
+				qianlei.onclick = function(){
+				sVideo.src =	video.qianlei; 
+				};
+				taotong.onclick = function(){
+				sVideo.src =  video.taotong;
+				};
+				qidong.onclick = function(){
+				sVideo.src =  video.qidong;
+				};
+				gongjuxiang.onclick = function(){
+				sVideo.src =  video.gongjuxiang;
+				};
+				qiegegongju.onclick = function(){
+				sVideo.src =  video.qiegegongju;
+				};
+				neiliujiao.onclick = function(){
+				sVideo.src =  video.neiliujiao;
+				};
+				banshou.onclick = function(){
+				sVideo.src =  video.banshou;
+				};
+
+				//设置视频点播提示
+				sVideo.title = "点击以下频道进行切换播放\"世达视频介绍\"";
+</script>
 <hr />
+</body>
+</html>
+
 
