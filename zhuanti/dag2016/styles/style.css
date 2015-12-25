@@ -18,7 +18,14 @@ img{
 	width:100%;
 	height:100%;
 	z-index:1;
+	animation:scale 60s	linear forwards;
 }
+	@keyframes scale 
+{
+	from{transform:scale(1)}
+	to{transform:scale(3)}
+}
+
 .abtext{
 	position:absolute;
 	z-index:2;
@@ -88,6 +95,18 @@ img[src="images/down.svg"] {
 	background-color:#FD0083;
 }
 
+#pagesix{
+	background-color:#005499;
+}
+
+#pageseven{
+	background-color:#006347;
+}
+
+#pageeight{
+	background-color:#18205f;
+}
+
 .page{
 	width:100%;
 	text-align:center;
@@ -130,11 +149,42 @@ img[src="images/down.svg"] {
 	width:60%;
 }
 
+.brandview{
+	width:100%;
+	height:185px;
+	overflow:hidden;
+  box-shadow: 1px 1px 10px #f6f6f6;
+	border-radius: 0.5em;
+}
 
+#brandjpg {
+	position:relative;
+	animation:brandview 60s linear infinite alternate;
 
+}
 
+@keyframes brandview {
+	from{top:0px;}
+	to{top:-3969px;}
+}
+.text-left{
+	text-align:left;
+}
+.text ul {
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: none !important;
+    color: #fff;
+}
 
+.text ul li {
+	list-style:none;
+}
 
+#pageeight p{
+	text-align:center;
+}
 
-
-
+.w200{
+	width:200px;
+}
