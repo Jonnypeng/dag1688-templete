@@ -129,7 +129,7 @@ img[src="images/down.svg"],img[src="images/down2.svg"] {
 }
 
 #pageseven{
-	background-color:#006347;
+	background-color:#FFF;
 }
 
 #pageeight{
@@ -211,8 +211,6 @@ img[src="images/down.svg"],img[src="images/down2.svg"] {
 	width:100%;
 	height:100%;
 	overflow:hidden;
-  box-shadow: 1px 1px 10px #f6f6f6;
-	border-radius: 0.5em;
 	position:fixed;
 }
 
