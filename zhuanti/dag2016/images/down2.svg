@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="图层_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px"
+	 viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<title>chevron-down-circle</title>
+<desc>Created with Sketch Beta.</desc>
+<g id="Page-1" sketch:type="MSPage">
+	<g id="Icon-Set" transform="translate(-204.000000, -1087.000000)" sketch:type="MSLayerGroup">
+		<path id="chevron-down-circle" sketch:type="MSShapeGroup" fill="#B2251D" d="M227.121,1098.46l-7.121,7.13l-7.121-7.13
+			c-0.391-0.39-1.024-0.39-1.415,0c-0.39,0.4-0.39,1.03,0,1.42l7.658,7.66c0.239,0.24,0.567,0.31,0.878,0.25
+			c0.311,0.06,0.639-0.01,0.879-0.25l7.657-7.66c0.39-0.39,0.39-1.02,0-1.42C228.145,1098.07,227.512,1098.07,227.121,1098.46
+			L227.121,1098.46z M220,1117c-7.732,0-14-6.27-14-14c0-7.73,6.268-14,14-14c7.732,0,14,6.27,14,14
+			C234,1110.73,227.732,1117,220,1117L220,1117z M220,1087c-8.836,0-16,7.16-16,16s7.164,16,16,16c8.837,0,16-7.16,16-16
+			S228.837,1087,220,1087L220,1087z"/>
+	</g>
+</g>
+</svg>
