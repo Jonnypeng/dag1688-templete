@@ -209,6 +209,7 @@ img[src="images/down.svg"],img[src="images/down2.svg"] {
 	overflow:hidden;
   box-shadow: 1px 1px 10px #f6f6f6;
 	border-radius: 0.5em;
+	position:fixed;
 }
 
 #brandjpg {
