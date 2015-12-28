@@ -95,12 +95,12 @@ img[src="images/down.svg"],img[src="images/down2.svg"] {
 }
 
 	@keyframes updown {
-	from{top:0px;}
-	to{top:15px;}
+	from{top:0px;opacity:0;}
+	to{top:15px;opacity:1;}
 }
 	@-webkit-keyframes updown {
-	from{top:0px;}
-	to{top:15px;}
+	from{top:0px;opacity:0;}
+	to{top:15px;opacity:1;}
 }
 .fa-chevron-circle-up{
 	color:white	!important;
@@ -157,6 +157,23 @@ img[src="images/down.svg"],img[src="images/down2.svg"] {
 	100%{transform:rotate(360deg)}
 }
 
+#dagbrandlogo{
+	animation:rotate 2s infinite;
+	animation-iteration-count:1;
+	-webkit-animation:rotate 2s infinite;
+	-webkit-animation-iteration-count:1;
+
+}
+
+@keyframes rotate{
+	0%{transform:rotateX(0deg)}
+	100%{transform:rotateX(360deg)}
+}
+@-webkit-keyframes rotate{
+	0%{transform:rotateX(0deg)}
+	100%{transform:rotateX(360deg)}
+}
+
 .text p {
 	text-shadow:none !important;
 	text-align:left;
@@ -167,9 +184,9 @@ img[src="images/down.svg"],img[src="images/down2.svg"] {
 
 .text {
 	position:relative;
-	animation:display 3s linear infinite; 
+	animation:display 2s linear infinite; 
 	animation-iteration-count:1;
-	-webkit-animation:display 3s linear infinite; 
+	-webkit-animation:display 2s linear infinite; 
 	-webkit-animation-iteration-count:1;
 }
 
