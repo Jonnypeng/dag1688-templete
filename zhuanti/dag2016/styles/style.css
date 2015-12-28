@@ -10,6 +10,10 @@ body{
     margin-left: auto !important;
     margin-right: auto !important;
 }
+.over-hidden{
+	overflow:hidden !important;
+}
+
 img{
 	max-width:100%;
 	height:auto;
@@ -222,11 +226,11 @@ img[src="images/down.svg"],img[src="images/down2.svg"] {
 
 @keyframes brandview {
 	from{top:0px;}
-	to{top:-3969px;}
+	to{top:-3550px;}
 }
 @-webkit-keyframes brandview {
 	from{top:0px;}
-	to{top:-3969px;}
+	to{top:-3550px;}
 }
 .text-left{
 	text-align:left;
@@ -257,3 +261,4 @@ img[src="images/down.svg"],img[src="images/down2.svg"] {
 		width:100%;
     background-color: rgba(255, 255, 255, 0.8);
 }
+
