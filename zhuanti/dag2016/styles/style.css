@@ -218,8 +218,8 @@ img[src="images/down.svg"],img[src="images/down2.svg"] {
 	width:100%;
 	height:auto;
 	position:relative;
-	animation:brandview 60s linear infinite alternate;
-	-webkit-animation:brandview 60s linear infinite alternate;
+	animation:brandview 30s linear infinite alternate;
+	-webkit-animation:brandview 30s linear infinite alternate;
 }
 
 @keyframes brandview {
@@ -259,4 +259,4 @@ img[src="images/down.svg"],img[src="images/down2.svg"] {
 		width:100%;
     background-color: rgba(255, 255, 255, 0.8);
 }
-
+#lianxi a:link {color:#fff;text-decoration:none;}
