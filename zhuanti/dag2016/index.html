@@ -3,11 +3,12 @@
 <head>
         <meta charset="UTF-8">
 				<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-        <title>大光五金祝各位商家及消费者，新年快乐！万事如意！</title>
+        <title>大光五金:祝各位商家及消费者，2016年新年快乐！万事如意！</title>
 				<link rel=stylesheet href="styles/jquery.mobile-1.4.5.min.css">
 				<link rel=stylesheet href="styles/style.css">
 				<script src="javascript/jquery-1.8.3.min.js"></script>
 				<script src="javascript/jquery.mobile.min.js"></script>
+				<script src="javascript/l-by-l.min.js"></script>
 </head>
 <body>
 <div class="container">
@@ -20,7 +21,7 @@
 		<img src="images/2016-4.svg" id="logo2016" />
 	</div>
 	<div class="text-center bt-text">
-	<a href="#pagetwo" data-transition="slideup"><img src="images/down.svg" /></a>
+	<a id="btn2" href="#pagetwo" data-transition="slideup"><img src="images/down.svg" /></a>
 	</div>
 </div> 
 
@@ -30,11 +31,13 @@
 		<img src="images/daglog.svg"	class="w200">
 	</div>
 	<div class="text">
-		<p>1985年夏天，大光五金诞生于贵阳，我们在改革大潮中崛起，集各类工业品及五金机电设备贸易为一体，致力营造恪守信用，讲求信誉，注意信义的企业文化。先后在上海，嘉兴，香港等地设立分公司，以高品质商品与专业服务享誉业界。
+		<p class="word1">
+			1985年夏天，大光五金诞生于贵阳，我们在改革大潮中崛起，集各类工业品及五金机电设备贸易为一体，致力营造恪守信用
+    ，讲求信誉，注意信义的企业文化。先后在上海，嘉兴，香港等地设立分公司，以高品质商品与专业服务享誉业界。
 			</p>
 	</div>
 	<div class="text-center bt-text">
-	<a href="#pagethree" data-transition="slideup"><img src="images/down.svg" /></i></a>
+	<a id="btn3" href="#pagethree" data-transition="slideup"><img src="images/down.svg" /></i></a>
 	</div>
 	</div>
 	</div>
@@ -46,12 +49,12 @@
 		<img src="images/dagok.svg"	class="halfwidth">
 	</div>
 	<div class="text">
-		<p>
+		<p class="word2">
 			30年的实体运作，给您带来的不仅是物美价廉的商品，更重要的是正品保障与售后服务，让您买到货真价实的原厂正品，我们经销的某些品牌，甚至还提供终身保用服务，这类商品在正常使用过程中，如果使用功能有损坏，皆可免费修理。
 			</p>
 	</div>
 	<div class="text-center bt-text">
-	<a href="#pagefour" data-transition="slideup"><img src="images/down.svg" /></a>
+	<a id="btn4" href="#pagefour" data-transition="slideup"><img src="images/down.svg" /></a>
 	</div>
 	</div>
 	</div>
@@ -63,12 +66,12 @@
 		<img src="images/dagguang.svg"	class="halfwidth">
 	</div>
 	<div class="text">
-		<p>
+		<p class="word3">
 我们的商品涵盖：五金工具、机电设备、发电设备、化工产品、仪器仪表、建筑装饰材料、劳保安防用品、消防水暖器材、起重吊装设备、电力电信线缆、民用五金、照明电器、防暴产品、通风设备、附件共15大类，达数千万种产品。
 			</p>
 	</div>
 	<div class="text-center bt-text">
-	<a href="#pagefive" data-transition="slideup"><img src="images/down.svg" /></a>
+	<a id="btn5" href="#pagefive" data-transition="slideup"><img src="images/down.svg" /></a>
 	</div>
 	</div>
 	</div>
@@ -79,12 +82,12 @@
 		<img src="images/dagserver.svg"	class="halfwidth">
 	</div>
 	<div class="text">
-		<p>
+		<p class="word4">
 				30年行业服务经验，使得我们已经成为贵州各大工矿企业的优质供应商，我们拥有独立的仓储配送物流体系，成熟的分销市场运作网络，更重要的，我们拥有一批行业经验超过10年的专业团队为您服务。
 			</p>
 	</div>
 	<div class="text-center bt-text">
-	<a href="#pagesix" data-transition="slideup"><img src="images/down.svg" /></a>
+	<a id="btn6" href="#pagesix" data-transition="slideup"><img src="images/down.svg" /></a>
 	</div>
 	</div>
 	</div>		
@@ -95,7 +98,7 @@
 		<img src="images/dagpic.svg"	class="halfwidth">
 	</div>
 	<div class="text">
-		<p>
+		<p class="word5">
 	商城整合全国各大一线品牌四十多个，商城一半以上为自代理品牌，其中很大部分为国际一流工业品牌，具有无与伦比的价格及服务优势。重要的是，我们能够根据提货量、信用额度、供应期限、结款方式来对价格进行调整，最大地提升您的成本竞争力。			
 			</p>
 	</div>
@@ -141,5 +144,55 @@
 	</div>
 	</div>
 </div> 
+
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+<script>
+	document.getElementById("btn2").onclick = function(){    
+			$(".word1").lbyl({
+    content: "1985年夏天，大光五金诞生于贵阳，我们在改革大潮中崛起，集各类工业品及五金机电设备贸易为一体，致力营造恪守信用，讲求信誉，注意信义的企业文化。先后在上海，嘉兴，香港等地设立分公司，以高品质商品与专业服务享誉业界。",
+    speed: 150, //time between each new letter being added
+    type: 'show', // 'show' or 'fade'
+    fadeSpeed: 500, // Only relevant when the 'type' is set to 'fade'
+    finished: function(){ console.log('finished') } // Finished Callback
+});
+};
+	document.getElementById("btn3").onclick = function(){    
+			$(".word2").lbyl({
+    content: "30年的实体运作，给您带来的不仅是物美价廉的商品，更重要的是正品保障与售后服务，让您买到货真价实的原厂正品，我们经销的某些品牌，甚至还提供终身保用服务，这类商品在正常使用过程中，如果使用功能有损坏，皆可免费修理。",
+    speed: 150, //time between each new letter being added
+    type: 'show', // 'show' or 'fade'
+    fadeSpeed: 500, // Only relevant when the 'type' is set to 'fade'
+    finished: function(){ console.log('finished') } // Finished Callback
+});
+};
+	document.getElementById("btn4").onclick = function(){    
+			$(".word3").lbyl({
+    content: " 我们的商品涵盖：五金工具、机电设备、发电设备、化工产品、仪器仪表、建筑装饰材料、劳保安防用品、消防水暖器材、起重吊装设备、电力电信线缆、民用五金、照明电器、防暴产品、通风设备、附件共15大类，达数千万种产品。",
+    speed: 150, //time between each new letter being added
+    type: 'show', // 'show' or 'fade'
+    fadeSpeed: 500, // Only relevant when the 'type' is set to 'fade'
+    finished: function(){ console.log('finished') } // Finished Callback
+});
+};
+	document.getElementById("btn5").onclick = function(){    
+			$(".word4").lbyl({
+    content: "30年行业服务经验，使得我们已经成为贵州各大工矿企业的优质供应商，我们拥有独立的仓储配送物流体系，成熟的分销市场运作网络，更重要的，我们拥有一批行业经验超过10年的专业团队为您服务。",
+    speed: 150, //time between each new letter being added
+    type: 'show', // 'show' or 'fade'
+    fadeSpeed: 500, // Only relevant when the 'type' is set to 'fade'
+    finished: function(){ console.log('finished') } // Finished Callback
+});
+};
+	document.getElementById("btn6").onclick = function(){    
+			$(".word5").lbyl({
+    content: "商城整合全国各大一线品牌四十多个，商城一半以上为自代理品牌，其中很大部分为国际一流工业品牌，具有无与伦比的价格及服务优势,重要的是，我们能够根据提货量、信用额度、供应期限、结款方式来对价格进行调整，最大地提升您的成本竞争力。",
+    speed: 150, //time between each new letter being added
+    type: 'show', // 'show' or 'fade'
+    fadeSpeed: 500, // Only relevant when the 'type' is set to 'fade'
+    finished: function(){ console.log('finished') } // Finished Callback
+});
+};
+
+	</script>
 </body>
 </html>
