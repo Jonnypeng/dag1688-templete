@@ -153,29 +153,29 @@ img[src="images/down.svg"],img[src="images/down2.svg"] {
 
 
 @keyframes transform{
-	0%{transform:rotate(0deg)}
-	100%{transform:rotate(360deg)}
+	0%{width:0%;}
+	100%{width:100;}
 }
 @-webkit-keyframes transform{
-	0%{transform:rotate(0deg)}
-	100%{transform:rotate(360deg)}
+	0%{width:0%;}
+	100%{width:100;}
 }
 
 #dagbrandlogo{
-	animation:rotate 2s infinite;
+	animation:rotate 3s infinite;
 	animation-iteration-count:1;
-	-webkit-animation:rotate 2s infinite;
+	-webkit-animation:rotate 3s infinite;
 	-webkit-animation-iteration-count:1;
 
 }
 
 @keyframes rotate{
-	0%{transform:rotateX(0deg)}
-	100%{transform:rotateX(360deg)}
+	0%{left:-100%;}
+	100%{left:0;}
 }
 @-webkit-keyframes rotate{
-	0%{transform:rotateX(0deg)}
-	100%{transform:rotateX(360deg)}
+	0%{left:-100%;}
+	100%{left:0;}
 }
 
 .text p {
@@ -250,8 +250,8 @@ img[src="images/down.svg"],img[src="images/down2.svg"] {
 	text-align:center;
 }
 
-.w200{
-	width:200px;
+.w150{
+	width:150px;
 }
 
 #pageseven .headerlogo {
