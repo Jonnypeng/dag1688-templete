@@ -184,6 +184,8 @@ img[src="images/down.svg"],img[src="images/down2.svg"] {
 	color:#fff;
 	font-size:1em;
 	padding:15px;
+	display:block;
+	word-break:break-all;
 }
 
 .text {
