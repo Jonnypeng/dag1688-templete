@@ -35,13 +35,13 @@ img{
 }
 	@keyframes scale 
 {
-	from{transform:scale(1)}
-	to{transform:scale(3)}
+	from{transform:scale(1);}
+	to{transform:scale(2);}
 }
 	@-webkit-keyframes scale 
 {
 	from{transform:scale(1)}
-	to{transform:scale(3)}
+	to{transform:scale(2)}
 }
 
 .abtext{
@@ -220,8 +220,8 @@ img[src="images/down.svg"],img[src="images/down2.svg"] {
 	width:100%;
 	height:auto;
 	position:relative;
-	animation:brandview 30s linear infinite alternate;
-	-webkit-animation:brandview 30s linear infinite alternate;
+	animation:brandview 50s linear infinite alternate;
+	-webkit-animation:brandview 50s linear infinite alternate;
 }
 
 @keyframes brandview {
