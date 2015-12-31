@@ -287,3 +287,30 @@ img[src="images/down.svg"],img[src="images/down2.svg"] {
 	to{top:0;}
 }
 
+#backimg {
+	animation:backimg 5s linear infinite ; 
+	-webkit-animation:backimg 5s linear infinite ; 
+}
+
+
+@keyframes backimg {
+	0%{opacity:0;}
+	50% {opacity:1;}
+	100%{opacity:0;}	
+	
+}
+@-webkit-keyframes backimg {
+	0%{opacity:0;}
+	50% {opacity:1;}
+	100%{opacity:0;}	
+}
+
+
+
+
+
+
+
+
+
+
