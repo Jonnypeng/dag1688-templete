@@ -111,10 +111,10 @@ img[src="images/down.svg"],img[src="images/down2.svg"] {
 }
 
 #pageone{
-    background: -webkit-radial-gradient(red, green, blue);
-    background: -o-radial-gradient(red, green, blue);
-    background: -moz-radial-gradient(red, green, blue);
-    background: radial-gradient(#FF0000, #000000);
+		background: -webkit-radial-gradient(red, black); /* Safari 5.1 - 6.0 */
+    background: -o-radial-gradient(red, black); /* Opera 11.6 - 12.0 */
+    background: -moz-radial-gradient(red, black); /* Firefox 3.6 - 15 */
+    background: radial-gradient(red, black); /* 标准的语法（必须放在最后） */
 }
 
 #pagetwo{
