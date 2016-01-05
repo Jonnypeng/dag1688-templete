@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+				<meta name=”renderer” content=”webkit”>
         <meta charset="UTF-8">
 				<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=yes">
-        <title>大光物资商城：汽车馆</title>
+        <title>大光物资商城：汽车用品推荐</title>
 				<link rel=stylesheet href="styles/style.css">
 				<script src="javascript/javascript.js"></script>
 </head>
 <body>
+<div id="icon">
+	<img src="images/icon.jpg"	width="0px"	height="0px">
+</div>
 <div class="container">
 	<div id="title">
 		<div id="link">
@@ -28,7 +32,10 @@
 		</div>
 	</div>	
 	<div id="header">
-		<img id="header-img" src="images/car.jpg">
+		<img id="header-img" src="images/car.jpg" usemap="#Map">
+		<map name="Map" id="Map">
+  <area shape="rect" coords="759,54,1115,132" href="http://www.dag1688.com/index.html" target="_blank"/>
+		</map>	
 	</div>
 	<div id="main">
 <ul id="proudct">
@@ -609,30 +616,33 @@
 	</div>
 </li>
 </ul>
+<div id="more">
+<a href="http://www.dag1688.com/products_list/&amp;Column_navigation01-002FCId=46&amp;pageNo_Product_list01-105=1&amp;pageSize_Product_list01-105=50.html"><img src="images/more-proudct.jpg"></a>
+</div>
 <div id="footer">
 				<div class="row"> 
-					<address class="col-xs-12 col-md-3">
+					<span class="col-xs-12 col-md-3">
 					<span>服务热线</span>
 					<p><a href="tel:085185757788">0851-85757788</a><br><a href="tel:085185770626">0851-85770626</a></p>
-					</address>
+					</span>
 					
-					<address class="col-xs-12 col-md-3">
+					<span class="col-xs-12 col-md-3">
 					<span>门市电话</span>
 					<p><a href="tel:085185757779">0851-85757779</a><br><a href="tel:085185756800">0851-85756800</a></p>
-					</address>
+					</span>
 					
-					<address class="col-xs-12 col-md-3">
+					<span class="col-xs-12 col-md-3">
 					<span>邮件微信</span>
 					<p>www@dag1688.com<br>
 					公众微信ID:dagsc1688</p>
-					</address>
+					</span>
 					
-					<address class="col-xs-12 col-md-3">
+					<span class="col-xs-12 col-md-3">
 					<span>联系地址</span>
 					<p>贵阳市沙冲中路33号大光旗舰店<br>
 					网站:www.dag1688.com
 					</p>
-					</address>
+					</span>
 					<div class="col-xs-12 col-md-12">
 					<p style="text-align:center;color:#fff;padding:15px;">
 				Copyright © 2015 大光物资商城版权所有 
@@ -642,5 +652,25 @@
 	</div>
 	</div>
 </div>
+	<script>
+		<!--[if ite IE9]>
+			document.getElementById("title").style.display = "none";	
+		<![endif]-->
+	</script>
+	<script>
+			var img = document.getElementsByTagName("img");
+			for(var i=0;i<img.length;i++){
+			img[i].setAttribute("border","0");
+}
+	</script>
+	<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?9688520d31bcd9704c20c253e46a1f6c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
 </body>
 </html>
