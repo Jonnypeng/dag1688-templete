@@ -1,0 +1,173 @@
+body{
+	background:url(../images/back.jpg) no-repeat bottom center fixed;
+	background-attachment:fixed;
+}
+.container {
+	width: 100%;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#link{
+	margin: 0.3% 5%;
+	padding:5px;
+}
+
+a:link{
+			color:white;
+	text-decoration:none;
+}
+
+
+#title {
+	width:100%;
+	height:auto;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:3;
+	background:white;
+	opacity:0.6;
+	color:#000;
+}
+
+
+
+#header {
+	width:100%;
+	height:auto;
+	position:absolute;
+	top:0;
+	left:0px;
+	z-index:2;
+}
+
+#header-img{
+	width:100%;
+}
+
+#searchbar {
+	display:inline-block;
+}
+
+.right{
+	float:right;
+}
+
+#main{
+				width: 80%;
+				height:1120px; 
+				background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+				margin: 0px auto;
+				z-index: 0;
+				position: absolute;
+				left: 10%;
+				top: 450px;
+				opacity: 0.8;
+}
+
+#proudct {
+margin: 3%;
+padding-left: 0px;
+}
+
+.content {
+	width: 33.333%;
+float: left;
+list-style: none;
+padding: 0px;
+margin: 0px;
+
+}
+
+.buttonP,.property {
+	display:none;
+}
+
+.name,.retailprice,.property{
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+
+.pro-module ul{
+	padding-left:0px;
+}
+
+
+.col-space{
+	padding:10px;
+	text-align:center;
+}
+
+.content:hover{
+	box-shadow:1px 1px 10px;
+}
+
+
+.btn-danger {
+	padding:0px 8px;
+	border-radius:0.5em;
+}
+
+.form-control{
+	border-radius: 0.3em;
+}
+
+.btn-danger:hover{
+	cursor:pointer;
+}
+
+#footer{
+clear: both;
+position: relative;
+top: 40px;
+background-color: gray;
+color: white;
+
+}
+
+.row{
+	width: 100%;
+padding: 15px 0px;
+}
+
+.col-md-3{
+	width:25%;
+	float:left;
+	text-align:center;
+}
+
+
+@media screen and (max-width:768px){
+#title{
+	display:none;
+}
+
+#main {
+	width: 100%;
+height: auto;
+background: #FFF none repeat scroll 0% 0%;
+margin: 0px auto;
+z-index: 0;
+position: absolute;
+left: 0%;
+top: 15%;
+opacity: 0.8;
+}
+
+
+.content {
+	width:100%;
+	border: 1px solid #eee;
+}
+.content:hover{
+	box-shadow:none;
+}
+.col-md-3{
+	width:100%;
+	float:left;
+	text-align:center;
+}
+}
