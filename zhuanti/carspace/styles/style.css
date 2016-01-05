@@ -1,6 +1,8 @@
 body{
 	background:url(../images/back.jpg) no-repeat bottom center fixed;
 	background-attachment:fixed;
+	font-family:"Microsoft YaHei";
+	font-sze:13px;
 }
 .container {
 	width: 100%;
@@ -14,11 +16,13 @@ body{
 	padding:5px;
 }
 
-a:link{
-			color:white;
+#main a:link{
+			color:#eee;
 	text-decoration:none;
 }
-
+.pro-module a:link{
+	color:black !important;
+}
 
 #title {
 	width:100%;
@@ -59,12 +63,14 @@ a:link{
 				width: 80%;
 				height:1120px; 
 				background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+				color:black;
 				margin: 0px auto;
 				z-index: 0;
 				position: absolute;
 				left: 10%;
 				top: 450px;
 				opacity: 0.8;
+				font-size:13px;
 }
 
 #proudct {
@@ -134,11 +140,25 @@ padding: 15px 0px;
 }
 
 .col-md-3{
-	width:25%;
+	width:24%;
 	float:left;
 	text-align:center;
 }
 
+.col-md-12{
+	clear:both;
+}
+.retailprice {
+	color:#b2251d;
+}
+
+#more{
+
+}
+
+#more img{
+	width:100%;
+}
 
 @media screen and (max-width:768px){
 #title{
@@ -155,6 +175,7 @@ position: absolute;
 left: 0%;
 top: 15%;
 opacity: 0.8;
+font-size: small;
 }
 
 
