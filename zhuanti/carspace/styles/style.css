@@ -1,8 +1,8 @@
 body{
-	background:url(../images/back.jpg) no-repeat bottom center fixed;
+	background:url(../images/back.jpg) no-repeat bottom center;
 	background-attachment:fixed;
 	font-family:"Microsoft YaHei";
-	font-sze:13px;
+	font-size:13px;
 }
 .container {
 	width: 100%;
@@ -165,6 +165,9 @@ padding: 15px 0px;
 }
 
 @media screen and (max-width:768px){
+body{
+	background:none;
+}
 #title{
 	display:none;
 }
