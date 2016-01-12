@@ -10,25 +10,36 @@
 </style>
 </head>
 <body>
-	<div id="a"></div>
-	<div id="b"></div>
+	<div id="a"><button id="btn1">点解A</button></div>
+	<div id="b"><button id="btn2">点解B</button></div>
 	<div id="c"></div>
 	<div id="d"></div>
 	<div id="e"></div>
        <script>
-					var a = document.getElementById("a");	
-					var b = document.getElementById("b");	
 					var c = document.getElementById("c");	
 					var d = document.getElementById("d");	
-					var e = document.getElementById("d");	
-					var i = 0;
+					var e = document.getElementById("e");	
+					var btn = document.getElementsByTagName("button");
 					var ai = 0;
 					var bi = 0;
-					a.innerHTML = "<button	id=\"btn1\">" + "点解A" +"</button>";
-					b.innerHTML = "<button	id=\"btn2\">" + "点解B" +"</button>";
-
-					var btn = document.getElementTagName("button");
-						
+				function cat(){
+					if(ai==bi){
+							e.innerHTML = "相等";
+}else{
+						e.innerHTML = "不等";
+}	}
+					
+					btn[0].onclick = function(){
+						ai++;
+						c.innerHTML = ai;
+						cat();
+}
+					
+					btn[1].onclick = function(){
+						bi++;
+						d.innerHTML = bi;
+						cat();
+}
 					
 			
 
@@ -52,18 +63,6 @@
 
 
 
-
-					btnA.onclick = function(){
-						ai++;
-						c.innerHTML = ai;	
-					if(ai==1){
-						e.innerHTML = "a与b相等";
-}	
-}
-					btnB.onclick = function(){
-						bi++;
-						d.innerHTML = bi;	
-}
 					
 			</script>	 
 </body>
