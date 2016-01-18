@@ -166,7 +166,8 @@ padding: 15px 0px;
 
 @media screen and (max-width:768px){
 body{
-	background:none;
+	background:url(../images/back.jpg) no-repeat center center;
+	background-attachment:fixed;
 }
 #title{
 	display:none;

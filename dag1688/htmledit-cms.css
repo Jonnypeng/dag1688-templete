@@ -1,0 +1,27 @@
+@import url('http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css');
+
+#box_header,#box_header_bot,#box_header_cart,#box_header_nav,#box_left,#box_left,.location,.message,#elem-Column_navigation01-002,#box_footer{
+	display:none;
+}
+
+img{
+	max-width:100%;
+	height:auto;
+}
+
+.container{
+	margin-top:5px;
+}
+
+.row{
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+h1.htmlinline {
+	font-size:24px;
+}
+
+p.text-center{
+	text-align:left;
+}
