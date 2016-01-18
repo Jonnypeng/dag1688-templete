@@ -116,10 +116,10 @@ $(document).ready(function(e) {
 </script>
 <div id="container">
   <!--第一屏begin-->
-  <div data-role="page" id="pageone" style="background:#D0C7D3">
+  <div data-role="page" id="pageone" style="background-color:red;">
     <div data-role="content" style="text-align:center"> <img src="images/head.png" width="1000" style="margin:0 auto">
       <div style="width:20%; margin:0 auto; clear:both">
-        <div style="float: left;font-size: 1.2em; padding: 6% 0 0 3%;width: 30%;">最大值:</div>
+        <div style="float: left;font-size: 1.2em; padding: 6% 0 0 3%;width: 30%;color:white;text-shadow:none;">最大值:</div>
         <div style="width:60%; float:left">
           <input id="max" type="text">
           <!--获取最大值,id别改-->
@@ -136,10 +136,10 @@ $(document).ready(function(e) {
   </div>
   <!--第一屏end-->
   <!--第二屏begin-->
-  <div data-role="page" id="pagetwo">
+  <div data-role="page" id="pagetwo" styel="background-color:white;">
     <!--返回链接,属性别改-->
     <a href="#pageone" data-transition="slide" data-direction="reverse">
-    <div style="background: black"><img src="images/second_bg.png"> </div>
+    <div style="background: red"><img src="images/second_bg.png"> </div>
     </a>
     <div data-role="content" id="con__1">
       <p>
@@ -148,15 +148,15 @@ $(document).ready(function(e) {
         <div id="num" style="width:400px; margin:0 auto; height:200px;"> <span id="num_1" style="width:33%; padding-top:50%; float:left; background:url(images/0.png) no-repeat"></span> <span id="num_2" style="width:33%; padding-top:50%; float:left;background:url(images/0.png) no-repeat"></span> <span id="num_3" style="width:33%; padding-top:50%;background:url(images/0.png) no-repeat; float:left"></span> </div>
         <div style="width:400px; margin:0 auto; height:100px;">
           <!--按钮begin id别改-->
-          <button id="start" style="width:40%; float:left; height:50%; background:white"> start </button>
-          <button id="stop" style="width:40%; float:left; height:50%; background:white"> end </button>
+          <button id="start" style="width:40%; float:left; height:50%; background:white"> 开始 </button>
+          <button id="stop" style="width:40%; float:left; height:50%; background:white"> 暂停 </button>
           <!--按钮end id别改-->
         </div>
       </div>
     </div>
     </p>
-    <div data-role="footer" id="footerxx" style="position:absolute; width:100%;">
-      <h1>Make By Stuinfers</h1>
+    <div data-role="footer" id="footerxx" style="position:absolute; width:100%;background:red;color:white;display:none;">
+      <h1>大光五金祝在座各位2016新春快乐</h1>
     </div>
   </div>
   <!--第二屏end-->
