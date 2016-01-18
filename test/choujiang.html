@@ -5,53 +5,144 @@
         <title></title>
 </head>
 <body>
+<div id="gameContent">
+        <table id="gameTable">
+          <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+          <tr><td>16</td><td></td><td></td><td></td><td>6</td></tr>
+          <tr><td>15</td><td></td><td></td><td></td><td>7</td></tr>
+          <tr><td>14</td><td></td><td></td><td></td><td>8</td></tr>
+          <tr><td>13</td><td>12</td><td>11</td><td>10</td><td>9</td></tr>
+         </table>
+       <p><a id="gameBtn"></a></p><!--这个就是中间的表情按钮-->
+ </div>
 
-<button id="choujiang3">三等奖抽奖</button>
-<button id="choujiang2">二等奖抽奖</button>
-<button id="choujiang1">一等奖抽奖</button>
-       <script language="javascript">
-var choujiang3 = document.getElementById("choujiang3");
-var choujiang2 = document.getElementById("choujiang2");
-var choujiang1 = document.getElementById("choujiang1");
+css代码：
+#gameContent{position:absolute;right:19px;top:19px;width:360px;}
+#gameContent table{  float:right;border-collapse: separate;border-spacing: 2px;}
+#gameContent td{width:30px;height:30px;text-align:center;vertical-align:middle;border:1px solid #ffdd99; background:#fff9ed;}
+#gameContent p{position:absolute;right:36px;top:36px;width:100px;height:100px;background:url("../image/game.jpg") no-repeat 0 0;padding-left:0;}
+#gameContent p.waitGame{background:url("../image/game.jpg") no-repeat -200px 0;}
+#gameBtn{ z-index:999;display:block;width:100px;height:100px;}
+#gameBtn:hover{cursor:pointer;background:url("../image/game.jpg") no-repeat -100px 0;}
+
+js代码（一下代码保存为一个js文件，其中也有jquery，所以还得引用jquery）：
 
 
-
-//从一个给定的数组arr中,随机返回num个不重复项
-function getArrayItems(arr, num) {
-    //新建一个数组,将传入的数组复制过来,用于运算,而不要直接操作传入的数组;
-    var temp_array = new Array();
-    for (var index in arr) {
-        temp_array.push(arr[index]);
-    }
-    //取出的数值项,保存在此数组
-    var return_array = new Array();
-    for (var i = 0; i<num; i++) {
-        //判断如果数组还有可以取出的元素,以防下标越界
-        if (temp_array.length>0) {
-            //在数组中产生一个随机索引
-            var arrIndex = Math.floor(Math.random()*temp_array.length);
-            //将此随机索引的对应的数组元素值复制出来
-            return_array[i] = temp_array[arrIndex];
-            //然后删掉此索引的数组元素,这时候temp_array变为新的数组
-            temp_array.splice(arrIndex, 1);
-        } else {
-            //数组中数据项取完后,退出循环,比如数组本来只有10项,但要求取出20项.
-            break;
+function GetSide(m, n) {
+    //初始化数组
+    var arr = [];
+    for (var i = 0; i < m; i++) {
+        arr.push([]);
+        for (var j = 0; j < n; j++) {
+            arr[i][j] = i * n + j;
         }
     }
-    return return_array;
+    //获取数组最外圈
+    var resultArr = [];
+    var tempX = 0,
+tempY = 0,
+direction = "Along",
+count = 0;
+    while (tempX >= 0 && tempX < n && tempY >= 0 && tempY < m && count < m * n) {
+        count++;
+        resultArr.push([tempY, tempX]);
+        if (direction == "Along") {
+            if (tempX == n - 1)
+                tempY++;
+            else
+                tempX++;
+            if (tempX == n - 1 && tempY == m - 1)
+                direction = "Inverse"
+        }
+        else {
+            if (tempX == 0)
+                tempY--;
+            else
+                tempX--;
+            if (tempX == 0 && tempY == 0)
+                break;
+        }
+    }
+    return resultArr;
 }
-//测试
-var ArrList=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33];
-choujiang3.onclick = function(){
-alert(getArrayItems(ArrList,5));
-}
-choujiang2.onclick = function(){
-alert(getArrayItems(ArrList,4));
-}
-choujiang1.onclick = function(){
-alert(getArrayItems(ArrList,3));
-}
-</script> 
+
+
+$(document).ready(function () {
+
+    var index = 0,           //当前亮区位置
+       prevIndex = 0,          //前一位置
+       Speed = 300,           //初始速度
+       Time,            //定义对象
+       arr = GetSide(5, 5),         //初始化数组
+       EndIndex = 0,           //决定在哪一格变慢
+       cycle = 0,           //转动圈数   
+       EndCycle = 0,           //计算圈数
+       flag = false,           //结束转动标志 
+       quick = 0,          //加速
+       gameTable = document.getElementByIdx_x("gameTable");
+
+
+    $("#gameBtn").click(function () {
+
+        var stopNum = Math.floor(Math.random() * 15 + 1);//点击产生随机数，最后将停在次数上
+        $.cookie("stopNum",stopNum);//存入cookie,使得全局可以调用
+
+        $(this).hide(); //开始后隐藏开始按钮
+        $(this).parent().addClass("waitGame");
+        cycle = 0;
+        flag = false;
+        EndIndex = Math.floor(Math.random() * 16);
+        EndCycle = 1;
+        Time = setInterval(Star, Speed);
+
+    });
+
+    function Star(num) {
+
+        gameTable.rows[arr[index][0]].cells[arr[index][1]].style.border = "1px solid pink";
+        gameTable.rows[arr[index][0]].cells[arr[index][1]].style.background = "pink";
+        if (index > 0) {
+            prevIndex = index - 1;
+        }
+        else {
+            prevIndex = arr.length - 1;
+        }
+        gameTable.rows[arr[prevIndex][0]].cells[arr[prevIndex][1]].style.border = "1px solid #ffdd99";
+        gameTable.rows[arr[prevIndex][0]].cells[arr[prevIndex][1]].style.background = "#fff9ed";
+        index++;
+        quick++;
+
+        if (index >= arr.length) {
+            index = 0;
+            cycle++;
+        }
+
+        //跑马灯变速
+        if (flag == false) {
+            //走五格开始加速
+            if (quick == 5) {
+                clearInterval(Time);
+                Speed = 50;
+                Time = setInterval(Star, Speed);
+            }
+            //跑N圈减速
+            if (cycle == EndCycle + 1 && index == EndIndex) {
+                clearInterval(Time);
+                Speed = 300;
+                flag = true;         //触发结束
+                Time = setInterval(Star, Speed);
+            }
+        }
+
+        if (flag == true && index == $.cookie("stopNum") - 1) {
+            quick = 0;
+            clearInterval(Time);
+            $("#gameContent p").removeClass("waitGame");
+            $("#gameBtn").show(); //停止后显示开始按钮
+        }
+
+    }
+
+})
 </body>
 </html>
