@@ -2,7 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>JS+JQ随机抽奖代码</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>大光五金2016年会抽奖</title>
 </head>
 <body>
 <!-- 代码 开始 -->
@@ -136,20 +137,20 @@ $(document).ready(function(e) {
   </div>
   <!--第一屏end-->
   <!--第二屏begin-->
-  <div data-role="page" id="pagetwo" styel="background-color:white;">
+  <div data-role="page" id="pagetwo" style="background-color:red;">
     <!--返回链接,属性别改-->
     <a href="#pageone" data-transition="slide" data-direction="reverse">
-    <div style="background: red"><img src="images/second_bg.png"> </div>
+    <div style="background: red"><img src="images/second_bg.png" style="width:100%;"></div>
     </a>
-    <div data-role="content" id="con__1">
+    <div data-role="content" id="con__1" style="background-color:red;">
       <p>
         <!--数字显示区域begin id别改-->
-      <div id="show_num">
+      <div id="show_num" style="background-color:red;">
         <div id="num" style="width:400px; margin:0 auto; height:200px;"> <span id="num_1" style="width:33%; padding-top:50%; float:left; background:url(images/0.png) no-repeat"></span> <span id="num_2" style="width:33%; padding-top:50%; float:left;background:url(images/0.png) no-repeat"></span> <span id="num_3" style="width:33%; padding-top:50%;background:url(images/0.png) no-repeat; float:left"></span> </div>
         <div style="width:400px; margin:0 auto; height:100px;">
           <!--按钮begin id别改-->
           <button id="start" style="width:40%; float:left; height:50%; background:white"> 开始 </button>
-          <button id="stop" style="width:40%; float:left; height:50%; background:white"> 暂停 </button>
+          <button id="stop" style="width:40%; float:left; height:50%; background:white"> 结束 </button>
           <!--按钮end id别改-->
         </div>
       </div>
