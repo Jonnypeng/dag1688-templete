@@ -1,0 +1,30 @@
+#box_header{
+	margin:15px;
+	border-bottom:1px #eee solid;
+	font-size:small;
+}
+
+#box_root{
+	width:100% !important;
+}
+
+#box_header_mid{
+	width:100%;
+}
+
+img{
+	max-width:100%;
+	height:auto;
+}
+
+#box_header_logo,#box_header_bot{
+	margin:15px;
+}
+
+ul.vertical{
+	padding-left:0px;
+}
+ul.vertical li{
+	-webkit-padding-left:0px;
+	list-style:none;
+}
