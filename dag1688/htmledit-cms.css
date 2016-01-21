@@ -1,16 +1,20 @@
-@import url('http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css');
-
+body{
+	margin:0px;
+}
 #box_header,#box_header_bot,#box_header_cart,#box_header_nav,#box_left,#box_left,.location,.message,#elem-Column_navigation01-002,#box_footer{
 	display:none;
 }
 
 img{
-	max-width:100%;
+	width:100%;
 	height:auto;
 }
 
 .container{
 	margin-top:5px;
+	width:100% !important;
+	
+	
 }
 
 .row{
@@ -20,8 +24,40 @@ img{
 
 h1.htmlinline {
 	font-size:24px;
+	margin:15px;
 }
 
-p.text-center{
-	text-align:left;
+
+#box_header_mid{
+	margin:15px;
 }
+
+.margin-15{
+	margin:15px;
+}
+
+p{
+	line-height:30px;
+	text-align:justify;
+	color:#393939;
+	word-wrap:break-word;
+}
+
+#box_BreadCrumbs {
+	font-size:small;
+}
+
+#elem-Eui_comp_imageText-071533 hr{
+    border: 1px #b2251d solid;
+    margin: 15px -13px;
+}
+
+#elem-Public_textInfo01-001 {
+	background-color:#eee;
+	text-align:center;
+	padding:15px 0px;
+	margin-bottom:0px;
+}
+#elem-Public_textInfo01-001 p{
+	text-align:center;
+} 
