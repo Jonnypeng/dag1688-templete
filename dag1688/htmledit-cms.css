@@ -23,33 +23,37 @@ img{
 }
 
 h1.htmlinline {
-	font-size:24px;
-	margin:15px;
+	font-size:40px;
+	margin:5%;
 }
 
 
 #box_header_mid{
-	margin:15px;
+	margin:5%;
 }
 
 .margin-15{
-	margin:15px;
+	margin:5%;
 }
 
 p{
-	line-height:30px;
+	line-height:60px;
 	text-align:justify;
 	color:#393939;
 	word-wrap:break-word;
+	font-size: 35px;
 }
 
+address h4{
+	 font-size: 35px;
+}
 #box_BreadCrumbs {
-	font-size:small;
+	font-size:28px;
 }
 
 #elem-Eui_comp_imageText-071533 hr{
     border: 1px #b2251d solid;
-    margin: 15px -13px;
+    margin: 5% -4%;
 }
 
 #elem-Public_textInfo01-001 {
