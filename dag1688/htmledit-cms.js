@@ -8,7 +8,7 @@ for(var i=0;i<allcss.length;i++){
 	if(i<allcss.lenght-1){
 		allcss[i].setAttribute("href","#");
 }else{
-	allcss[i].setAttribute("href","htmledit-cms.css");
+	allcss[i].setAttribute("href","http://dag1688.aliapp.com/styles/htmledit-cms.css");
 }
 }
 var logo = document.getElementById("elem-Eui_comp_imageText-071533");
@@ -19,13 +19,7 @@ footer.innerHTML = "<address><h4>服务热线</h4><p><a href=\"tel:085185757788\
 
 
 document.getElementsByTagName("meta")[0].setAttribute("name","viewport");
-document.getElementsByTagName("meta")[0].setAttribute("content","initial-scale=1, maximum-scale=1, user-scalable=no");
-//document.getElementsByTagName("meta")[1].setAttribute("http-equiv","Cache-Control");
-//document.getElementsByTagName("meta")[1].setAttribute("content","no-cache,no-store,must-revalidate");
-//document.getElementsByTagName("meta")[2].setAttribute("http-equiv","Pragma");
-//document.getElementsByTagName("meta")[2].setAttribute("content","no-cache");
-//document.getElementsByTagName("meta")[3].setAttribute("http-equiv","Expires");
-//document.getElementsByTagName("meta")[3].setAttribute("content","0");
+document.getElementsByTagName("meta")[0].setAttribute("content","width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no, shrink-to-fit=no");
 document.getElementById("box_root").style = "";
 document.getElementById("box_root").setAttribute("class","container");
 document.getElementById("box_header_mid").setAttribute("class","row");

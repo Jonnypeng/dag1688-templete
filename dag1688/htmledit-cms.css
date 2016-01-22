@@ -1,5 +1,6 @@
 body{
 	margin:0px;
+	width:100%;
 }
 #box_header,#box_header_bot,#box_header_cart,#box_header_nav,#box_left,#box_left,.location,.message,#elem-Column_navigation01-002,#box_footer{
 	display:none;
@@ -23,7 +24,7 @@ img{
 }
 
 h1.htmlinline {
-	font-size:40px;
+	font-size: 1.5em;
 	margin:5%;
 }
 
@@ -37,18 +38,18 @@ h1.htmlinline {
 }
 
 p{
-	line-height:60px;
+	line-height:30px;
 	text-align:justify;
 	color:#393939;
 	word-wrap:break-word;
-	font-size: 35px;
+	font-size: 1.125em;
 }
 
 address h4{
-	 font-size: 35px;
+	 font-size: 1.3em;
 }
 #box_BreadCrumbs {
-	font-size:28px;
+	font-size:small;
 }
 
 #elem-Eui_comp_imageText-071533 hr{
