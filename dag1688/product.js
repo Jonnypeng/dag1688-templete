@@ -3,10 +3,26 @@ var browserWidth = window.innerWidth || document.documentElement.ClientWidth || 
 if(browserWidth<1080){
 
 document.getElementsByTagName("meta")[0].setAttribute("name","viewport");
-document.getElementsByTagName("meta")[0].setAttribute("content","initial-scale=1,maximun-scale=1,user-scalable=no");
+document.getElementsByTagName("meta")[0].setAttribute("content","initial-scale=1,user-scalable=no");
 
+//将总体宽度的内联样式清空 
+var boxRoot = document.getElementById("box_root");
+boxRoot.setAttribute("style","");
+//将头部logo进行更换
+var headlogo = document.getElementById("elem-Eui_comp_imageText-071533").getElementsByTagName("img")[0];
+headlogo.setAttribute("src","http://dag1688.aliapp.com/wp-content/uploads/2016/01/logo.png");
+//将底部宽度的内联样式清空
+var footer = document.getElementById("box_footer");
+var footerDiv = footer.getElementsByTagName("div");
+for(var i=0;i<footerDiv.length;i++){
+	footerDiv[i].setAttribute("style","");
+}
+//对样式进行变量
 var allJs = document.getElementsByTagName("script");
 var allcs = document.getElementsByTagName("link");
+var nav = document.getElementById("ProductCategory_show01-left_nav");
+
+var productlist = document.getElementById("box_right");
 // JS与CSS进行清零
 for(var i=0;i<allJs.length;i++){
 	allJs[i].setAttribute("src","#");
@@ -15,52 +31,70 @@ for(var i=0;i<allcs.length;i++){
 	allcs[i].setAttribute("href","");
 }
 
+
+//将底部的内联样式表全部清零
+document.getElementById("box_footer").setAttribute("style","");
+
+//将商品类别迁移到商品列表之后
+nav.style.display = "none";
+productlist.innerHTML += nav.innerHTML;
+
+var clearboth = document.getElementsByClassName("clearBoth");
+for(var i=0;i<clearboth.length;i++){
+	clearboth[i].style.display = "none";
+}
+
+//将搜索引擎栏的旁注进行修改
+var search = document.getElementById("Product_search01-001_form");
+search.getElementsByTagName("em")[0].innerHTML = "商品搜索&nbsp;&nbsp;&nbsp;";
+
+//将目录菜单进行设置动作
+var firstLi = document.getElementsByClassName("first-li"); 
+var showDiv = document.getElementsByClassName("show-div"); 
+var onOff = true;
+	for(var i =0;i<firstLi.length;i++){
+	firstLi[i].index = i;
+	firstLi[i].onclick = function(){
+		if(onOff){
+			showDiv[this.index].style.display = "block";
+			onOff = false;
+			}else{
+			showDiv[this.index].style.display = "none";
+			onOff = true;
+}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 allcs[0].setAttribute("href","product.css");
-
-var headlogo = document.getElementById("elem-Eui_comp_imageText-071533").getElementsByTagName("img")[0];
-headlogo.setAttribute("src","http://dag1688.aliapp.com/wp-content/themes/dag1688-mobile/images/logo.svg");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 }

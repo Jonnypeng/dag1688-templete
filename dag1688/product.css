@@ -1,13 +1,35 @@
+body{
+	font-family:"微软雅黑";
+}
+#box_root{
+	width:100% !important;
+}
+#box_header_mid{
+	/*display:none;*/
+}
+#box_header_top_sub2{
+	display:none;
+}
+
+#box_header_keyword,#box_header_nav,#produces_list_ad,#box_left,.comptitle_47,.amount {
+	display:none;
+}
+#box_header_cart {
+	margin:0px 15px;
+}
 #box_header{
 	margin:15px;
 	border-bottom:1px #eee solid;
 	font-size:small;
 }
-
+#box_header_bot {
+	display:none;
+}
 #box_root{
 	width:100% !important;
 }
 
+#Product_list01-105_Form+.pageJump{display:none;} 
 #box_header_mid{
 	width:100%;
 }
@@ -28,3 +50,122 @@ ul.vertical li{
 	-webkit-padding-left:0px;
 	list-style:none;
 }
+.show-div {
+	text-align: left;
+	line-height: 30px;
+	letter-spacing: 3px;
+	color:#A9A9A9;
+	padding:5px;
+	display:none;
+}
+.display-none{
+	display:none;
+}
+.first-ul,.second ul{
+	padding:0px;
+	text-align:center;
+}
+
+.second li {
+	list-style:none;
+	text-align: left;
+}
+#ProductCategory_show01-left_nav {
+	text-align:center;
+}
+
+li.first-li {
+padding: 10px;
+background: #eee;
+border-radius: 0.4em;
+border: 1px solid white;
+list-style:none;
+}
+li.first-li a:link{
+	color:black;
+	text-decoration:none;
+}
+li.first-li a:visited{
+	color:black;
+}
+
+li.first-li>a {
+	font-size:1em;
+	font-weight:bold;
+} 
+.second li a:link{
+	text-decoration:underline;
+}
+#box_right{padding:15px;}
+
+.type ul {
+	padding:0px;
+}
+.type ul li {
+	list-style:none;
+}
+ul.mainul,.pro-module ul{
+	padding:0px;
+	width:100%;
+}
+
+ul.mainul li{
+	list-style:none;
+	text-align: center;
+	padding:10px;
+}
+
+p.buttonP {
+	display:none;
+}
+
+li.column-num3 {
+	    border: 1px solid #eee;
+}
+
+.number a,.number span{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px #eee solid;
+    background-color: #E6E6E6;
+    margin: 3px;
+		border-radius: 0.3em;
+}
+
+span.disabled{
+	background-color:white !important;
+}
+
+.totalcount,.total {
+margin: 10px;
+text-align: center;
+}
+
+span.current{
+color: red;
+font-weight: bold;
+}
+
+
+.none {
+	display:none;
+}
+
+.block{
+	display:block;
+}
+
+#box_footer {
+	  margin: 0px -8px;
+    padding: 10px 15px;
+    background-color: gray;
+    color: white;
+}
+#box_footer li{
+	list-style:square;
+}
+#box_footer a:link{
+	color:white;
+}
+
+
