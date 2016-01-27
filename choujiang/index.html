@@ -105,16 +105,21 @@ $(document).ready(function(e) {
 				}
 				//alert(arr_2);
 				if(arr_2.length == 1){	//没有数字了
-					for(var i=0;i<=max_num;i++){
-						arr.push(i)//循环录入数组
-						} 
+					//for(var i=0;i<=max_num;i++){
+						//arr.push(i)//循环录入数组
+						//} 
+						alert("哥们，人数已经被抽完了！！！");
 					}
 				else{	//还有数字
 				arr = arr_2;						
 				}
 		}		
   	  });
+
 </script>
+<audio autoplay loop>
+	<source src="audio/music.mp3" type="audio/mp3">
+</audio>
 <div id="container">
   <!--第一屏begin-->
   <div data-role="page" id="pageone" style="background-color:red;">
