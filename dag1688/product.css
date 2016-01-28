@@ -1,5 +1,6 @@
 body{
 	font-family:"微软雅黑";
+	margin: 0px;
 }
 #box_root{
 	width:100% !important;
@@ -155,17 +156,17 @@ font-weight: bold;
 	display:block;
 }
 
-#box_footer {
-	  margin: 0px -8px;
-    padding: 10px 15px;
+#box_footer,#elem-Column_navigation01-002{
+	display:none;
+}
+
+#elem-Public_textInfo01-001{
+	  text-align: center;
     background-color: gray;
     color: white;
+    padding: 15px 0px;
 }
-#box_footer li{
-	list-style:square;
-}
-#box_footer a:link{
+
+#elem-Public_textInfo01-001 a:link{
 	color:white;
 }
-
-

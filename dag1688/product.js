@@ -65,6 +65,10 @@ var onOff = true;
 }
 }
 
+//将底部的联系方式进行替换
+var footer = document.getElementById("elem-Public_textInfo01-001");
+footer.innerHTML = "<address><h4>服务热线</h4><p><a href=\"tel:085185757788\">0851-85757788</a><br><a href=\"tel:085185770626\">0851-85770626</a></p></address>" + "<address><h4>门市电话</h4><p><a href=\"tel:085185757779\">0851-85757779</a><br><a href=\"tel:085185756800\">0851-85756800</a></p></address>" + "<address><h4>邮件微信</h4><p>gy@dag1688.com<br>公众微信ID:dagsc1688</p></address>"	+ "<address><h4>联系地址</h4><p>贵阳市沙冲中路33号大光旗舰店<br>网站:www.dag1688.com</p></address><p>Copyright © 2016 大光物资商城版权所有</p>";
+
 
 
 
