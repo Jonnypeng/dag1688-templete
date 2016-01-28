@@ -170,3 +170,23 @@ font-weight: bold;
 #elem-Public_textInfo01-001 a:link{
 	color:white;
 }
+
+#elem-Eui_comp_imageText-071533 a{
+	display:inline-block;
+	width:100%;
+}
+
+i.fa-bars{
+	font-size: 2.5rem;
+  position: absolute;
+  margin-top: 3%;
+	margin-left: 3%;
+	color:gray;
+}
+
+#box_header_logo hr{
+border: #C22F3D solid 1px;
+    margin-top: 5%;
+    margin-left: -4%;
+    margin-right: -4%;
+}

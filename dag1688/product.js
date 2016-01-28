@@ -11,6 +11,13 @@ boxRoot.setAttribute("style","");
 //将头部logo进行更换
 var headlogo = document.getElementById("elem-Eui_comp_imageText-071533").getElementsByTagName("img")[0];
 headlogo.setAttribute("src","http://dag1688.aliapp.com/wp-content/uploads/2016/01/logo.png");
+
+/*为头部的logo旁增加目录
+//var header = document.getElementById("elem-Eui_comp_imageText-071533");
+header.innerHTML += "<i id=\"index\" class=\"fa fa-bars\"></i>";*/
+//将头部进行分割线
+var headER = document.getElementById("box_header_logo");
+headER.innerHTML += "<hr \/>";
 //将底部宽度的内联样式清空
 var footer = document.getElementById("box_footer");
 var footerDiv = footer.getElementsByTagName("div");
@@ -39,6 +46,8 @@ document.getElementById("box_footer").setAttribute("style","");
 nav.style.display = "none";
 productlist.innerHTML += nav.innerHTML;
 
+
+//清除空行
 var clearboth = document.getElementsByClassName("clearBoth");
 for(var i=0;i<clearboth.length;i++){
 	clearboth[i].style.display = "none";
@@ -96,9 +105,8 @@ footer.innerHTML = "<address><h4>服务热线</h4><p><a href=\"tel:085185757788\
 
 
 
-
-
+//将自定义的CSS进行替换，将奥森图标进行加载
 allcs[0].setAttribute("href","product.css");
-
+document.getElementsByTagName("head")[0].innerHTML += "<link href=\"http:\/\/cdn.bootcss.com\/font-awesome\/4.3.0\/css\/font-awesome.min.css\" rel=\"stylesheet\">"
 }
 }
