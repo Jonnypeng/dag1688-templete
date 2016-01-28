@@ -106,7 +106,8 @@ footer.innerHTML = "<address><h4>服务热线</h4><p><a href=\"tel:085185757788\
 
 
 //将自定义的CSS进行替换，将奥森图标进行加载
-allcs[0].setAttribute("href","product.css");
+//allcs[0].setAttribute("href","product.css");
+allcs[0].setAttribute("href","http://121.40.196.117/dag1688-templete/dag1688/htmledit-cms.css");
 document.getElementsByTagName("head")[0].innerHTML += "<link href=\"http:\/\/cdn.bootcss.com\/font-awesome\/4.3.0\/css\/font-awesome.min.css\" rel=\"stylesheet\">"
 }
 }
