@@ -1,0 +1,44 @@
+body{
+	font-family:"微软雅黑";
+	margin: 0px;
+}
+img{
+	max-width:100%;
+	height:auto;
+}
+ul{
+	padding:0px;
+}
+li{
+	padding:0px;
+	list-style:none;
+}
+
+/*以下是头部*/
+#box_header{
+	margin-top:15px;
+}
+
+/*将官方的搜索引擎进行隐藏*/
+#box_header_bot #box_header_search,#box_header_bot #box_header_keyword{
+	display:none;
+}
+
+/*统一设置样式的外边距*/
+#searchbar,.box_header_nav1,#box_banner,#box_productsBbasic{
+margin: 10px 0px !important;
+}
+
+/*屏蔽横栏导航*/
+.box_header_nav2{
+	display:none;
+}
+
+/*去掉客服与朋友推荐、左栏目*/
+#box_hide+div,#box_products-tool,#box_left{
+	display:none;
+}
+
+h1.htmlinline{
+	font-size:1.8rem;
+}
