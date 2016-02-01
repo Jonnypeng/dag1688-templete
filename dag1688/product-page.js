@@ -68,8 +68,21 @@ for(var i=0;i<boxMainDiv.length;i++){
 	boxMainDiv[i].setAttribute("style","");
 }
 
+//设置选择型号的伪元素
+var textType = document.getElementsByClassName("text-type")[0];
+var textTypeA = textType.getElementsByTagName("a");
+var textTypeActive = textType.getElementsByClassName("text-type-active")[0];
+for(var i =0;i<textTypeA.length;i++){
+	textTypeA[i].index = i;
+	textTypeA[i].onclick = function(){
+	//	if(textTypeA[this.index].ClassName == text-type-active){
+	//textTypeA[this.index].style.background = "gray";
+//}
+		textTypeActive.style.background = "gray";
+		this.setAttribute("class","text-type-active");
 
-
+}
+}
 
 
 
