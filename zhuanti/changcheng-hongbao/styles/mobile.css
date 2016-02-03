@@ -1,0 +1,76 @@
+body{
+	margin:0px auto;
+	font-family:"微软雅黑";
+	background:-webkit-linear-gradient(left top,red,black);
+	background:-o-linear-gradient(bottom right,red,black);
+	background:-moz-linear-gradient(bottom right,red,black);
+	background:linear-gradient(to bottom right,red,black);
+}
+
+ul{
+	padding:0px;
+}
+
+li{
+	list-style:none;
+}
+
+div{
+	margin:10px auto;
+}
+
+img{
+	max-width:100%;
+	height:auto;
+}
+.container{
+	width:100%;
+}
+div.logo{
+	margin:0px 5px;
+}
+#time{
+	display:block;
+	font-size:1.5em;
+	text-align:center;
+	color:white;
+}
+span.l-logo,span.r-logo{
+	display:inline-block !important;
+	width:49%;
+}
+span.hand-right{
+	display:none;
+}
+img[src="images/changcheng-hongbao-01.jpg"]{
+	box-shadow:1px 1px 10px;
+}
+
+
+.footer-right{
+	display:none;
+}
+.middle{
+	display:none;
+}
+div.lian{color:white;text-align:center;}
+div.lian a:link{color:white;text-decoration:none;}
+div.lian a:visited{color:white;text-decoration:none;}
+div.lian a:hover{color:green;text-decoration:none;}
+div.lian a:active{color:red;text-decoration:none;}
+/*
+.money-list{
+	width:25%;
+	padding:10px;
+	text-align:center;
+	background:red;	
+	border-radius:0.4em;
+	border:1px #eee solid;
+	display:inline-block;
+}
+
+
+.money-list img{
+	width:100px;
+}
+*/

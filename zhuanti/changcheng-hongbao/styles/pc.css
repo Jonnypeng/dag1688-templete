@@ -1,0 +1,144 @@
+	body{
+	width:100%;
+	height:768px;
+	margin:0px auto;
+	background: fixed -webkit-linear-gradient(left top, red , black); /* Safari 5.1 - 6.0 */
+  background: fixed -o-linear-gradient(bottom right, red, black); /* Opera 11.1 - 12.0 */
+  background: fixed -moz-linear-gradient(bottom right, red, black); /* Firefox 3.6 - 15 */
+  background: fixed linear-gradient(to bottom right, red , black); /* 标准的语法 */
+}
+	head,footer{
+	display:block;
+}
+	.container{
+		width:100%;
+		height:768px;
+		margin:0px auto;
+	}
+	.main-top{
+		text-align:center;
+		margin-top:15px;
+	}
+	.logo {
+		position: fixed;
+    top: -15px;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+    box-shadow: 1px 1px 10px;
+	background: fixed -webkit-linear-gradient(left top, red , black); /* Safari 5.1 - 6.0 */
+  background: fixed -o-linear-gradient(bottom right, red, black); /* Opera 11.1 - 12.0 */
+  background: fixed -moz-linear-gradient(bottom right, red, black); /* Firefox 3.6 - 15 */
+  background: fixed linear-gradient(to bottom right, red , black); /* 标准的语法 */
+    padding: 10px;	
+	}
+	.main-top{
+		position:absolute;
+		top:125px;
+		left:0px;
+		right:0px;
+		z-index:9;
+}
+
+	ul{
+	padding:0px;
+}
+
+	li{
+	list-style:none;
+}
+	.money-list{
+	border-radius:0.4em;
+	text-align:center;
+	width:180px;
+	
+}
+	.footer-right{
+	position:fixed;
+	bottom:-5px;
+	right:10px;
+	z-index:9;
+}
+	.l-logo{
+	margin-left:80px;
+}
+	.footer-right img{
+		border-top-left-radius: 1.4em;
+    border-top-right-radius: 1.4em;	
+}
+	#time{
+    font-size: 3em;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    right: 90px;
+    top: 15px;
+    color: yellow;
+    font-family: 微软雅黑;	
+}
+	.money{position:fixed;z-index:3;top:155px;left:15px;}
+	#m-1{
+	position:relative;
+	-webkit-animation:mymove 12s ease infinite;
+	animation:mymove 12s ease infinite;}
+	#m-2{
+	position:relative;
+	-webkit-animation:mymove 9s ease infinite;
+	animation:mymove 9s ease infinite;}
+	#m-3{
+	position:relative;
+	-webkit-animation:mymove 8s ease infinite;
+	animation:mymove 8s ease infinite;}
+	#m-4{
+	position:relative;
+	-webkit-animation:mymove 7s ease infinite;
+	animation:mymove 7s ease infinite;}
+	#m-5{
+	position:relative;
+	-webkit-animation:mymove 6s ease infinite;
+	animation:mymove 6s ease infinite;}
+@keyframes mymove
+{
+0%   {top:-60px; left:0px; background:red;padding:15px;}
+25%  {top:-60px; left:1100px; background:blue;padding:15px;}
+50%  {top:100px; left:1100px; background:gray;padding:15px;}
+75%  {top:100px; left:0px; background:green;padding:15px;}
+100% {top:-60px; left:0px; background:red;padding:15px;}
+}
+@-webkit-keyframes mymove /* Safari and Chrome */
+{
+0%   {top:-60px; left:0px; background:red;padding:15px;}
+25%  {top:-60px; left:1100px; background:blue;padding:15px;}
+50%  {top:100px; left:1100px; background:gray;padding:15px;}
+75%  {top:100px; left:0px; background:green;padding:15px;}
+100% {top:-666666left:0px; background:red;padding:15px;}
+}
+.fa-hand-o-right {
+	position:relative;
+	left: 139px;
+    bottom: 516px
+	animation:updown 9s infinite;
+	-webkit-animation:updown 9s infinite;
+	-moz-animation:updown 9s infinite;
+}
+@keyframes updown{
+	0%{bottom:516px;left:134px;color:red}
+	25%{bottom:467px;left:134px;color:blue}
+	50%{bottom:415px;left:134px;color:green}
+	75%{bottom:363px;left:134px;color:red}
+	100%{bottom:320px;left:134px;color:green}
+} 
+@-webkit-keyframes updown{
+	0%{bottom:516px;left:134px;color:red}
+	25%{bottom:467px;left:134px;color:blue}
+	50%{bottom:415px;left:134px;color:green}
+	75%{bottom:363px;left:134px;color:red}
+	100%{bottom:320px;left:134px;color:green}
+} 
+@-moz-keyframes updown{
+	0%{bottom:516px;left:134px;color:red}
+	25%{bottom:467px;left:134px;color:blue}
+	50%{bottom:415px;left:134px;color:green}
+	75%{bottom:363px;left:134px;color:red}
+	100%{bottom:320px;left:134px;color:green}
+} 
