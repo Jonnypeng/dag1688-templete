@@ -16,6 +16,7 @@ li{
 
 /*以下是头部*/
 #box_header{
+	font-size: 0.8rem;
 	margin-top:15px;
 }
 
@@ -43,11 +44,7 @@ h1.htmlinline{
 	font-size:1.8rem;
 }
 
-/*将底部宽度重置*/
 
-#box_footer>div,#box_footer>div>div{
-	width:100% !important;
-}
 
 /*价格样式*/
 .pricesuccess {
@@ -89,7 +86,7 @@ li.format-type{
 .text-type a:link{
 	display:inline-block;
 	font-style:normal;
-	background: gray;
+	background: #31B0D5;
 	padding: 10px;
 	color: white;
 	border-radius: 0.4em;
@@ -132,6 +129,8 @@ a.scrollnextpage{
 }
 .selectedbox strong{
 	color:red;
+	border: 1px gray solid;
+    padding: 0px 10px;
 }
 
 .spike-t {
@@ -152,7 +151,7 @@ a.scrollnextpage{
 }
 
 .btnb-nomarl{
-	background:#5454B7;
+	background:#31B0D5;
 	color:white;
 }
 
@@ -165,7 +164,7 @@ a.scrollnextpage{
 	display:none;
 }
 
-#box_footer{
+#Help_listByMultiCategory01-001{
 	display:none !important;
 }
 
@@ -200,4 +199,64 @@ a.scrollnextpage{
 
 #category-index button{
 	margin:5px 0px;
+}
+
+#elem-Eui_comp_imageText-0715222 {
+	display:none;
+	
+}
+
+#box_footer {
+	margin-top:30px;	
+	margin-left: -15px;
+        margin-right: -15px;
+}
+#address{
+	background-color:gray;
+	color:white;
+	text-align:center;
+	padding:15px;
+}
+
+#address a:link{
+	color:white;
+}
+
+#address address{
+	padding:15px;
+}
+
+#category-index a:link{
+	color:black;
+}
+
+#box_header_top_sub1 {
+	height:1.5rem;
+}
+
+#OrderCart_showMini01_TipLayer {
+	background:yellow;
+	border-radius:0.4em;
+	text-align:center;
+	left:0px !important;
+	right:0px !important;
+}
+.float-win {
+	padding: 15px 0px 0px 0px;
+}
+
+#OrderCart_showMini01_TipLayer h3{
+	display:none;
+}
+#OrderCart_showMini01_TipLayer h4{
+	color:green;
+	font-size:1.3rem;
+}
+
+
+
+/*以下是手机版屏蔽自定义模版描述，加速手机阅览性能*/
+
+#edit-header,#edit-footer{
+	display:none;
 }
