@@ -81,6 +81,18 @@ for(var i =0;i<boxFooterDiv.length;i++){
 }
 boxFooter.innerHTML += "<div id=\"address\" class=\"col-xs-12\"><address><h5>服务热线<\/h5><p><a href=\"tel:085185757788\">0851-85757788<\/a><br><a href=\"tel:085185770626\">0851-85770626<\/a><\/p><\/address><address><h5>门市电话<\/h5><p><a href=\"tel:085185757779\">0851-85757779<\/a><br><a href=\"tel:085185756800\">0851-85756800<\/a><\/p><\/address><address><h5>邮件微信<\/h5><p>gy@dag1688.com<br>公众微信ID:dagsc1688<\/p><\/address><address><h5>联系地址<\/h5><p>贵阳市沙冲中路33号大光旗舰店<br>网站:www.dag1688.com<\/p><\/address><p>Copyright © 2016 大光物资商城版权所有<\/p><\/div>"
 
+//对选择型号的样式进行重置
+var textType = document.getElementsByClassName("text-type")[0];
+var textTypeA = textType.getElementsByTagName("a");
+for(var i =0;i<textTypeA.length;i++){
+	textTypeA.index = i;
+	textTypeA[i].onclick = function(){
+		for(var j=0;j<textTypeA.length;j++){
+		textTypeA[j].style.background = "#31B0D5";
+}
+		this.style.background = "#B2251D";
+}
+}
 
 
 
