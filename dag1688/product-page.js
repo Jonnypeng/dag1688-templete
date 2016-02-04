@@ -68,22 +68,9 @@ for(var i=0;i<boxMainDiv.length;i++){
 	boxMainDiv[i].setAttribute("style","");
 }
 
-//设置选择型号的伪元素
-var textType = document.getElementsByClassName("text-type")[0];
-var textTypeA = textType.getElementsByTagName("a");
-var textTypeActive = textType.getElementsByClassName("text-type-active")[0];
-for(var i =0;i<textTypeA.length;i++){
-	textTypeA[i].index = i;
-	textTypeA[i].onclick = function(){
-	//	if(textTypeA[this.index].ClassName == text-type-active){
-	//textTypeA[this.index].style.background = "gray";
-//}
-		textTypeActive.style.background = "gray";
-		this.setAttribute("class","text-type-active");
-
-}
-}
-
+//增加分类目录
+var boxRootTab1 = document.getElementById("box_root_tab1");
+boxRootTab1.innerHTML += "<div class=\"comptitle_47\" style=\"\"><strong class=\"titlestyle_47\"><img src=\"\/library\/resources\/images\/icons\/31.gif\">商品类别<\/strong><\/div>" + "<div id=\"category-index\"> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=24.html\" target=\"_blank\"><button type=\"button\" class=\"btn btn-default btn-block\">五金工具<\/button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=25.html\" target=\"_blank\"><button type=\"button\" class=\"btn btn-default btn-block\">机电设备<\/button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=21.html\" target=\"_blank\"><button type=\"button\" class=\"btn btn-default btn-block\">发电设备<\/button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=29.html\" target=\"_blank\"><button type=\"button\" class=\"btn btn-default btn-block\">化工产品<\/button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=4.html\" target=\"_blank\"><button type=\"button\" class=\"btn btn-default btn-block\">仪器、仪表</button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=26.html\" target=\"_blank\"><button type=\"button\" class=\"btn btn-default btn-block\">建筑、装饰<\/button></a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=3.html\" target=\"_blank\"><button type=\"button\" class=\"btn btn-default btn-block\">劳保、安防</button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=28.html\" target=\"_blank\"><button type=\"button\" class=\"btn btn-default btn-block\">消防、水暖</button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=2.html\" target=\"_blank\"><button type=\"button\" class=\"btn btn-default btn-block\">起重、吊装</button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=20.html\" target=\"_blank\"><button type=\"button\" class=\"btn btn-default btn-block\">电力、线缆</button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=27.html\" target=\"_blank\"><button type=\"button\" class=\"btn btn-default btn-block\">民用五金、照明电器<\/button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=18.html\" target=\"_blank\"><button type=\"button\" class=\"btn btn-default btn-block\">防爆产品、通风设备</button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=17.html\" target=\"_blank\"><button type=\"button\" class=\"btn btn-default btn-block\">附件<\/button><\/a> <\/div>"
 
 
 

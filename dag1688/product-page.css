@@ -86,7 +86,7 @@ li.format-type{
 	margin:10px 0px;
 }
 
-.text-type a{
+.text-type a:link{
 	display:inline-block;
 	font-style:normal;
 	background: gray;
@@ -101,4 +101,103 @@ li.format-type{
 	background-color:#B2251D !important;
 }
 
+/*重置幻灯片播放按钮样式*/
+a.scrollprevpage{
+    position:absolute;
+    z-index: 9;
+    left: 15px;
+    margin-top: 3px;
+}
+a.scrollnextpage{
+    position:absolute;
+    z-index: 9;
+    right: 15px;
+    margin-top: 3px;
+}
 
+.tip-error {
+	display:none;
+}
+
+.buy span,.buy em{
+	display:inline-block;
+	margin-bottom:10px;
+}
+.buy input{
+	display:inline-block;
+	width:40px;
+	border-radius: 0.5em;
+	margin: 0px 5px;
+	text-align:center;
+}
+.selectedbox strong{
+	color:red;
+}
+
+.spike-t {
+	display:none;
+}
+
+.btnb {
+	display:block;
+	margin:10px 0px;
+	border:1px #eee solid;
+	padding:10px;
+	text-align:center;
+	border-radius:0.4em;
+}
+.btnb-import{
+	background:#B2251D;
+	color:white;
+}
+
+.btnb-nomarl{
+	background:#5454B7;
+	color:white;
+}
+
+.j-favorites{
+	display:none;	
+
+}
+
+.jiathis_counter_style {
+	display:none;
+}
+
+#box_footer{
+	display:none !important;
+}
+
+.tabhead{
+	display:none;
+}
+.titlestyle_47 {
+	display:inline-block;
+}
+.titlestyle_47 img{
+	display:none;
+}
+
+.tabs-cont{
+    margin: 10px 0px;
+    padding: 5px;
+    border: #ddd 1px solid;
+}
+
+#box_BreadCrumbs,#box_productsBbasic .col-xs-12 {
+	padding:0px;
+}
+
+/*底部的多余样式全部清零*/
+#elem-Custom_form01-001,#elem-Review_list01-101,#elem-OrderExt_bizRecord01-101,#elem-Consult_list01-101,#box_root_tab2,#box_root_tab3,#box_root_tab4,#Column_navigation01-002,#elem-Public_textInfo01-001{
+	display:none;
+}
+
+#ProductCategory_show01-1411396696371,#box_header_nav {
+	display:none;
+}
+
+#category-index button{
+	margin:5px 0px;
+}
