@@ -70,14 +70,13 @@ window.setInterval(function(){ShowCountDown(2016,2,28,'time');}, interval);
 var browserWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 if(browserWidth < 1000){
 
-//响应布局
-document.getElementsByTagName("link")[1].href = "styles/mobile.css";
-
 
 var footer = document.getElementsByTagName("footer")[0];
 footer.innerHTML = "<div class=\"lian\"><a href=\"http:\/\/www.dag1688.com\/zhuanti\/dagmap\/wechat-map.html\" target=\"_blank\">到店购:查看地图<\/a><\/div>" + "<div class=\"lian\"><a href=\"http:\/\/www.dag1688.com\/zhuanti\/dagmap\/streetview.html\" target=\"_blank\">到店购:查看街景<\/a><\/div>" + "<div class=\"lian\"><a href=\"tel:085185757779\">活动详询:0851-85757779<\/a><\/div>"
 
 
+//响应布局
+document.getElementsByTagName("link")[1].href = "styles/mobile.css";
 }
 	</script>
 </body>
