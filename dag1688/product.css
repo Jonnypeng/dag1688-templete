@@ -207,9 +207,11 @@ a.scrollnextpage{
 }
 
 #box_footer {
-	margin-top:30px;	
-	margin-left: -15px;
-        margin-right: -15px;
+	margin-top:50px;	
+}
+
+div.comptitle_47,div#category-index {
+	margin:15px;
 }
 #address{
 	background-color:gray;
@@ -260,3 +262,74 @@ a.scrollnextpage{
 #edit-header,#edit-footer{
 	display:none;
 }
+/*以下是将头部的多余部分进行隐藏*/
+#elem-Product_recommendList01-101,#Product_list01-105_Form+.pageJump{
+	display:none;
+}
+
+#box_main,.filter-tools{
+	margin:5px auto;
+}
+
+
+/*设置产品列表的样式*/
+
+li.column-num3{
+	border:1px #eee solid;
+	box-sizing: border-box;
+  text-align: center;
+  padding: 30px 0px;
+}
+
+p.buttonP{
+	display:none;
+}
+
+li.name span {
+	display:none;
+}
+
+.pro-module {
+	margin: 15px 0px;
+}
+
+ul.productlist-02+div.pageJump div{
+	margin:5px 0px;
+}
+.currentpagepizespan,.otherpagepizespan{
+	margin:0px 5px;
+}
+
+.pro-list-head{
+	display:none;
+}
+
+span.omit {
+	display:none !important;
+} 
+
+
+div.number span,div.number a {
+	display:inline-block;
+	padding:10px 15px;
+  width: 30%;
+  text-align: center;
+	    border-radius: .3rem;
+    box-shadow: 0 .1rem 0 rgba(255,255,255,.6) inset;
+    background: #eff0f3;
+    background: -webkit-linear-gradient(top,#f7f8fa,#e7e9ec);
+    background: linear-gradient(to bottom,#f7f8fa,#e7e9ec);
+    border: 1rem solid #6c6e73;
+    border-color: #adb1b8 #a2a6ac #8d9096;
+		margin:0px 10px;
+	border:1px #eee solid;
+}
+
+.totalcount,.amount{
+	display:none;
+}
+
+#Order_myCart01_OutMaxCount,#Order_myCart01_AmountInfo,#OrderCart_myCart01_ClearTipLayer {
+	display:none;
+}
+
