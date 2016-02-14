@@ -2,81 +2,70 @@ window.onload = function(){
 var browserWidth = window.innerWidth || document.documentElement.ClientWidth || document.body.clientWidth;
 if(browserWidth<1080){
 
+//设置移动界面的头部数据
 document.getElementsByTagName("meta")[0].setAttribute("name","viewport");
 document.getElementsByTagName("meta")[0].setAttribute("content","initial-scale=1,user-scalable=no");
 
 //将总体宽度的内联样式清空 
 var boxRoot = document.getElementById("box_root");
 boxRoot.setAttribute("style","");
-//将头部logo进行更换
+
+var allcss = document.getElementsByTagName("link");
+for(var i = 0;i<allcss.length;i++){
+	allcss[i].href = "";
+}
+
+//将BT框架、奥森图标、自定义样式进行置入
+allcss[0].href="//cdn.bootcss.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css";
+allcss[1].href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css";
+allcss[2].href="http://www.dag1688.com/styles/product/ProductDetail_image01-d2_c1.css";
+allcss[3].href="product.css";
+
+//为最顶部的登录注册设置样式
+document.getElementById("box_header").className = "container";
+document.getElementById("box_header_top").className = "row";
+document.getElementById("box_header_top_sub1").className = "col-xs-12";
+document.getElementById("box_header_top_sub2").className = "col-xs-12";
+
+//将所有的多余行进行隐藏
+var clearBoth = document.getElementsByClassName("clearBoth");
+for(var i=0;i<clearBoth.length;i++){
+	clearBoth[i].style.display = "none";
+}
+
+//将主页面pagewidth进行液态宽度
+document.getElementsByClassName("pageWidth")[0].setAttribute("style","");
+
+//将pagewidth进行container设置
+document.getElementsByClassName("pageWidth")[0].setAttribute("class","container pageWidth");
+
+//为头部logo进行更换
 var headlogo = document.getElementById("elem-Eui_comp_imageText-071533").getElementsByTagName("img")[0];
 headlogo.setAttribute("src","http://dag1688.aliapp.com/wp-content/uploads/2016/01/logo.png");
 
-/*为头部的logo旁增加目录
-//var header = document.getElementById("elem-Eui_comp_imageText-071533");
-header.innerHTML += "<i id=\"index\" class=\"fa fa-bars\"></i>";*/
-//将头部进行分割线
-var headER = document.getElementById("box_header_logo");
-headER.innerHTML += "<hr \/>";
-//将底部宽度的内联样式清空
-var footer = document.getElementById("box_footer");
-var footerDiv = footer.getElementsByTagName("div");
-for(var i=0;i<footerDiv.length;i++){
-	footerDiv[i].setAttribute("style","");
-}
-//对样式进行变量
-var allJs = document.getElementsByTagName("script");
-var allcs = document.getElementsByTagName("link");
-var nav = document.getElementById("ProductCategory_show01-left_nav");
+//增加自定义的搜索引擎
+document.getElementById("box_header_bot").innerHTML += "<form id=\"searchbar\" name=\"searchForm\" action=\"http:\/\/www.dag1688.com\/Product.do?method=submit\" method=\"post\" target=\"_self\" onsubmit=\"return checkNull();\" class=\"bs-example bs-example-form\" role=\"form\"> <div class=\"input-group\"> <input id=\"Product_search01-001_keyword\" name=\"keyword\" value=\"\" maxlength=\"128\" class=\"form-control\" type=\"text\"> <input name=\"action_page\" value=\"/products_list.html\" type=\"hidden\"> <span class=\"input-group-btn\"> <input name=\"searchType\" value=\"商品搜索\" class=\"btn btn-danger\" type=\"submit\"> <\/span> <\/div> <\/form>";
 
-var productlist = document.getElementById("box_right");
-// JS与CSS进行清零
-for(var i=0;i<allJs.length;i++){
-	//allJs[i].setAttribute("src","#");
-}
-for(var i=0;i<allcs.length;i++){
-	allcs[i].setAttribute("href","");
+//将主页面box_main的所有子元素内联样式全部清零
+var boxMainDiv = document.getElementById("box_main").getElementsByTagName("div");
+for(var i=0;i<boxMainDiv.length;i++){
+	boxMainDiv[i].setAttribute("style","");
 }
 
-
-//将底部的内联样式表全部清零
-document.getElementById("box_footer").setAttribute("style","");
-
-//将商品类别迁移到商品列表之后
-nav.style.display = "none";
-productlist.innerHTML += nav.innerHTML;
-
-
-//清除空行
-var clearboth = document.getElementsByClassName("clearBoth");
-for(var i=0;i<clearboth.length;i++){
-	clearboth[i].style.display = "none";
-}
-
-//将搜索引擎栏的旁注进行修改
-var search = document.getElementById("Product_search01-001_form");
-search.getElementsByTagName("em")[0].innerHTML = "商品搜索&nbsp;&nbsp;&nbsp;";
-
-//将目录菜单进行设置动作
-var firstLi = document.getElementsByClassName("first-li"); 
-var showDiv = document.getElementsByClassName("show-div"); 
-var onOff = true;
-	for(var i =0;i<firstLi.length;i++){
-	firstLi[i].index = i;
-	firstLi[i].onclick = function(){
-		if(onOff){
-			showDiv[this.index].style.display = "block";
-			onOff = false;
-			}else{
-			showDiv[this.index].style.display = "none";
-			onOff = true;
-}
-}
-}
-
-//将底部的联系方式进行替换
-var footer = document.getElementById("elem-Public_textInfo01-001");
-footer.innerHTML = "<address><h4>服务热线</h4><p><a href=\"tel:085185757788\">0851-85757788</a><br><a href=\"tel:085185770626\">0851-85770626</a></p></address>" + "<address><h4>门市电话</h4><p><a href=\"tel:085185757779\">0851-85757779</a><br><a href=\"tel:085185756800\">0851-85756800</a></p></address>" + "<address><h4>邮件微信</h4><p>gy@dag1688.com<br>公众微信ID:dagsc1688</p></address>"	+ "<address><h4>联系地址</h4><p>贵阳市沙冲中路33号大光旗舰店<br>网站:www.dag1688.com</p></address><p>Copyright © 2016 大光物资商城版权所有</p>";
+//为Bootstrap进行样式设置
+//document.getElementById("box_header_mid").setAttribute("class","row");
+//document.getElementById("box_header_nav").setAttribute("class","row");
+//document.getElementById("box_productsImg").setAttribute("class","row");
+//document.getElementById("box_banner").setAttribute("class","row");
+//document.getElementById("box_productsBbasic").setAttribute("class","row");
+//document.getElementsByClassName("box_header_nav1")[0].setAttribute("class","box_header_nav1 col-xs-12");
+//document.getElementById("box_header_logo").setAttribute("class","col-xs-12");
+//document.getElementById("box_BreadCrumbs").setAttribute("class","col-xs-12");
+//document.getElementById("box_header_bot").setAttribute("class","col-xs-12");
+//document.getElementById("box_header_cart").setAttribute("class","col-xs-12");
+//document.getElementById("box_productsImg-p").setAttribute("class","col-xs-12");
+//document.getElementById("box_products-tool").setAttribute("class","col-xs-12");
+//document.getElementById("elem-ProductDetail_basic01-101").setAttribute("class","col-xs-12");
 
 
 
@@ -105,9 +94,30 @@ footer.innerHTML = "<address><h4>服务热线</h4><p><a href=\"tel:085185757788\
 
 
 
-//将自定义的CSS进行替换，将奥森图标进行加载
-allcs[0].setAttribute("href","product.css");
-//allcs[0].setAttribute("href","http://121.40.196.117/dag1688-templete/dag1688/product.css");
-document.getElementsByTagName("head")[0].innerHTML += "<link href=\"http:\/\/cdn.bootcss.com\/font-awesome\/4.3.0\/css\/font-awesome.min.css\" rel=\"stylesheet\">"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 }
+
