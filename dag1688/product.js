@@ -19,7 +19,7 @@ for(var i = 0;i<allcss.length;i++){
 allcss[0].href="//cdn.bootcss.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css";
 allcss[1].href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css";
 allcss[2].href="http://www.dag1688.com/styles/product/ProductDetail_image01-d2_c1.css";
-allcss[3].href="product.css";
+allcss[3].href="http://121.40.196.117/dag1688-templete/dag1688/product.css";
 
 //为最顶部的登录注册设置样式
 document.getElementById("box_header").className = "container";
