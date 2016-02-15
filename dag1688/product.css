@@ -208,17 +208,18 @@ a.scrollnextpage{
 }
 
 #box_footer {
-	margin-top:50px;	
+	margin:50px 15px 0px 15px;
 }
 
-div.comptitle_47,div#category-index {
+/*div.comptitle_99,div#category-index {
 	margin:15px;
-}
+}*/
 #address{
 	background-color:gray;
 	color:white;
 	text-align:center;
 	padding:15px;
+	margin: 30px -15px 0px -15px;
 }
 
 #address a:link{
@@ -310,21 +311,23 @@ span.omit {
 	display:none !important;
 } 
 
-
+div.number{
+	text-align:center;
+}
 div.number span,div.number a {
  display:inline-block;	
  padding:10px 15px;
- width: 30%;
+ width: 22%;
  text-align: center;
- border-radius: .3rem;
+ border-radius: 0.3rem;
     box-shadow: 0 .1rem 0 rgba(255,255,255,.6) inset;
     background: #eff0f3;
     background: -webkit-linear-gradient(top,#f7f8fa,#e7e9ec);
     background: linear-gradient(to bottom,#f7f8fa,#e7e9ec);
-    border: 1rem solid #6c6e73;
     border-color: #adb1b8 #a2a6ac #8d9096;
-		margin:5px 10px;
-	border:1px #eee solid;
+    margin:5px;
+    border:1px #eee solid;
+    font-size:0.75rem;
 }
 
 .totalcount,.amount{
@@ -340,4 +343,42 @@ div.number span,div.number a {
 	font-size:1rem;
 }
 
+.result h3,.result ul{
+	display:inline-block;
+}
+
+.Product_filterSearch01-d1_c1 .result .selestfinds A {
+display: inline-block;
+    background: url(http://www.dag1688.com/images/product/close-1.jpg) #f2e6ed no-repeat 96% center;
+    color: #cf171f;
+    margin-right: 10px;
+    border: #cf171f 1px solid;
+    padding: 2px 20px 1px 6px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+#Product_filterSearch01-101_selectConditions {
+	height:1.5rem;
+}
+
+#Product_filterSearch01-101_deSelectAllConditions,#Product_filterSearch01-101_selectConditions,#Product_filterSearch01-101_brand_more{
+	display:inline-block;
+}
+
+dl.last dt,dl.last dd{
+	display:inline-block;
+}
+
+#elem-Product_filterSearch01-101 {
+    border-bottom: 1px #EDE0D0 solid;
+}
+
+.border_47-midr {
+	margin-top:15px;
+}
+
+li.sort span {
+	display:none;
+}
 
