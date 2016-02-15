@@ -1,6 +1,7 @@
 body{
 	font-family:"微软雅黑";
 	margin: 0px;
+	background:#fff1e0;
 }
 img{
 	max-width:100%;
@@ -279,6 +280,7 @@ li.column-num3{
 	box-sizing: border-box;
   text-align: center;
   padding: 30px 0px;
+  background:white;
 }
 
 p.buttonP{
@@ -310,18 +312,18 @@ span.omit {
 
 
 div.number span,div.number a {
-	display:inline-block;
-	padding:10px 15px;
-  width: 30%;
-  text-align: center;
-	    border-radius: .3rem;
+ display:inline-block;	
+ padding:10px 15px;
+ width: 30%;
+ text-align: center;
+ border-radius: .3rem;
     box-shadow: 0 .1rem 0 rgba(255,255,255,.6) inset;
     background: #eff0f3;
     background: -webkit-linear-gradient(top,#f7f8fa,#e7e9ec);
     background: linear-gradient(to bottom,#f7f8fa,#e7e9ec);
     border: 1rem solid #6c6e73;
     border-color: #adb1b8 #a2a6ac #8d9096;
-		margin:0px 10px;
+		margin:5px 10px;
 	border:1px #eee solid;
 }
 
@@ -332,4 +334,10 @@ div.number span,div.number a {
 #Order_myCart01_OutMaxCount,#Order_myCart01_AmountInfo,#OrderCart_myCart01_ClearTipLayer {
 	display:none;
 }
+
+
+#Product_filterSearch01-101_selectConditions h3 {
+	font-size:1rem;
+}
+
 
