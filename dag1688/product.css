@@ -1,3 +1,10 @@
+@import url(//cdn.bootcss.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css);
+@import url(//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url(http://www.dag1688.com/styles/product/ProductDetail_image01-d2_c1.css);
+/*@import url(http://www.dag1688.com/styles/page_members_register.css);*/
+
+
+
 body{
 	font-family:"微软雅黑";
 	margin: 0px;
@@ -37,7 +44,7 @@ margin: 10px 0px !important;
 }
 
 /*去掉客服与朋友推荐、左栏目*/
-#box_hide+div,#box_products-tool,#box_left{
+#box_hide+div,#box_products-tool,{
 	display:none;
 }
 
@@ -219,7 +226,7 @@ a.scrollnextpage{
 	color:white;
 	text-align:center;
 	padding:15px;
-	margin: 30px -15px 0px -15px;
+	margin: 30px -30px 0px -30px;
 }
 
 #address a:link{
@@ -398,4 +405,188 @@ a.j-buy {
 	display:none;
 }
 
+.text-type a:link{
+	background: #A7A7A7;
+}
 
+#Product_list01-105_select{
+    border-radius: 0.3em;
+    width: 100%;
+    padding: 5px;
+}
+
+
+#Product_recommend01-101,#box_page_ad,#elem-Product_top01-101,#Product_similar01-101,#Product_similar01-101,#ProductBrand_list01-101,#Product_viewList01-101,#ProductCategory_show01-101,#Review_ranking01-101,#box_hide+div,#ProductCategory_show01-left_nav,#ProductBrand_list01-105{
+	display:none;
+}
+
+#cartsitemstable .name img{
+	display:none;
+}
+#cartsitemstable input{
+    width: 60%;
+    text-align: center;
+    padding: 3px;
+    border-radius: 0.3rem;	
+}
+
+#cartsitemstable {
+	font-size:0.75rem;
+	text-align:center;
+}
+
+#cartsitemstable .first+.number,#cartsitemstable .first {
+	display:none;
+}
+
+#cartsitemstable th{
+	width:25%;	
+        text-align: center;
+}
+
+.order-login {
+	margin-bottom:15px;
+}
+
+#Order_myCart01_total .distribution,#Order_myCart01_total .rate{
+	display:none;
+}
+
+#OrderCart_myCart01_ClearTipLayer {
+    position: absolute;
+    z-index: 101;
+    top: 368px;
+    left: 223.5px;
+    margin-left: -88px;
+    margin-top: -82px;
+    padding: 10px;
+    border-radius: 0.6em;
+    background: white;
+	
+}
+#OrderCart_myCart01_ClearTipLayer #beyondCount,#OrderCart_myCart01_ClearTipLayer #beyondMaxCount {
+	display:none;
+}
+#OrderCart_myCart01_ClearTipLayer{
+	text-align:center;
+}
+#OrderCart_myCart01_ClearTipLayer .btnarea{
+	margin-top:15px;
+}
+#OrderCart_myCart01_ClearTipLayer .btnarea a{
+	display:inline-block;
+	background: #eee;	
+}
+
+#OrderCart_myCart01_showDiv span,#continueBuyURLString .btn-m,#OrderCart_myCart01_toSettleAccounts .btn-m{
+padding:10px;	
+}
+#continueBuyURLString .btn-m {
+     background: #31B0D5;
+    color: white;	
+	border-radius:0.3rem;
+}
+#OrderCart_myCart01_toSettleAccounts .btn-m {
+	background: #B2251D;
+    color: white;	
+	border-radius:0.3rem;
+}
+#OrderCart_myCart01_showDiv span{
+	background:gray;
+	color:white;
+	border-radius:0.3rem;
+}
+.btn-left,.btn-right{
+	display:inline-block;
+}
+.btn-left{
+    position: relative;
+    top: 2px;
+}
+
+.btn-right{
+	position:relative;
+	left:-30px;
+}
+
+#OrderCart_myCart01_toSettleAccounts {
+	position:relative;
+	left:-25px;
+}
+
+
+#OrderCart_showMini01_shopping-stat {
+	display:none;
+}
+
+#box_main_mid_cart{
+	display:none;
+}
+
+/*注册页*/
+div.text-oper input {
+	display:inline-block;
+}
+
+#showPwdStrength,#promptMessage,#promptMessageClew{
+	display:none;
+}
+
+#regeditUl .verify a{
+	font-size:0.75rem;
+}
+#regeditUl .no-title #submitButton .btn-m{
+	    background: #B2251D;
+    color: #fff;
+    padding: 10px;
+    border-radius: 0.3rem;
+    position: relative;
+    left: -17px;
+    top: 23px;	
+}
+#regeditUl .address #address {
+	background:white;
+	margin:0px;
+}
+#regeditUl input{
+	border-radius:0.3rem;
+}
+
+#regeditUl li{
+	/*height:60px;*/
+	padding: 5px 0px 10px;
+}
+#regeditUl .text-oper #logoDiv {
+	margin-bottom:5px;	
+}
+
+#Members_login01-101_loginForm .text-oper input{
+	border-radius:0.3rem;
+}
+
+#forgetPassword {
+	font-size:0.75rem;
+	color:gray;
+}
+
+#Members_login01-101_loginForm #goFront .btn-m {
+background: #B2251D;
+    color: white;
+    padding: 5px 10px;
+    margin: 10px 5px 5px 0px;
+    display: inline-block;
+    border-radius: 0.3rem;
+}
+
+#box_members_reg .comptitle_47 {
+	margin:10px 0px;
+}
+
+#box_members_reg li.account,#box_members_reg li.password{
+	padding:5px 0px;
+}
+
+#regeditUl #cellphonePrompt{
+	font-weight:bold;
+	color:red;
+}

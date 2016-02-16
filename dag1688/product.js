@@ -16,10 +16,10 @@ for(var i = 0;i<allcss.length;i++){
 }
 
 //将BT框架、奥森图标、自定义样式进行置入
-allcss[0].href="//cdn.bootcss.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css";
+/*allcss[0].href="//cdn.bootcss.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css";
 allcss[1].href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css";
-allcss[2].href="http://www.dag1688.com/styles/product/ProductDetail_image01-d2_c1.css";
-allcss[3].href="http://121.40.196.117/dag1688-templete/dag1688/product.css";
+allcss[2].href="http://www.dag1688.com/styles/product/ProductDetail_image01-d2_c1.css";*/
+allcss[0].href="http://121.40.196.117/dag1688-templete/dag1688/product.css";
 
 //为最顶部的登录注册设置样式
 document.getElementById("box_header").className = "container";
@@ -40,11 +40,11 @@ document.getElementsByClassName("pageWidth")[0].setAttribute("style","");
 document.getElementsByClassName("pageWidth")[0].setAttribute("class","container pageWidth");
 
 //为头部logo进行更换
-var headlogo = document.getElementById("elem-Eui_comp_imageText-071533").getElementsByTagName("img")[0];
+var headlogo = document.getElementById("box_header_logo").getElementsByTagName("img")[0];
 headlogo.setAttribute("src","http://dag1688.aliapp.com/wp-content/uploads/2016/01/logo.png");
 
 //增加自定义的搜索引擎
-document.getElementById("box_header_bot").innerHTML += "<form id=\"searchbar\" name=\"searchForm\" action=\"http:\/\/www.dag1688.com\/Product.do?method=submit\" method=\"post\" target=\"_self\" onsubmit=\"return checkNull();\" class=\"bs-example bs-example-form\" role=\"form\"> <div class=\"input-group\"> <input id=\"Product_search01-001_keyword\" name=\"keyword\" value=\"\" maxlength=\"128\" class=\"form-control\" type=\"text\"> <input name=\"action_page\" value=\"/products_list.html\" type=\"hidden\"> <span class=\"input-group-btn\"> <input name=\"searchType\" value=\"商品搜索\" class=\"btn btn-danger\" type=\"submit\"> <\/span> <\/div> <\/form>" + "<hr\/>";
+document.getElementById("box_header_logo").innerHTML += "<form id=\"searchbar\" name=\"searchForm\" action=\"http:\/\/www.dag1688.com\/Product.do?method=submit\" method=\"post\" target=\"_self\" onsubmit=\"return checkNull();\" class=\"bs-example bs-example-form\" role=\"form\"> <div class=\"input-group\"> <input id=\"Product_search01-001_keyword\" name=\"keyword\" value=\"\" maxlength=\"128\" class=\"form-control\" type=\"text\"> <input name=\"action_page\" value=\"/products_list.html\" type=\"hidden\"> <span class=\"input-group-btn\"> <input name=\"searchType\" value=\"商品搜索\" class=\"btn btn-danger\" type=\"submit\"> <\/span> <\/div> <\/form>" + "<hr\/>";
 
 //将主页面box_main的所有子元素内联样式全部清零
 var boxMainDiv = document.getElementById("box_main").getElementsByTagName("div");
@@ -53,28 +53,8 @@ for(var i=0;i<boxMainDiv.length;i++){
 }
 
 /*为下拉菜单增加样式*/
-var productSelect = document.getElementById("Product_list01-105_select");
-productSelect.setAttribute("class","form-control");
-/*商品筛选层级下划线
-var productFilter = document.getElementById("elem-Product_filterSearch01-101");
-productFilter.innerHTML += "<hr\/>";*/
-//为Bootstrap进行样式设置
-//document.getElementById("box_header_mid").setAttribute("class","row");
-//document.getElementById("box_header_nav").setAttribute("class","row");
-//document.getElementById("box_productsImg").setAttribute("class","row");
-//document.getElementById("box_banner").setAttribute("class","row");
-//document.getElementById("box_productsBbasic").setAttribute("class","row");
-//document.getElementsByClassName("box_header_nav1")[0].setAttribute("class","box_header_nav1 col-xs-12");
-//document.getElementById("box_header_logo").setAttribute("class","col-xs-12");
-//document.getElementById("box_BreadCrumbs").setAttribute("class","col-xs-12");
-//document.getElementById("box_header_bot").setAttribute("class","col-xs-12");
-//document.getElementById("box_header_cart").setAttribute("class","col-xs-12");
-//document.getElementById("box_productsImg-p").setAttribute("class","col-xs-12");
-//document.getElementById("box_products-tool").setAttribute("class","col-xs-12");
-//document.getElementById("elem-ProductDetail_basic01-101").setAttribute("class","col-xs-12");
-
-
-/*将导航页码进行样式重置*/
+/*var productSelect = document.getElementById("Product_list01-105_select");
+productSelect.setAttribute("class","form-control");*/
 
 
 
