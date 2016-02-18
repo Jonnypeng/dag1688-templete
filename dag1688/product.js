@@ -1,4 +1,12 @@
 window.onload = function(){
+var NoUrl = [
+	"http://www.dag1688.com/members_register.html",
+	"http://www.dag1688.com/members_register/&stype=1.html",
+	"http://www.dag1688.com/members_register/&stype=0.html"
+]
+for(var url=0;url<NoUrl.length;url++){
+if(window.location.href!=NoUrl[url]){
+
 var browserWidth = window.innerWidth || document.documentElement.ClientWidth || document.body.clientWidth;
 if(browserWidth<1080){
 
@@ -15,10 +23,6 @@ for(var i = 0;i<allcss.length;i++){
 	allcss[i].href = "";
 }
 
-//将BT框架、奥森图标、自定义样式进行置入
-/*allcss[0].href="//cdn.bootcss.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css";
-allcss[1].href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css";
-allcss[2].href="http://www.dag1688.com/styles/product/ProductDetail_image01-d2_c1.css";*/
 allcss[0].href="http://121.40.196.117/dag1688-templete/dag1688/product.css";
 
 //为最顶部的登录注册设置样式
@@ -56,7 +60,9 @@ for(var i=0;i<boxMainDiv.length;i++){
 /*var productSelect = document.getElementById("Product_list01-105_select");
 productSelect.setAttribute("class","form-control");*/
 
-
+/*将文档区域文字的的长度预存为0，修补源代码找不到长度的错误*/
+var textarea=document.getElementById('address');
+//textarea.value.length <= 500;
 
 
 
@@ -171,4 +177,5 @@ boxFooter.innerHTML = "<div class=\"comptitle_99\" style=\"\"><strong class=\"ti
 
 }
 }
-
+}
+}

@@ -221,7 +221,7 @@ a.scrollnextpage{
 /*div.comptitle_99,div#category-index {
 	margin:15px;
 }*/
-#address{
+#category-index+#address{
 	background-color:gray;
 	color:white;
 	text-align:center;
@@ -547,6 +547,8 @@ div.text-oper input {
 #regeditUl .address #address {
 	background:white;
 	margin:0px;
+	color: black;
+    	text-align: left;
 }
 #regeditUl input{
 	border-radius:0.3rem;
@@ -589,4 +591,23 @@ background: #B2251D;
 #regeditUl #cellphonePrompt{
 	font-weight:bold;
 	color:red;
+}
+
+.type-file-box #button {
+	display:none;
+}
+
+textarea.textarea{
+	padding:5px;
+	width:250px;
+	border-radius: 0.4rem;
+}
+
+div.text-tip .tip-error {
+	color:red;
+	font-weight:bold;
+}
+
+
+#regeditUl #enterpriseRadio {
 }
