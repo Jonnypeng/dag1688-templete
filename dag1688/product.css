@@ -8,7 +8,7 @@
 body{
 	font-family:"微软雅黑";
 	margin: 0px;
-	background:#fff1e0;
+	background:#faf9f4; !important;
 }
 img{
 	max-width:100%;
@@ -608,6 +608,35 @@ div.text-tip .tip-error {
 	font-weight:bold;
 }
 
+#Members_info01-101_showTwoCode,#Members_info01-101_careSuccess{
+	display:none;
+}
 
-#regeditUl #enterpriseRadio {
+#Members_info01-101 .icon img,#Members_info01-101 img#headImg{
+	width:100px;
+}
+
+/*资讯分类*/
+div#elem-NewsCategory_tree01-1415241977012 {
+	display:none;
+}
+
+div#News_detail01-1415241990783,#infoContent,#NewsCategory_tree01-110601 {
+	margin-top:15px;
+}
+
+div#News_detail01-1415241990783 span.font {
+	display:none;
+}
+
+div#NewsCategory_tree01-110601 ul.first li {
+	border: 1px solid #eee;
+    text-align: center;
+    background: #eee;
+    border-radius: 0.3rem;
+    padding: 5px 0px;
+    margin:5px 0px;
+}
+div#NewsCategory_tree01-110601 ul.first li.bot-line{
+	display:none;
 }

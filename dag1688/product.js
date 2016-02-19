@@ -1,14 +1,57 @@
 window.onload = function(){
 var NoUrl = [
-	"http://www.dag1688.com/members_register.html",
-	"http://www.dag1688.com/members_register/&stype=1.html",
-	"http://www.dag1688.com/members_register/&stype=0.html"
-]
-for(var url=0;url<NoUrl.length;url++){
-if(window.location.href!=NoUrl[url]){
+	"http://www.dag1688.com/members_register/&stype=1.html",//企业注册
+	"http://www.dag1688.com/members_index/navigationType=1.html", //会员中心
+	"http://www.dag1688.com/members_index/&navigationType=1.html", //会员中心首页
+	"http://www.dag1688.com/members_orderlist/&navigationType=2.html", //我的订单
+	"http://www.dag1688.com/product_favorite/&navigationType=3.html", //我的收藏夹
+	"http://www.dag1688.com/orderext_myalt/&navigationType=4.html", //我的退换货
+	"http://www.dag1688.com/members_apply/&navigationType=5.html", //我的到货通知
+	"http://www.dag1688.com/members_product_review/&navigationType=6.html", //我的评价
+	"http://www.dag1688.com/product_consult/&navigationType=7.html", //我的咨询
+	"http://www.dag1688.com/members_myactivity/&navigationType=8.html", //我的活动报名
+	"http://www.dag1688.com/members_mass/&navigationType=9.html", //我的订阅,
+	"http://www.dag1688.com/members_update/&navigationType=10.html", //我的帐号资料
+	"http://www.dag1688.com/account_safety/&navigationType=11.html", //账户安全设置
+	"http://www.dag1688.com/account_information/&navigationType=12.html", //我的预存款
+	"http://www.dag1688.com/members_profit/&navigationType=14.html", //我的推荐返利
+	"http://www.dag1688.com/members_integral/&navigationType=15.html",//我的积分
+	"http://www.dag1688.com/members_coupons/&navigationType=16.html", //我的优惠券
+	"http://www.dag1688.com/members_addressbook/&navigationType=17.html",//我的地址簿
+	"http://www.dag1688.com/help_index.html", //帮助中心
+	"http://www.dag1688.com/help_index/&helpId=26&Help_listByMultiCategory01-926FHId=26.html", //新用户注册
+	"http://www.dag1688.com/help_index/&helpId=28&Help_listByMultiCategory01-926FHId=28.html", //找回密码
+	"http://www.dag1688.com/help_index/&helpId=29&Help_listByMultiCategory01-926FHId=29.html", //修改密码
+	"http://www.dag1688.com/help_index/&helpId=25&Help_listByMultiCategory01-926FHId=25.html",//隐私声明
+	"http://www.dag1688.com/help_index/&helpId=1&Help_listByMultiCategory01-926FHId=1.html", //服务条款
+	"http://www.dag1688.com/help_index/&helpId=2&Help_listByMultiCategory01-926FHId=2.html", //购物流程
+	"http://www.dag1688.com/help_index/&helpId=44&Help_listByMultiCategory01-926FHId=44.html", //支付说明
+	"http://www.dag1688.com/help_index/&helpId=45&Help_listByMultiCategory01-926FHId=45.html", //配送说明
+	"http://www.dag1688.com/help_index/&helpId=5&Help_listByMultiCategory01-926FHId=5.html", //优惠券使用
+	"http://www.dag1688.com/help_index/&helpId=9&Help_listByMultiCategory01-926FHId=9.html",//签收注意事项
+	"http://www.dag1688.com/help_index/&helpId=15&Help_listByMultiCategory01-926FHId=15.html", //退换货政策
+	"http://www.dag1688.com/help_index/&helpId=16&Help_listByMultiCategory01-926FHId=16.html",//退换货流程
+	"http://www.dag1688.com/help_index/&helpId=17&Help_listByMultiCategory01-926FHId=17.html",//退款说明
+	"http://www.dag1688.com/help_index/&helpId=3&Help_listByMultiCategory01-926FHId=3.html",//会员制度
+	"http://www.dag1688.com/help_index/&helpId=4&Help_listByMultiCategory01-926FHId=4.html", //积分规则
+	"http://www.dag1688.com/help_index/&helpId=20&Help_listByMultiCategory01-926FHId=20.html", //如何付款
+	"http://www.dag1688.com/help_index/&helpId=18&Help_listByMultiCategory01-926FHId=18.html", //如何找回密码	
+	"http://www.dag1688.com/help_index/&helpId=21&Help_listByMultiCategory01-926FHId=21.html", //如何办理退款	
+	"http://www.dag1688.com/help_index/&helpId=24&Help_listByMultiCategory01-926FHId=24.html", //如何办理退换货
+	"http://www.dag1688.com/help_index/&helpId=19&Help_listByMultiCategory01-926FHId=19.html", //如何取消订单
+	"http://www.dag1688.com/help_index/&helpId=8&Help_listByMultiCategory01-926FHId=8.html",//配送费收取标准
+	"http://www.dag1688.com/help_index/&helpId=7&Help_listByMultiCategory01-926FHId=7.html", //配送范围及时效
+	"http://www.dag1688.com/help_index/&helpId=11&Help_listByMultiCategory01-926FHId=11.html", //在线支付详情
+	"http://www.dag1688.com/help_index/&helpId=12&Help_listByMultiCategory01-926FHId=12.html", //银行转账详情
+	"http://www.dag1688.com/help_index/&helpId=13&Help_listByMultiCategory01-926FHId=13.html",//邮局汇款详情
+	"http://www.dag1688.com/help_index/&helpId=6&Help_listByMultiCategory01-926FHId=6.html",//促销说明
+	"http://www.dag1688.com/members_findpassword.html", //找回密码
+	"http://www.dag1688.com/products_brand/&Column_navigation01-001FCId=181&pageNo_ProductBrand_list01-001=1&pageSize_ProductBrand_list01-001=25.html" //品牌查询
+];
+if(window.location.href!=NoUrl[0]&&window.location.href!=NoUrl[1]&&window.location.href!=NoUrl[2]&&window.location.href!=NoUrl[3]&&window.location.href!=NoUrl[4]&&window.location.href!=NoUrl[5]&&window.location.href!=NoUrl[6]&&window.location.href!=NoUrl[7]&&window.location.href!=NoUrl[8]&&window.location.href!=NoUrl[9]&&window.location.href!=NoUrl[10]&&window.location.href!=NoUrl[11]&&window.location.href!=NoUrl[12]&&window.location.href!=NoUrl[13]&&window.location.href!=NoUrl[14]&&window.location.href!=NoUrl[15]&&window.location.href!=NoUrl[16]&&window.location.href!=NoUrl[17]&&window.location.href!=NoUrl[18]&&window.location.href!=NoUrl[19]&&window.location.href!=NoUrl[20]&&window.location.href!=NoUrl[21]&&window.location.href!=NoUrl[22]&&window.location.href!=NoUrl[23]&&window.location.href!=NoUrl[24]&&window.location.href!=NoUrl[25]&&window.location.href!=NoUrl[26]&&window.location.href!=NoUrl[27]&&window.location.href!=NoUrl[28]&&window.location.href!=NoUrl[29]&&window.location.href!=NoUrl[30]&&window.location.href!=NoUrl[31]&&window.location.href!=NoUrl[32]&&window.location.href!=NoUrl[33]&&window.location.href!=NoUrl[34]&&window.location.href!=NoUrl[35]&&window.location.href!=NoUrl[36]&&window.location.href!=NoUrl[37]&&window.location.href!=NoUrl[38]&&window.location.href!=NoUrl[39]&&window.location.href!=NoUrl[40]&&window.location.href!=NoUrl[41]&&window.location.href!=NoUrl[42]&&window.location.href!=NoUrl[43]&&window.location.href!=NoUrl[44]&&window.location.href!=NoUrl[45]&&window.location.href!=NoUrl[46]){
 
 var browserWidth = window.innerWidth || document.documentElement.ClientWidth || document.body.clientWidth;
-if(browserWidth<1080){
+if(browserWidth<1000){
 
 //设置移动界面的头部数据
 document.getElementsByTagName("meta")[0].setAttribute("name","viewport");
@@ -175,7 +218,6 @@ boxFooter.innerHTML = "<div class=\"comptitle_99\" style=\"\"><strong class=\"ti
 
 
 
-}
 }
 }
 }
