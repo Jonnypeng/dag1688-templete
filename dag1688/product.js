@@ -1,4 +1,4 @@
-window.onload = function(){
+//window.onload = function(){
 var NoUrl = [
 	"http://www.dag1688.com/members_register/&stype=1.html",//企业注册
 	"http://www.dag1688.com/members_index/navigationType=1.html", //会员中心
@@ -56,6 +56,8 @@ if(browserWidth<1000){
 //设置移动界面的头部数据
 document.getElementsByTagName("meta")[0].setAttribute("name","viewport");
 document.getElementsByTagName("meta")[0].setAttribute("content","initial-scale=1,user-scalable=no");
+//将主页面pagewidth进行液态宽度
+document.getElementsByClassName("pageWidth")[0].setAttribute("style","");
 
 //将总体宽度的内联样式清空 
 var boxRoot = document.getElementById("box_root");
@@ -80,8 +82,6 @@ for(var i=0;i<clearBoth.length;i++){
 	clearBoth[i].style.display = "none";
 }
 
-//将主页面pagewidth进行液态宽度
-document.getElementsByClassName("pageWidth")[0].setAttribute("style","");
 
 //将pagewidth进行container设置
 document.getElementsByClassName("pageWidth")[0].setAttribute("class","container pageWidth");
@@ -91,7 +91,7 @@ var headlogo = document.getElementById("box_header_logo").getElementsByTagName("
 headlogo.setAttribute("src","http://dag1688.aliapp.com/wp-content/uploads/2016/01/logo.png");
 
 //增加自定义的搜索引擎
-document.getElementById("box_header_logo").innerHTML += "<form id=\"searchbar\" name=\"searchForm\" action=\"http:\/\/www.dag1688.com\/Product.do?method=submit\" method=\"post\" target=\"_self\" onsubmit=\"return checkNull();\" class=\"bs-example bs-example-form\" role=\"form\"> <div class=\"input-group\"> <input id=\"Product_search01-001_keyword\" name=\"keyword\" value=\"\" maxlength=\"128\" class=\"form-control\" type=\"text\"> <input name=\"action_page\" value=\"/products_list.html\" type=\"hidden\"> <span class=\"input-group-btn\"> <input name=\"searchType\" value=\"商品搜索\" class=\"btn btn-danger\" type=\"submit\"> <\/span> <\/div> <\/form>" + "<hr\/>";
+document.getElementById("box_header_logo").innerHTML += "<form id=\"searchbar\" name=\"searchForm\" action=\"http:\/\/www.dag1688.com\/Product.do?method=submit\" method=\"post\" target=\"_self\" onsubmit=\"return checkNull();\" class=\"bs-example bs-example-form\" role=\"form\"> <div class=\"input-group\"> <input id=\"Product_search01-001_keyword\" name=\"keyword\" value=\"\" maxlength=\"128\" class=\"form-control\" type=\"text\"> <input name=\"action_page\" value=\"/products_list.html\" type=\"hidden\"> <span class=\"input-group-btn\"> <input name=\"searchType\" value=\"商品搜索\" class=\"btn btn-danger\" type=\"submit\"> <\/span> <\/div> <\/form>" + "<hr\ class=\"header-hr\"\/>";
 
 //将主页面box_main的所有子元素内联样式全部清零
 var boxMainDiv = document.getElementById("box_main").getElementsByTagName("div");
@@ -220,4 +220,4 @@ boxFooter.innerHTML = "<div class=\"comptitle_99\" style=\"\"><strong class=\"ti
 
 }
 }
-}
+//}
