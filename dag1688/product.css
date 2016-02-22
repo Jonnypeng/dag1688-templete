@@ -636,6 +636,8 @@ div#NewsCategory_tree01-110601 ul.first li {
     border-radius: 0.3rem;
     padding: 5px 0px;
     margin:5px 0px;
+   display:inline-block;
+   width:49%;
 }
 div#NewsCategory_tree01-110601 ul.first li.bot-line{
 	display:none;
@@ -651,4 +653,19 @@ div#NewsCategory_tree01-110601 ul.first li.bot-line{
     margin-left: -15px;
     margin-right: -15px;
     border-width: 2px;
+}
+
+
+#News_list01-110602 li.title {
+	list-style-image:url(http://www.dag1688.com/images/news_sign.jpg);
+	list-style-position:inside;
+}
+#News_list01-110602 li.date {
+	font-size:0.5rem;
+	text-align:right;
+	border-bottom:1px gray dashed;
+}
+
+#News_list01-110602 ul.newslist ul{
+	margin:15px 0px;
 }
