@@ -52,7 +52,14 @@ if(window.location.href!=NoUrl[0]&&window.location.href!=NoUrl[1]&&window.locati
 
 var browserWidth = window.innerWidth || document.documentElement.ClientWidth || document.body.clientWidth;
 if(browserWidth<1000){
+var pmOnOff = true
+var pcbody = document.getElementsByTagName("html")[0].innerHTML;
 
+
+
+pcMobile();
+function pcMobile(){
+if(pmOnOff){
 //设置移动界面的头部数据
 document.getElementsByTagName("meta")[0].setAttribute("name","viewport");
 document.getElementsByTagName("meta")[0].setAttribute("content","initial-scale=1,user-scalable=no");
@@ -75,6 +82,7 @@ document.getElementById("box_header").className = "container";
 document.getElementById("box_header_top").className = "row";
 document.getElementById("box_header_top_sub1").className = "col-xs-12";
 document.getElementById("box_header_top_sub2").className = "col-xs-12";
+
 
 //将所有的多余行进行隐藏
 var clearBoth = document.getElementsByClassName("clearBoth");
@@ -108,15 +116,22 @@ var textarea=document.getElementById('address');
 //textarea.value.length <= 500;
 
 /*将商品列表图样的链接进行删除*/
-var productList = document.getElementById("Product_list01-105");
-var productPic = productList.getElementsByClassName("pic");
+//var productList = document.getElementById("Product_list01-105");
+/*var bug1 = document.createElement("span");
+bug1.className = "pic";
+document.body.appendChild(bug1);*/
+
+var productPic = document.getElementsByClassName("pic");
+	
 for(var k=0;k<productPic.length;k++){
 	disablePicA(productPic[k]);
 }
 
 function disablePicA(pic){
 	var picA = pic.getElementsByTagName("a")[0];
+	if(picA){
 	picA.setAttribute("onclick","return false");
+};
 }	
 
 
@@ -180,54 +195,31 @@ boxFooter.setAttribute("style","");
 //boxFooter.getElementsByTagName("div")[0].setAttribute("style","");*/
 
 boxFooter.innerHTML = "<div class=\"comptitle_99\" style=\"\"><strong class=\"titlestyle_47\"><img src=\"\/library\/resources\/images\/icons\/31.gif\">商品类别<\/strong><\/div>" + "<div id=\"category-index\"> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=24.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">五金工具<\/button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=25.html\" ><button type=\"button\" class=\"btn btn-primary btn-block\">机电设备<\/button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=21.html\" ><button type=\"button\" class=\"btn btn-primary btn-block\">发电设备<\/button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=29.html\" ><button type=\"button\" class=\"btn btn-primary btn-block\">化工产品<\/button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=4.html\" ><button type=\"button\" class=\"btn btn-primary btn-block\">仪器、仪表</button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=26.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">建筑、装饰<\/button></a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=3.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">劳保、安防</button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=28.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">消防、水暖</button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=2.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">起重、吊装</button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=20.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">电力、线缆</button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=27.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">民用五金、照明电器<\/button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=18.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">防爆产品、通风设备</button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=17.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">附件<\/button><\/a> <\/div>" + "<div id=\"address\"><address><h5>服务热线<\/h5><p><a href=\"tel:085185757788\">0851-85757788<\/a><br><a href=\"tel:085185770626\">0851-85770626<\/a><\/p><\/address><address><h5>门市电话<\/h5><p><a href=\"tel:085185757779\">0851-85757779<\/a><br><a href=\"tel:085185756800\">0851-85756800<\/a><\/p><\/address><address><h5>邮件微信<\/h5><p>gy@dag1688.com<br>公众微信ID:dagsc1688<\/p><\/address><address><h5>联系地址<\/h5><p>贵阳市沙冲中路33号大光旗舰店<br>网站:www.dag1688.com<\/p><\/address><p>Copyright © 2016 大光物资商城版权所有<br />黔ICP备14002038号<\/p><\/div>"
+fn1(boxFooter);
+}else{   //这是执行电脑版本
+	document.getElementsByTagName("html")[0].innerHTML = pcbody;	
+	document.getElementById("Members_welcomeInfo02-001_notLogin").style.display = "block";
+	document.getElementById("Members_welcomeLink01-001_notLogin").style.display = "block";
+}
+}
+}
 
 
+//将头部的帮助中心更换为切换到电脑板
+function fn1(boxFooter){
+var welcome = document.getElementById("Members_welcomeLink01-001_notLogin");
+var pcEdition = document.createElement("span");
+pcEdition.id = "pcedition";
+pcEdition.innerHTML = "切换到<strong>电脑版<\/strong><i class=\"fa fa-tv\"><\/i>";
+boxFooter.appendChild(pcEdition);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+pcEdition.onclick = function(){
+	pmOnOff = false;	
+	pcMobile();
+	
+}
+};
 
 
 
 }
-}
-//}
