@@ -107,7 +107,17 @@ productSelect.setAttribute("class","form-control");*/
 var textarea=document.getElementById('address');
 //textarea.value.length <= 500;
 
+/*将商品列表图样的链接进行删除*/
+var productList = document.getElementById("Product_list01-105");
+var productPic = productList.getElementsByClassName("pic");
+for(var k=0;k<productPic.length;k++){
+	disablePicA(productPic[k]);
+}
 
+function disablePicA(pic){
+	var picA = pic.getElementsByTagName("a")[0];
+	picA.setAttribute("onclick","return false");
+}	
 
 
 
