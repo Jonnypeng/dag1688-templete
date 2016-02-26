@@ -685,3 +685,36 @@ div#NewsCategory_tree01-110601 ul.first li.bot-line{
     font-size:0.75rem; 
     opacity:0.7;
 }
+
+#slider{
+width: 100%;
+    margin: 15px 0px 0px 0px;
+}
+
+#slider a {
+	display:block;
+}
+
+
+
+#control .fa{
+	margin:0px 5px;
+}
+
+#control {
+	text-align: center;
+    position: relative;
+    z-index.1;
+    bottom:15px;
+}
+
+
+
+
+
+
+
+
+
+
+
