@@ -45,8 +45,7 @@ var NoUrl = [
 	"http://www.dag1688.com/help_index/&helpId=12&Help_listByMultiCategory01-926FHId=12.html", //银行转账详情
 	"http://www.dag1688.com/help_index/&helpId=13&Help_listByMultiCategory01-926FHId=13.html",//邮局汇款详情
 	"http://www.dag1688.com/help_index/&helpId=6&Help_listByMultiCategory01-926FHId=6.html",//促销说明
-	"http://www.dag1688.com/members_findpassword.html", //找回密码
-	"http://www.dag1688.com/products_brand/&Column_navigation01-001FCId=181&pageNo_ProductBrand_list01-001=1&pageSize_ProductBrand_list01-001=25.html" //品牌查询
+	"http://www.dag1688.com/members_findpassword.html" //找回密码
 ];
 if(window.location.href!=NoUrl[0]&&window.location.href!=NoUrl[1]&&window.location.href!=NoUrl[2]&&window.location.href!=NoUrl[3]&&window.location.href!=NoUrl[4]&&window.location.href!=NoUrl[5]&&window.location.href!=NoUrl[6]&&window.location.href!=NoUrl[7]&&window.location.href!=NoUrl[8]&&window.location.href!=NoUrl[9]&&window.location.href!=NoUrl[10]&&window.location.href!=NoUrl[11]&&window.location.href!=NoUrl[12]&&window.location.href!=NoUrl[13]&&window.location.href!=NoUrl[14]&&window.location.href!=NoUrl[15]&&window.location.href!=NoUrl[16]&&window.location.href!=NoUrl[17]&&window.location.href!=NoUrl[18]&&window.location.href!=NoUrl[19]&&window.location.href!=NoUrl[20]&&window.location.href!=NoUrl[21]&&window.location.href!=NoUrl[22]&&window.location.href!=NoUrl[23]&&window.location.href!=NoUrl[24]&&window.location.href!=NoUrl[25]&&window.location.href!=NoUrl[26]&&window.location.href!=NoUrl[27]&&window.location.href!=NoUrl[28]&&window.location.href!=NoUrl[29]&&window.location.href!=NoUrl[30]&&window.location.href!=NoUrl[31]&&window.location.href!=NoUrl[32]&&window.location.href!=NoUrl[33]&&window.location.href!=NoUrl[34]&&window.location.href!=NoUrl[35]&&window.location.href!=NoUrl[36]&&window.location.href!=NoUrl[37]&&window.location.href!=NoUrl[38]&&window.location.href!=NoUrl[39]&&window.location.href!=NoUrl[40]&&window.location.href!=NoUrl[41]&&window.location.href!=NoUrl[42]&&window.location.href!=NoUrl[43]&&window.location.href!=NoUrl[44]&&window.location.href!=NoUrl[45]&&window.location.href!=NoUrl[46]){
 
@@ -217,20 +216,6 @@ slider.appendChild(sliderImgA);
 var sliderImg = document.createElement("img");
 sliderImgA.appendChild(sliderImg);
 
-var prevNext = document.createElement("div");
-prevNext.id = "prevNext";
-slider.appendChild(prevNext);
-
-var prev = document.createElement("i");
-prev.id = "prev";
-prev.setAttribute("class","fa fa-angle-left fa-2x");
-prevNext.appendChild(prev);
-
-var next = document.createElement("i");
-next.id = "next";
-next.setAttribute("class","fa fa-angle-right fa-2x");
-prevNext.appendChild(next);
-
 var control = document.createElement("div");
 control.id = "control";
 control.innerHTML = "<i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i>";
@@ -239,42 +224,90 @@ slider.appendChild(control);
 var controlIcon = control.getElementsByTagName("i");
 
 var slider = [];
-slider[0] = {url:"http://www.dag1688.com/products_list/keyword=%25E5%2585%25AC%25E7%2589%259B&searchType=productSearch&method=submit.html",img:"http://www.dag1688.com/fileRepository/gg/source/mj4ZpiHiRkWFDbX5GOXQlg.jpg"};
-slider[1] = {url:"http://www.dag1688.com/products_detail/&productId=10726.html",img:"http://www.dag1688.com/fileRepository/gg/source/mj4ZpiHiRkWFDbX5GOXQlg.jpg" };
-slider[2] = {url:"http://www.dag1688.com/products_detail/&productId=9831.html",img:"http://www.dag1688.com/fileRepository/gg/source/mj4ZpiHiRkWFDbX5GOXQlg.jpg"};
+slider[0] = {url:"http://www.dag1688.com/zhuanti/carspace/index.html",img:"http://www.dag1688.com/fileRepository/gg/source/mj4ZpiHiRkWFDbX5GOXQlg.jpg"};
+slider[1] = {url:"http://www.dag1688.com/products_list/keyword=%25E8%25A5%25BF%25E6%25B9%2596&searchType=productSearch&method=submit.html",img:"http://www.dag1688.com/fileRepository/gg/source/wrCb3YiRSga-QBjqQXXC4g.jpg" };
+slider[2] = {url:"http://www.dag1688.com/zhuanti/wd40/index.html",img:"http://www.dag1688.com/fileRepository/gg/source/Fysx0OhUTkyxnga4jSuRug.jpg"};
+
+slider[3] = {url:"http://www.dag1688.com/zhuanti/metabo/index.html",img:"http://www.dag1688.com/fileRepository/gg/source/vnf_l3gAR2ydHook74mOkA.jpg"};
+
+slider[4] = {url:"http://www.dag1688.com/zhuanti/sata/index.html",img:"http://www.dag1688.com/fileRepository/gg/source/H_W39elXSnOHsThgnHJTVA.jpg"};
 
 //初始化
 var sNum = 0;
 
 sliderImgA.href = slider[sNum].url;
 sliderImg.src = slider[sNum].img;
-controlIcon[sNum].setAttribute("class","fa fa-circle");
+control.innerHTML = "<i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i>";
 
 
-next.onclick = function(){
+setInterval(next,3000);
+
+function next(){
 	sNum++;
 if(sNum>slider.length-1){
 	sNum=0;
 }
 sliderImgA.href = slider[sNum].url;
 sliderImg.src = slider[sNum].img;
-control.innerHTML = "<i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i>";
+control.innerHTML = "<i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i>";
 controlIcon[sNum].setAttribute("class","fa fa-circle");
+};
 
+//置入导航栏
+
+var navMenu = document.createElement("div");	
+navMenu.id = "nav";
+headMain.appendChild(navMenu);
+
+var menuUl = document.createElement("ul");
+menuUl.id = "navUl";
+menuUl.innerHTML = "<li><\/li><li><\/li><li><\/li><li><\/li><li><\/li>"
+navMenu.appendChild(menuUl);
+
+var Nav = [];
+Nav[0] = {url:"#category-index",class:"fa fa-list-ul fa-3x",title:"商品分类"};
+Nav[1] = {url:"http://www.dag1688.com/products_brand/&Column_navigation01-001FCId=181&pageNo_ProductBrand_list01-001=1&pageSize_ProductBrand_list01-001=25.html",class:"fa fa-cube fa-3x",title:"品牌世界"};
+Nav[2] = {url:"http://www.dag1688.com/news_list/newsCategoryId=1.html",class:"fa fa-money fa-3x",title:"优惠活动"};
+Nav[3] = {url:"http://www.dag1688.com/news_list/&Column_navigation01-001FCId=47.html",class:"fa fa-newspaper-o fa-3x",title:"行情资讯"};
+Nav[4] = {url:"http://www.dag1688.com/join/&Column_navigation01-001FCId=44.html",class:"fa fa-building fa-3x",title:"百企联盟"};
+
+var menuLi = menuUl.getElementsByTagName("li");
+for(var i=0;i<menuLi.length;i++){
+	menuLi[i].innerHTML = "<a><\/a>"
+	menuLi[i].getElementsByTagName("a")[0].href = Nav[i].url;
+	menuLi[i].getElementsByTagName("a")[0].innerHTML = "<span><\/span><br><span><\/span>";
+	menuLi[i].getElementsByTagName("span")[0].className = Nav[i].class;
+	menuLi[i].getElementsByTagName("span")[1].innerHTML = Nav[i].title;
 }
 
-prev.onclick = function(){
-	sNum--;
-if(sNum<0){
-	sNum=slider.length-1;
-}
-sliderImgA.href = slider[sNum].url;
-sliderImg.src = slider[sNum].img;
-control.innerHTML = "<i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i>";
-controlIcon[sNum].setAttribute("class","fa fa-circle");
+var brand = document.createElement("div");
+brand.id = "brand";
+brand.innerHTML = "<div>本周品牌推荐</div><ul><li></li><li></li><li></li><li></li><li></li><li></li></ul>";
+headMain.appendChild(brand);
 
-}
-	
+var brandLi = brand.getElementsByTagName("li");
+var brandArr = [
+"<a href=\"/products_brand_detail/&amp;brandId=7.html\" title=\"长城精工\"><img alt=\"\" src=\"/fileRepository/product/others/3ea44e11-90f8-464d-8318-676419f460e1.jpg\"></a>",
+"<a href=\"/products_brand_detail/&amp;brandId=6.html\" title=\"世达\"><img alt=\"\" src=\"/fileRepository/product/others/b08834bc-50a1-481f-872a-0be2a38402fc.jpg\"></a>",
+"<a href=\"/products_brand_detail/&amp;brandId=8.html\" title=\"公牛\"><img alt=\"\" src=\"/fileRepository/product/others/84e6ce7c-30f0-4ef9-bc69-1ec84cdf8f46.jpg\"></a>",
+"<a href=\"/products_brand_detail/&amp;brandId=12.html\" title=\"麦太保\"><img alt=\"\" src=\"/fileRepository/product/others/67d04ce0-615b-4830-a2b9-7439898ad265.jpg\"></a>",
+"<a href=\"/products_brand_detail/&amp;brandId=95.html\" title=\"西湖\"><img alt=\"\" src=\"/fileRepository/product/others/bf4e30e7-b824-43d3-9b10-25ce18868f93.jpg\"></a>",
+"<a href=\"/products_brand_detail/&amp;brandId=138.html\" title=\"上海沪工\"><img alt=\"\" src=\"/fileRepository/product/others/e3414fcd-93fe-4728-86e8-c100ba16feac.jpg\"></a>"
+];
+
+for(var i=0;i<brandLi.length;i++){
+	brandLi[i].className = "column-num6";
+	brandLi[i].innerHTML = brandArr[i]; 
+};
+
+
+
+
+
+
+
+
+
 
 
 

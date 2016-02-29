@@ -379,6 +379,7 @@ dl.last dt,dl.last dd{
 
 #elem-Product_filterSearch01-101 {
     border-bottom: 1px #EDE0D0 solid;
+    display:none;
 }
 
 .border_47-midr {
@@ -705,7 +706,8 @@ width: 100%;
 	text-align: center;
     position: relative;
     z-index.1;
-    bottom:15px;
+    margin-top:10px;
+    margin-bottom:10px;
 }
 
 
@@ -713,9 +715,66 @@ width: 100%;
 	float:right;
 }
 
+#head-main {
+	margin:0px -15px;
+}
+
+#slider img{
+	width:100%;
+}
+
+#nav {
+	border-top:1px #EDE0D0 solid;
+	border-bottom:1px #EDE0D0 solid;
+	background:white;
+}
+
+#navUl {
+	text-align:center;
+	margin:15px 0px;
+}
 
 
+#navUl li {
+	display:inline-block;
+	margin:0px 5px;
+	font-size:0.75rem;
+	color:#373a3c;
+}
 
+li.column-num5 {
+	    width: 49%;
+    display: inline-block;
+    text-align: center;
+    margin: 2px 0px;
+    padding: 10px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+	background:white;
+}
+
+#ProductBrand_list01-001 ul{
+}
+
+#brand ul{
+	margin: 15px;
+}
+
+.column-num6 {
+width: 50%;
+    display: inline-block;
+    text-align: center;
+    margin: 0px 0px;
+    padding: 10px;
+    border: 1px #EDE0D0 solid;
+    box-sizing: border-box;
+    background: white;
+}
+
+#brand>div {
+	margin: 15px;
+    font-weight: bold;
+}
 
 
 
