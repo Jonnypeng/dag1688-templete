@@ -327,7 +327,15 @@ for(var i=0;i<brandLi.length;i++){
 	document.getElementById("Members_welcomeLink01-001_notLogin").style.display = "block";
 }
 }
-}
+}else if(browserWidth>1000) {
+//为头部logo进行更换
+var headlogo = document.getElementById("box_header_logo").getElementsByTagName("img")[0];
+headlogo.setAttribute("src","http://dag1688.aliapp.com/wp-content/uploads/2016/03/正方形LOGO1.png");
+headlogo.style.width = "190px";
+headlogo.style.marginTop = "10px";
+	
+
+};
 
 
 //将头部的帮助中心更换为切换到电脑板
