@@ -95,6 +95,11 @@ document.getElementsByClassName("pageWidth")[0].setAttribute("class","container 
 var headlogo = document.getElementById("box_header_logo").getElementsByTagName("img")[0];
 headlogo.setAttribute("src","http://www.dag1688.com/zhuanti/wd40/images/logo.png");
 
+//为头部图片进行首页切换
+var header = document.getElementById("elem-Eui_comp_imageText-071533");
+var headerA = header.getElementsByTagName("a")[0];
+headerA.href = "http://www.dag1688.com/products_list/&Column_navigation01-002FCId=46&pageNo_Product_list01-105=1&pageSize_Product_list01-105=15.html";
+
 //增加自定义的搜索引擎
 document.getElementById("box_header_logo").innerHTML += "<form id=\"searchbar\" name=\"searchForm\" action=\"http:\/\/www.dag1688.com\/Product.do?method=submit\" method=\"post\" target=\"_self\" onsubmit=\"return checkNull();\" class=\"bs-example bs-example-form\" role=\"form\"> <div class=\"input-group\"> <input id=\"Product_search01-001_keyword\" name=\"keyword\" value=\"\" maxlength=\"128\" class=\"form-control\" type=\"text\"> <input name=\"action_page\" value=\"/products_list.html\" type=\"hidden\"> <span class=\"input-group-btn\"> <input name=\"searchType\" value=\"商品搜索\" class=\"btn btn-danger\" type=\"submit\"> <\/span> <\/div> <\/form>" + "<hr\ class=\"header-hr\"\/>";
 
@@ -204,6 +209,7 @@ headMain.innerHTML = "";
 //去除面包屑
 var bread = document.getElementById("elem-Public_breadCrumb01-product");
 bread.style.display = "none";
+
 
 //置入幻灯片
 var slider = document.createElement("div");
