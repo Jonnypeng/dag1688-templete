@@ -268,7 +268,7 @@ a.scrollnextpage{
 
 /*以下是手机版屏蔽自定义模版描述，加速手机阅览性能*/
 
-#edit-header,#edit-footer{
+#edit-footer{
 	display:none;
 }
 /*以下是将头部的多余部分进行隐藏*/
@@ -777,8 +777,27 @@ width: 50%;
 }
 
 
+/*麦太保专题*/
 
+#metabo-video-box h2{
+	display:none;
+}
+#metabo-video-box #video-control {
+	font-size:0.75rem;
+}
 
+#metabo-video-box #video-control button{
+	height:56px;
+}
+
+/*世达商品描述模版*/
+#sata-video-box h2{
+	display:none;
+}
+#sata-video-box #video-control{
+	display:block;
+	font-size: 0.75rem;
+}
 
 
 
