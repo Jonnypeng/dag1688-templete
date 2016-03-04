@@ -92,16 +92,26 @@ for(var i=0;i<clearBoth.length;i++){
 document.getElementsByClassName("pageWidth")[0].setAttribute("class","container pageWidth");
 
 //为头部logo进行更换
-var headlogo = document.getElementById("box_header_logo").getElementsByTagName("img")[0];
-headlogo.setAttribute("src","http://www.dag1688.com/zhuanti/wd40/images/logo.png");
+var headlogo = document.getElementById("box_header_logo");
+headlogo.innerHTML = ""; //清空
+var headlogoA = document.createElement("a");
+headlogoA.id = "headlogo";
+headlogoA.href="http://www.dag1688.com/products_list/&Column_navigation01-002FCId=46&pageNo_Product_list01-105=1&pageSize_Product_list01-105=15.html";
+headlogo.appendChild(headlogoA);
 
-//为头部图片进行首页切换
-var header = document.getElementById("elem-Eui_comp_imageText-071533");
-var headerA = header.getElementsByTagName("a")[0];
-headerA.href = "http://www.dag1688.com/products_list/&Column_navigation01-002FCId=46&pageNo_Product_list01-105=1&pageSize_Product_list01-105=15.html";
+var headlogoImg = document.createElement("img");
+headlogoImg.src= "http://dag1688.aliapp.com/wp-content/uploads/2016/03/正方形LOGO1.png";
+headlogoA.appendChild(headlogoImg);
 
-//增加自定义的搜索引擎
-document.getElementById("box_header_logo").innerHTML += "<form id=\"searchbar\" name=\"searchForm\" action=\"http:\/\/www.dag1688.com\/Product.do?method=submit\" method=\"post\" target=\"_self\" onsubmit=\"return checkNull();\" class=\"bs-example bs-example-form\" role=\"form\"> <div class=\"input-group\"> <input id=\"Product_search01-001_keyword\" name=\"keyword\" value=\"\" maxlength=\"128\" class=\"form-control\" type=\"text\"> <input name=\"action_page\" value=\"/products_list.html\" type=\"hidden\"> <span class=\"input-group-btn\"> <input name=\"searchType\" value=\"商品搜索\" class=\"btn btn-danger\" type=\"submit\"> <\/span> <\/div> <\/form>" + "<hr\ class=\"header-hr\"\/>";
+var searchbar = document.createElement("div");
+searchbar.id = "searchbar";
+searchbar.innerHTML = "<form name=\"searchForm\" action=\"http:\/\/www.dag1688.com\/Product.do?method=submit\" method=\"post\" target=\"_self\" onsubmit=\"return checkNull();\" class=\"bs-example bs-example-form\" role=\"form\"> <div class=\"input-group\"> <input id=\"Product_search01-001_keyword\" name=\"keyword\" value=\"\" maxlength=\"128\" class=\"form-control\" type=\"text\"> <input name=\"action_page\" value=\"/products_list.html\" type=\"hidden\"> <span class=\"input-group-btn\"> <input name=\"searchType\" value=\"搜索\" class=\"btn btn-danger\" type=\"submit\"> <\/span> <\/div> <\/form>";
+headlogo.appendChild(searchbar);
+
+var header_hr = document.createElement("hr");
+header_hr.className = "header-hr";
+headlogo.appendChild(header_hr);
+
 
 //将主页面box_main的所有子元素内联样式全部清零
 var boxMainDiv = document.getElementById("box_main").getElementsByTagName("div");
@@ -333,7 +343,7 @@ for(var i=0;i<brandLi.length;i++){
 	document.getElementById("Members_welcomeLink01-001_notLogin").style.display = "block";
 }
 }
-}/*else if(browserWidth>1000) {
+}else if(browserWidth>1000) {
 //为头部logo进行更换
 var headlogo = document.getElementById("box_header_logo").getElementsByTagName("img")[0];
 headlogo.setAttribute("src","http://dag1688.aliapp.com/wp-content/uploads/2016/03/正方形LOGO1.png");
@@ -341,7 +351,7 @@ headlogo.style.width = "190px";
 headlogo.style.marginTop = "10px";
 	
 
-};*/
+};
 
 
 //将头部的帮助中心更换为切换到电脑板

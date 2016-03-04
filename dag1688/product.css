@@ -800,4 +800,24 @@ width: 50%;
 }
 
 
+/*头部logo*/
+#headlogo,#searchbar {
+	display:inline-block;
+	vertical-align:middle;
+}
 
+#headlogo {
+	width:25%;
+	border-right: #eee solid 2px;
+    padding-right: 10px;
+}
+
+#searchbar {
+	width:75%;
+	padding-left: 10px;
+}
+
+
+.comptitle_00 {
+	margin:15px 0px;
+}
