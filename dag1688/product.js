@@ -119,19 +119,6 @@ for(var i=0;i<boxMainDiv.length;i++){
 	boxMainDiv[i].setAttribute("style","");
 }
 
-/*为下拉菜单增加样式*/
-/*var productSelect = document.getElementById("Product_list01-105_select");
-productSelect.setAttribute("class","form-control");*/
-
-/*将文档区域文字的的长度预存为0，修补源代码找不到长度的错误*/
-var textarea=document.getElementById('address');
-//textarea.value.length <= 500;
-
-/*将商品列表图样的链接进行删除*/
-//var productList = document.getElementById("Product_list01-105");
-/*var bug1 = document.createElement("span");
-bug1.className = "pic";
-document.body.appendChild(bug1);*/
 
 var productPic = document.getElementsByClassName("pic");
 	
@@ -145,6 +132,8 @@ function disablePicA(pic){
 	picA.setAttribute("onclick","return false");
 };
 }	
+
+/*商品列表样式首图更换*/
 
 
 

@@ -287,8 +287,17 @@ li.column-num3{
 	border:1px #eee solid;
 	box-sizing: border-box;
   text-align: center;
-  padding: 30px 0px;
+  padding: 15px;
   background:white;
+  display: inline-block;
+    width: 49%;
+    vertical-align: middle;
+   margin-bottom: 5px;
+	height: 210px;
+}
+
+.col-space {
+        vertical-align: middle;
 }
 
 p.buttonP{
@@ -300,7 +309,7 @@ li.name span {
 }
 
 .pro-module {
-	margin: 15px 0px;
+	font-size:0.75rem;
 }
 
 ul.productlist-02+div.pageJump div{
@@ -819,4 +828,10 @@ width: 50%;
 
 .comptitle_00 {
 	margin:15px 0px;
+}
+
+
+li.column-num3:first-child{
+	width:100%;
+	height: 270px;
 }
