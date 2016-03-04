@@ -100,7 +100,7 @@ headlogoA.href="http://www.dag1688.com/products_list/&Column_navigation01-002FCI
 headlogo.appendChild(headlogoA);
 
 var headlogoImg = document.createElement("img");
-headlogoImg.src= "http://dag1688.aliapp.com/wp-content/uploads/2016/03/正方形LOGO1.png";
+headlogoImg.src= "http://www.dag1688.com/fileRepository/zhuanti/source/dGI2IkeER-q1L1u_vzJWJQ.png";
 headlogoA.appendChild(headlogoImg);
 
 var searchbar = document.createElement("div");
@@ -345,10 +345,10 @@ for(var i=0;i<brandLi.length;i++){
 }
 }else if(browserWidth>1000) {
 //为头部logo进行更换
-var headlogo = document.getElementById("box_header_logo").getElementsByTagName("img")[0];
+/*var headlogo = document.getElementById("box_header_logo").getElementsByTagName("img")[0];
 headlogo.setAttribute("src","http://dag1688.aliapp.com/wp-content/uploads/2016/03/正方形LOGO1.png");
 headlogo.style.width = "190px";
-headlogo.style.marginTop = "10px";
+headlogo.style.marginTop = "10px";*/
 	
 
 };
