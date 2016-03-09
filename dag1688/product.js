@@ -47,15 +47,127 @@ var NoUrl = [
 	"http://www.dag1688.com/help_index/&helpId=6&Help_listByMultiCategory01-926FHId=6.html",//促销说明
 	"http://www.dag1688.com/members_findpassword.html" //找回密码
 ];
-if(window.location.href!=NoUrl[0]&&window.location.href!=NoUrl[1]&&window.location.href!=NoUrl[2]&&window.location.href!=NoUrl[3]&&window.location.href!=NoUrl[4]&&window.location.href!=NoUrl[5]&&window.location.href!=NoUrl[6]&&window.location.href!=NoUrl[7]&&window.location.href!=NoUrl[8]&&window.location.href!=NoUrl[9]&&window.location.href!=NoUrl[10]&&window.location.href!=NoUrl[11]&&window.location.href!=NoUrl[12]&&window.location.href!=NoUrl[13]&&window.location.href!=NoUrl[14]&&window.location.href!=NoUrl[15]&&window.location.href!=NoUrl[16]&&window.location.href!=NoUrl[17]&&window.location.href!=NoUrl[18]&&window.location.href!=NoUrl[19]&&window.location.href!=NoUrl[20]&&window.location.href!=NoUrl[21]&&window.location.href!=NoUrl[22]&&window.location.href!=NoUrl[23]&&window.location.href!=NoUrl[24]&&window.location.href!=NoUrl[25]&&window.location.href!=NoUrl[26]&&window.location.href!=NoUrl[27]&&window.location.href!=NoUrl[28]&&window.location.href!=NoUrl[29]&&window.location.href!=NoUrl[30]&&window.location.href!=NoUrl[31]&&window.location.href!=NoUrl[32]&&window.location.href!=NoUrl[33]&&window.location.href!=NoUrl[34]&&window.location.href!=NoUrl[35]&&window.location.href!=NoUrl[36]&&window.location.href!=NoUrl[37]&&window.location.href!=NoUrl[38]&&window.location.href!=NoUrl[39]&&window.location.href!=NoUrl[40]&&window.location.href!=NoUrl[41]&&window.location.href!=NoUrl[42]&&window.location.href!=NoUrl[43]&&window.location.href!=NoUrl[44]&&window.location.href!=NoUrl[45]&&window.location.href!=NoUrl[46]){
-
 var browserWidth = window.innerWidth || document.documentElement.ClientWidth || document.body.clientWidth;
-if(browserWidth<1000){
-var pmOnOff = true
-var pcbody = document.getElementsByTagName("html")[0].innerHTML;
+var pmOnOff = true;
+var pcbody = null;
 
+if(window.location.href!=NoUrl[0]&&window.location.href!=NoUrl[1]&&window.location.href!=NoUrl[2]&&window.location.href!=NoUrl[3]&&window.location.href!=NoUrl[4]&&window.location.href!=NoUrl[5]&&window.location.href!=NoUrl[6]&&window.location.href!=NoUrl[7]&&window.location.href!=NoUrl[8]&&window.location.href!=NoUrl[9]&&window.location.href!=NoUrl[10]&&window.location.href!=NoUrl[11]&&window.location.href!=NoUrl[12]&&window.location.href!=NoUrl[13]&&window.location.href!=NoUrl[14]&&window.location.href!=NoUrl[15]&&window.location.href!=NoUrl[16]&&window.location.href!=NoUrl[17]&&window.location.href!=NoUrl[18]&&window.location.href!=NoUrl[19]&&window.location.href!=NoUrl[20]&&window.location.href!=NoUrl[21]&&window.location.href!=NoUrl[22]&&window.location.href!=NoUrl[23]&&window.location.href!=NoUrl[24]&&window.location.href!=NoUrl[25]&&window.location.href!=NoUrl[26]&&window.location.href!=NoUrl[27]&&window.location.href!=NoUrl[28]&&window.location.href!=NoUrl[29]&&window.location.href!=NoUrl[30]&&window.location.href!=NoUrl[31]&&window.location.href!=NoUrl[32]&&window.location.href!=NoUrl[33]&&window.location.href!=NoUrl[34]&&window.location.href!=NoUrl[35]&&window.location.href!=NoUrl[36]&&window.location.href!=NoUrl[37]&&window.location.href!=NoUrl[38]&&window.location.href!=NoUrl[39]&&window.location.href!=NoUrl[40]&&window.location.href!=NoUrl[41]&&window.location.href!=NoUrl[42]&&window.location.href!=NoUrl[43]&&window.location.href!=NoUrl[44]&&window.location.href!=NoUrl[45]&&window.location.href!=NoUrl[46]){
+pcbody = document.getElementsByTagName("html")[0].innerHTML;   //存起来
 pcMobile();
+
+}
+
+if(window.location.href=="http://www.dag1688.com/products_list/&Column_navigation01-002FCId=46&pageNo_Product_list01-105=1&pageSize_Product_list01-105=15.html"){   //特定首页的代码重写
+pcMobile();
+var boxRight = document.getElementById("box_right");
+var headMain = boxRight.getElementsByTagName("div")[2];
+headMain.id = "head-main";
+headMain.setAttribute("name","");
+headMain.className = "";
+headMain.innerHTML = ""; 
+
+//去除面包屑
+disableRbread();
+
+//置入幻灯片
+var slider = document.createElement("div");
+slider.id = "slider";
+headMain.appendChild(slider);
+
+var sliderImgA = document.createElement("a");
+slider.appendChild(sliderImgA);
+
+var sliderImg = document.createElement("img");
+sliderImgA.appendChild(sliderImg);
+
+var control = document.createElement("div");
+control.id = "control";
+control.innerHTML = "<i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i>";
+slider.appendChild(control);
+
+var controlIcon = control.getElementsByTagName("i");
+
+var slider = [];
+slider[0] = {url:"http://www.dag1688.com/zhuanti/carspace/index.html",img:"http://www.dag1688.com/fileRepository/gg/source/mj4ZpiHiRkWFDbX5GOXQlg.jpg"};
+slider[1] = {url:"http://www.dag1688.com/products_list/keyword=%25E8%25A5%25BF%25E6%25B9%2596&searchType=productSearch&method=submit.html",img:"http://www.dag1688.com/fileRepository/gg/source/wrCb3YiRSga-QBjqQXXC4g.jpg" };
+slider[2] = {url:"http://www.dag1688.com/zhuanti/wd40/index.html",img:"http://www.dag1688.com/fileRepository/gg/source/Fysx0OhUTkyxnga4jSuRug.jpg"};
+
+slider[3] = {url:"http://www.dag1688.com/zhuanti/metabo/index.html",img:"http://www.dag1688.com/fileRepository/gg/source/vnf_l3gAR2ydHook74mOkA.jpg"};
+
+slider[4] = {url:"http://www.dag1688.com/zhuanti/sata/index.html",img:"http://www.dag1688.com/fileRepository/gg/source/H_W39elXSnOHsThgnHJTVA.jpg"};
+
+//初始化
+var sNum = 0;
+
+sliderImgA.href = slider[sNum].url;
+sliderImg.src = slider[sNum].img;
+control.innerHTML = "<i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i>";
+
+
+setInterval(next,3000);
+
+function next(){
+	sNum++;
+if(sNum>slider.length-1){
+	sNum=0;
+}
+sliderImgA.href = slider[sNum].url;
+sliderImg.src = slider[sNum].img;
+control.innerHTML = "<i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i>";
+controlIcon[sNum].setAttribute("class","fa fa-circle");
+};
+
+//置入导航栏
+
+var navMenu = document.createElement("div");	
+navMenu.id = "nav";
+headMain.appendChild(navMenu);
+
+var menuUl = document.createElement("ul");
+menuUl.id = "navUl";
+menuUl.innerHTML = "<li><\/li><li><\/li><li><\/li><li><\/li><li><\/li>"
+navMenu.appendChild(menuUl);
+
+var Nav = [];
+Nav[0] = {url:"#category-index",class:"fa fa-list-ul fa-3x",title:"商品分类"};
+Nav[1] = {url:"http://www.dag1688.com/products_brand/&Column_navigation01-001FCId=181&pageNo_ProductBrand_list01-001=1&pageSize_ProductBrand_list01-001=25.html",class:"fa fa-cube fa-3x",title:"品牌世界"};
+Nav[2] = {url:"http://www.dag1688.com/news_list/newsCategoryId=1.html",class:"fa fa-money fa-3x",title:"优惠活动"};
+Nav[3] = {url:"http://www.dag1688.com/news_list/&Column_navigation01-001FCId=47.html",class:"fa fa-newspaper-o fa-3x",title:"行情资讯"};
+Nav[4] = {url:"http://www.dag1688.com/join/&Column_navigation01-001FCId=44.html",class:"fa fa-building fa-3x",title:"百企联盟"};
+
+var menuLi = menuUl.getElementsByTagName("li");
+for(var i=0;i<menuLi.length;i++){
+	menuLi[i].innerHTML = "<a><\/a>"
+	menuLi[i].getElementsByTagName("a")[0].href = Nav[i].url;
+	menuLi[i].getElementsByTagName("a")[0].innerHTML = "<span><\/span><br><span><\/span>";
+	menuLi[i].getElementsByTagName("span")[0].className = Nav[i].class;
+	menuLi[i].getElementsByTagName("span")[1].innerHTML = Nav[i].title;
+}
+
+var brand = document.createElement("div");
+brand.id = "brand";
+brand.innerHTML = "<div>本周品牌推荐</div><ul><li></li><li></li><li></li><li></li><li></li><li></li></ul>";
+headMain.appendChild(brand);
+
+var brandLi = brand.getElementsByTagName("li");
+var brandArr = [
+"<a href=\"/products_brand_detail/&amp;brandId=7.html\" title=\"长城精工\"><img alt=\"\" src=\"/fileRepository/product/others/3ea44e11-90f8-464d-8318-676419f460e1.jpg\"></a>",
+"<a href=\"/products_brand_detail/&amp;brandId=6.html\" title=\"世达\"><img alt=\"\" src=\"/fileRepository/product/others/b08834bc-50a1-481f-872a-0be2a38402fc.jpg\"></a>",
+"<a href=\"/products_brand_detail/&amp;brandId=8.html\" title=\"公牛\"><img alt=\"\" src=\"/fileRepository/product/others/84e6ce7c-30f0-4ef9-bc69-1ec84cdf8f46.jpg\"></a>",
+"<a href=\"/products_brand_detail/&amp;brandId=12.html\" title=\"麦太保\"><img alt=\"\" src=\"/fileRepository/product/others/67d04ce0-615b-4830-a2b9-7439898ad265.jpg\"></a>",
+"<a href=\"/products_brand_detail/&amp;brandId=95.html\" title=\"西湖\"><img alt=\"\" src=\"/fileRepository/product/others/bf4e30e7-b824-43d3-9b10-25ce18868f93.jpg\"></a>",
+"<a href=\"/products_brand_detail/&amp;brandId=138.html\" title=\"上海沪工\"><img alt=\"\" src=\"/fileRepository/product/others/e3414fcd-93fe-4728-86e8-c100ba16feac.jpg\"></a>"
+];
+
+for(var i=0;i<brandLi.length;i++){
+	brandLi[i].className = "column-num6";
+	brandLi[i].innerHTML = brandArr[i]; 
+};
+};
+
+
 function pcMobile(){
+if(browserWidth<1000){
 if(pmOnOff){
 //设置移动界面的头部数据
 document.getElementsByTagName("meta")[0].setAttribute("name","viewport");
@@ -197,134 +309,6 @@ boxFooter.setAttribute("style","");
 
 boxFooter.innerHTML = "<div class=\"comptitle_99\" style=\"\"><strong class=\"titlestyle_47\"><img src=\"\/library\/resources\/images\/icons\/31.gif\">商品类别<\/strong><\/div>" + "<div id=\"category-index\"> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=24.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">五金工具<\/button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=25.html\" ><button type=\"button\" class=\"btn btn-primary btn-block\">机电设备<\/button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=21.html\" ><button type=\"button\" class=\"btn btn-primary btn-block\">发电设备<\/button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=29.html\" ><button type=\"button\" class=\"btn btn-primary btn-block\">化工产品<\/button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=4.html\" ><button type=\"button\" class=\"btn btn-primary btn-block\">仪器、仪表</button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=26.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">建筑、装饰<\/button></a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=3.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">劳保、安防</button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=28.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">消防、水暖</button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=2.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">起重、吊装</button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=20.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">电力、线缆</button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=27.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">民用五金、照明电器<\/button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=18.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">防爆产品、通风设备</button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=17.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">附件<\/button><\/a> <\/div>" + "<div id=\"address\"><address><h5>服务热线<\/h5><p><a href=\"tel:085185757788\">0851-85757788<\/a><br><a href=\"tel:085185770626\">0851-85770626<\/a><\/p><\/address><address><h5>门市电话<\/h5><p><a href=\"tel:085185757779\">0851-85757779<\/a><br><a href=\"tel:085185756800\">0851-85756800<\/a><\/p><\/address><address><h5>邮件微信<\/h5><p>gy@dag1688.com<br>公众微信ID:dagsc1688<\/p><\/address><address><h5>联系地址<\/h5><p>贵阳市沙冲中路33号大光旗舰店<br>网站:www.dag1688.com<\/p><\/address><p>Copyright © 2016 大光物资商城版权所有<br />黔ICP备14002038号<\/p><\/div>"
 fn1(boxFooter);
-if(window.location.href=="http://www.dag1688.com/products_list/&Column_navigation01-002FCId=46&pageNo_Product_list01-105=1&pageSize_Product_list01-105=15.html"){   //特定首页的代码重写
-var boxRight = document.getElementById("box_right");
-var headMain = boxRight.getElementsByTagName("div")[2];
-headMain.id = "head-main";
-headMain.setAttribute("name","");
-headMain.className = "";
-headMain.innerHTML = ""; 
-
-//去除面包屑
-var bread = document.getElementById("elem-Public_breadCrumb01-product");
-bread.style.display = "none";
-
-
-//置入幻灯片
-var slider = document.createElement("div");
-slider.id = "slider";
-headMain.appendChild(slider);
-
-var sliderImgA = document.createElement("a");
-slider.appendChild(sliderImgA);
-
-var sliderImg = document.createElement("img");
-sliderImgA.appendChild(sliderImg);
-
-var control = document.createElement("div");
-control.id = "control";
-control.innerHTML = "<i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i>";
-slider.appendChild(control);
-
-var controlIcon = control.getElementsByTagName("i");
-
-var slider = [];
-slider[0] = {url:"http://www.dag1688.com/zhuanti/carspace/index.html",img:"http://www.dag1688.com/fileRepository/gg/source/mj4ZpiHiRkWFDbX5GOXQlg.jpg"};
-slider[1] = {url:"http://www.dag1688.com/products_list/keyword=%25E8%25A5%25BF%25E6%25B9%2596&searchType=productSearch&method=submit.html",img:"http://www.dag1688.com/fileRepository/gg/source/wrCb3YiRSga-QBjqQXXC4g.jpg" };
-slider[2] = {url:"http://www.dag1688.com/zhuanti/wd40/index.html",img:"http://www.dag1688.com/fileRepository/gg/source/Fysx0OhUTkyxnga4jSuRug.jpg"};
-
-slider[3] = {url:"http://www.dag1688.com/zhuanti/metabo/index.html",img:"http://www.dag1688.com/fileRepository/gg/source/vnf_l3gAR2ydHook74mOkA.jpg"};
-
-slider[4] = {url:"http://www.dag1688.com/zhuanti/sata/index.html",img:"http://www.dag1688.com/fileRepository/gg/source/H_W39elXSnOHsThgnHJTVA.jpg"};
-
-//初始化
-var sNum = 0;
-
-sliderImgA.href = slider[sNum].url;
-sliderImg.src = slider[sNum].img;
-control.innerHTML = "<i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i>";
-
-
-setInterval(next,3000);
-
-function next(){
-	sNum++;
-if(sNum>slider.length-1){
-	sNum=0;
-}
-sliderImgA.href = slider[sNum].url;
-sliderImg.src = slider[sNum].img;
-control.innerHTML = "<i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i><i class=\"fa fa-circle-o\"><\/i>";
-controlIcon[sNum].setAttribute("class","fa fa-circle");
-};
-
-//置入导航栏
-
-var navMenu = document.createElement("div");	
-navMenu.id = "nav";
-headMain.appendChild(navMenu);
-
-var menuUl = document.createElement("ul");
-menuUl.id = "navUl";
-menuUl.innerHTML = "<li><\/li><li><\/li><li><\/li><li><\/li><li><\/li>"
-navMenu.appendChild(menuUl);
-
-var Nav = [];
-Nav[0] = {url:"#category-index",class:"fa fa-list-ul fa-3x",title:"商品分类"};
-Nav[1] = {url:"http://www.dag1688.com/products_brand/&Column_navigation01-001FCId=181&pageNo_ProductBrand_list01-001=1&pageSize_ProductBrand_list01-001=25.html",class:"fa fa-cube fa-3x",title:"品牌世界"};
-Nav[2] = {url:"http://www.dag1688.com/news_list/newsCategoryId=1.html",class:"fa fa-money fa-3x",title:"优惠活动"};
-Nav[3] = {url:"http://www.dag1688.com/news_list/&Column_navigation01-001FCId=47.html",class:"fa fa-newspaper-o fa-3x",title:"行情资讯"};
-Nav[4] = {url:"http://www.dag1688.com/join/&Column_navigation01-001FCId=44.html",class:"fa fa-building fa-3x",title:"百企联盟"};
-
-var menuLi = menuUl.getElementsByTagName("li");
-for(var i=0;i<menuLi.length;i++){
-	menuLi[i].innerHTML = "<a><\/a>"
-	menuLi[i].getElementsByTagName("a")[0].href = Nav[i].url;
-	menuLi[i].getElementsByTagName("a")[0].innerHTML = "<span><\/span><br><span><\/span>";
-	menuLi[i].getElementsByTagName("span")[0].className = Nav[i].class;
-	menuLi[i].getElementsByTagName("span")[1].innerHTML = Nav[i].title;
-}
-
-var brand = document.createElement("div");
-brand.id = "brand";
-brand.innerHTML = "<div>本周品牌推荐</div><ul><li></li><li></li><li></li><li></li><li></li><li></li></ul>";
-headMain.appendChild(brand);
-
-var brandLi = brand.getElementsByTagName("li");
-var brandArr = [
-"<a href=\"/products_brand_detail/&amp;brandId=7.html\" title=\"长城精工\"><img alt=\"\" src=\"/fileRepository/product/others/3ea44e11-90f8-464d-8318-676419f460e1.jpg\"></a>",
-"<a href=\"/products_brand_detail/&amp;brandId=6.html\" title=\"世达\"><img alt=\"\" src=\"/fileRepository/product/others/b08834bc-50a1-481f-872a-0be2a38402fc.jpg\"></a>",
-"<a href=\"/products_brand_detail/&amp;brandId=8.html\" title=\"公牛\"><img alt=\"\" src=\"/fileRepository/product/others/84e6ce7c-30f0-4ef9-bc69-1ec84cdf8f46.jpg\"></a>",
-"<a href=\"/products_brand_detail/&amp;brandId=12.html\" title=\"麦太保\"><img alt=\"\" src=\"/fileRepository/product/others/67d04ce0-615b-4830-a2b9-7439898ad265.jpg\"></a>",
-"<a href=\"/products_brand_detail/&amp;brandId=95.html\" title=\"西湖\"><img alt=\"\" src=\"/fileRepository/product/others/bf4e30e7-b824-43d3-9b10-25ce18868f93.jpg\"></a>",
-"<a href=\"/products_brand_detail/&amp;brandId=138.html\" title=\"上海沪工\"><img alt=\"\" src=\"/fileRepository/product/others/e3414fcd-93fe-4728-86e8-c100ba16feac.jpg\"></a>"
-];
-
-for(var i=0;i<brandLi.length;i++){
-	brandLi[i].className = "column-num6";
-	brandLi[i].innerHTML = brandArr[i]; 
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-};
 
 }else{   //这是执行电脑版本
 	document.getElementsByTagName("html")[0].innerHTML = pcbody;	
@@ -332,18 +316,22 @@ for(var i=0;i<brandLi.length;i++){
 	document.getElementById("Members_welcomeLink01-001_notLogin").style.display = "block";
 }
 }
-}else if(browserWidth>1000) {
-//为头部logo进行更换
-/*var headlogo = document.getElementById("box_header_logo").getElementsByTagName("img")[0];
-headlogo.setAttribute("src","http://dag1688.aliapp.com/wp-content/uploads/2016/03/正方形LOGO1.png");
-headlogo.style.width = "190px";
-headlogo.style.marginTop = "10px";*/
-	
+}
 
+
+//禁止面包屑
+function disableRbread(){
+var bread = document.getElementById("elem-Public_breadCrumb01-product");
+bread.style.display = "none";
 };
 
 
-//将头部的帮助中心更换为切换到电脑板
+
+	
+
+
+
+//更换为切换到电脑板
 function fn1(boxFooter){
 var welcome = document.getElementById("Members_welcomeLink01-001_notLogin");
 var pcEdition = document.createElement("span");
@@ -359,5 +347,3 @@ pcEdition.onclick = function(){
 };
 
 
-
-}
