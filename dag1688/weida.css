@@ -1,0 +1,15 @@
+div#weida-header{
+	width:655px;
+	height:auto;
+	margin:15px 0px;
+}
+
+#weida-header img{
+	width:100%;
+	height:auto;
+}
+
+#aboutDagText{
+	font-size:1rem;
+	text-indent:2rem;
+}
