@@ -1,6 +1,6 @@
 //=====================================置入幻灯片
 //图片与链接进行定量
-var slider = ["http://www.cw-maxpower.com/images/2.jpg","http://www.cw-maxpower.com/images/1a.jpg"];
+var slider = ["http://www.cw-maxpower.com/images/2.jpg","http://www.dag1688.com/fileRepository/product/others/TM2cLwrrRvq7LHIf-7hBew.jpg"];
 
 var weidaHeader = document.getElementById("weida-header");
 var weidaSliderImg = document.createElement("img");
