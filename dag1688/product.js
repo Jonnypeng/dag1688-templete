@@ -250,6 +250,13 @@ var bread = document.getElementById("elem-Public_breadCrumb01-product");
 bread.style.display = "none";
 };
 
+//重置面包屑
+var breadCrumbs = document.getElementById("elem-Public_breadCrumb01-11") || document.getElementById("elem-Public_breadCrumb01-product");		//前面一个ID是商品详情页的,后面一个ID是商品列表页的
+var breadCrumbsIndex = breadCrumbs.getElementsByTagName("a")[0];
+breadCrumbsIndex.setAttribute("href","http://www.dag1688.com/products_list/&Column_navigation01-002FCId=46&pageNo_Product_list01-105=1&pageSize_Product_list01-105=15.html");
+
+
+
 
 //======================幻灯片函数
 function fnSlider(slidAttr){
