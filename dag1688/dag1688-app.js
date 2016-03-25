@@ -24,6 +24,17 @@ closedBtn.onclick = function (){
 			menuOnOff = false;
 		};
 };
+	
+	//开合菜单函数
+	function openClosemenu(){
+	if(menuOnOff==false){
+			navMenu.style.display = "block";
+			menuOnOff = true;
+		}else if(menuOnOff==true){
+			navMenu.style.display = "none";
+			menuOnOff = false;
+	};
+};	
 	//载入cordova事件
 function onload(){
 	document.addEventListener("deviceready",onDeviceReady,false);
@@ -33,10 +44,7 @@ function onload(){
 		};
 
 		function onMenuButton(){
-		if(menuOnOff==false){
-			navMenu.style.display = "block";
-			menuOnOff = true;
-		}
+		openClosemenu();  
 			};
 		};
 		//退出程序按钮
@@ -55,10 +63,7 @@ function onload(){
 
 //========================底部菜单键的动作
 	moreBtn.onclick = function (){
-		if(menuOnOff==false){
-			navMenu.style.display = "block";
-			menuOnOff = true;
-		};
+		openClosemenu();  
 	};
 
 
