@@ -36,10 +36,7 @@ function onload(){
 		if(menuOnOff==false){
 			navMenu.style.display = "block";
 			menuOnOff = true;
-		}else if(menuOnOff==true){
-			navMenu.style.display = "none";
-			menuOnOff = false;
-			};
+		}
 			};
 		};
 		//退出程序按钮
