@@ -74,10 +74,10 @@ for(var i = 0;i<navFooterDiv.length;i++){
 		frameSrc("http://www.dag1688.com/products_list/&Column_navigation01-002FCId=46&pageNo_Product_list01-105=1&pageSize_Product_list01-105=15.html");
 				};
 	navFooterDiv[1].onclick = function(){
-		frameSrc("http://dag1688.aliapp.com/search-product.html");
+		frameSrc("http://www.dag1688.com/products_brand/&Column_navigation01-001FCId=181&pageNo_ProductBrand_list01-001=1&pageSize_ProductBrand_list01-001=25.html#category-index");
 				};
 	navFooterDiv[2].onclick = function(){
-		frameSrc("http://www.dag1688.com/products_brand/&Column_navigation01-001FCId=181&pageNo_ProductBrand_list01-001=1&pageSize_ProductBrand_list01-001=25.html#category-index");
+		frameSrc("http://dag1688.aliapp.com/search-product.html");
 				};
 };
 
@@ -102,6 +102,10 @@ navMenuLi[3].onclick = function(){
 };
 navMenuLi[4].onclick = function(){
 		frameSrc("http://dag1688.aliapp.com/");
+	disableMenu();
+};
+navMenuLi[5].onclick = function(){
+		frameSrc("http://www.dag1688.com/about_us/&aboutusId=32&Aboutus_list01-001FAId=32.html");
 	disableMenu();
 };
 };
