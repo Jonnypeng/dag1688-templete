@@ -119,3 +119,7 @@ position: fixed;
 	#nav-footer a:visited{
 	color:white;
 }
+
+span#closedBtn {
+	color:#FFFF00;
+}

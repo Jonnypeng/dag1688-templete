@@ -10,27 +10,41 @@ var navFooter = document.getElementById("nav-footer");
 var closedBtn = document.getElementById("closed");
 var navFooterDiv = navFooter.getElementsByTagName("div");
 var menuOnOff = false;
-var moreOnOff = false;
 
 
 onload();
 
 closedBtn.onclick = function (){
-	navMenu.style.display = "none"	;
-	moreOnOff = false;
+	disableMenu();
 };
+	//关闭菜单函数
+	function disableMenu(){
+		if(menuOnOff==true){
+			navMenu.style.display = "none";
+			menuOnOff = false;
+		};
+};
+	//载入cordova事件
 function onload(){
 	document.addEventListener("deviceready",onDeviceReady,false);
+
 		function onDeviceReady(){
 			document.addEventListener("menubutton",onMenuButton,false);
 		};
 
 		function onMenuButton(){
-		disable(menuOnOff);
+		if(menuOnOff==false){
+			navMenu.style.display = "block";
+			menuOnOff = true;
+		}else if(menuOnOff==true){
+			navMenu.style.display = "none";
+			menuOnOff = false;
+			};
+			};
 		};
-};
+		//退出程序按钮
 		exitBtn.onclick = function(){
-			disable(menuOnOff);
+				disableMenu();
 				exit.style.display = "block";
 };
 		
@@ -44,7 +58,10 @@ function onload(){
 
 //========================底部菜单键的动作
 	moreBtn.onclick = function (){
-		disable(menuOnOff);
+		if(menuOnOff==false){
+			navMenu.style.display = "block";
+			menuOnOff = true;
+		};
 	};
 
 
@@ -67,36 +84,28 @@ for(var i = 0;i<navFooterDiv.length;i++){
 for(var i = 0;i<navMenuLi.length;i++){
 navMenuLi[0].onclick = function(){
 		frameSrc("http://www.dag1688.com/products_list/&Column_navigation01-002FCId=46&pageNo_Product_list01-105=1&pageSize_Product_list01-105=15.html");
-		disable(menuOnOff);
+	disableMenu();
 };
 navMenuLi[1].onclick = function(){
 		frameSrc("http://www.dag1688.com/products_brand/&Column_navigation01-001FCId=181&pageNo_ProductBrand_list01-001=1&pageSize_ProductBrand_list01-001=25.html");
-		disable(menuOnOff);
+	disableMenu();
+};
 navMenuLi[2].onclick = function(){
 		frameSrc("http://www.dag1688.com/zhuanti/dagmap/wechat-map.html");
-		disable(menuOnOff);
+	disableMenu();
 };
 navMenuLi[3].onclick = function(){
 		frameSrc("http://www.dag1688.com/zhuanti/dagmap/streetview.html");
-		disable(menuOnOff);
+	disableMenu();
 };
 navMenuLi[4].onclick = function(){
 		frameSrc("http://dag1688.aliapp.com/");
-		disable(menuOnOff);
+	disableMenu();
 };
 };
 
 function frameSrc(url){
-dagIframe.setAttribute("src",url);
-};
+		dagIframe.setAttribute("src",url);
+		};
 
-	function disable(menuOnOff){
-		if(!menuOnOff){
-				navMenu.style.display = "block";
-				menuOnOff = true;
-}else if(menuOnOff){
-				navMenu.style.display = "none";
-				menuOnOff = false;
-};
-};
 
