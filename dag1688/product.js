@@ -76,9 +76,9 @@ headMain.innerHTML = "";
 var slider = [];
 slider[0] = {url:"http://www.dag1688.com/products_list/method=submit&keyword=%25E5%25A8%2581%25E8%25BE%25BE&searchType=productSearch.html",img:"http://www.dag1688.com/fileRepository/gg/source/Sl7mpnsDRDiZN2HdGHth3A.jpg"};
 slider[1] = {url:"http://www.dag1688.com/products_list/keyword=%25E8%25A5%25BF%25E6%25B9%2596&searchType=productSearch&method=submit.html",img:"http://www.dag1688.com/fileRepository/gg/source/wrCb3YiRSga-QBjqQXXC4g.jpg" };
-slider[2] = {url:"http://www.dag1688.com/zhuanti/wd40/index.html",img:"http://www.dag1688.com/fileRepository/gg/source/Fysx0OhUTkyxnga4jSuRug.jpg"};
-slider[3] = {url:"http://www.dag1688.com/zhuanti/metabo/index.html",img:"http://www.dag1688.com/fileRepository/gg/source/vnf_l3gAR2ydHook74mOkA.jpg"};
-slider[4] = {url:"http://www.dag1688.com/zhuanti/sata/index.html",img:"http://www.dag1688.com/fileRepository/gg/source/H_W39elXSnOHsThgnHJTVA.jpg"};
+slider[2] = {url:"http://www.dag1688.com/products_list/keyword=wd-40&searchType=productSearch&method=submit.html",img:"http://www.dag1688.com/fileRepository/gg/source/Fysx0OhUTkyxnga4jSuRug.jpg"};
+slider[3] = {url:"http://www.dag1688.com/products_list/keyword=%25E9%25BA%25A6%25E5%25A4%25AA%25E4%25BF%259D&searchType=productSearch&method=submit.html",img:"http://www.dag1688.com/fileRepository/gg/source/vnf_l3gAR2ydHook74mOkA.jpg"};
+slider[4] = {url:"http://www.dag1688.com/products_list/keyword=%25E4%25B8%2596%25E8%25BE%25BE&searchType=productSearch&method=submit.html",img:"http://www.dag1688.com/fileRepository/gg/source/H_W39elXSnOHsThgnHJTVA.jpg"};
 fnSlider(slider);
 
 
