@@ -49,17 +49,23 @@ function onload(){
 		};
 		//退出程序按钮
 		exitBtn.onclick = function(){
-				disableMenu();
-				exit.style.display = "block";
+				//disableMenu();
+				//exit.style.display = "block";
+				if(confirm("您将退出应用程序")==true){
+					navigator.app.exitApp();
+				}else{
+					return;
+				};
+				
 };
 		
-	okExit.onclick = function (){
-		navigator.app.exitApp();
-};
-
-	noExit.onclick = function (){
-		exit.style.display = "none";
-};
+//	okExit.onclick = function (){
+//		navigator.app.exitApp();
+//};
+//
+//	noExit.onclick = function (){
+//		exit.style.display = "none";
+//};
 
 //========================底部菜单键的动作
 	moreBtn.onclick = function (){
