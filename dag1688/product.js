@@ -1,6 +1,7 @@
 //window.onload = function(){
 var NoUrl = [
 	"http://www.dag1688.com/members_register/&stype=1.html",//企业注册
+	"http://www.dag1688.com/members_register.html", //个人注册
 	"http://www.dag1688.com/members_index/navigationType=1.html", //会员中心
 	"http://www.dag1688.com/members_index/&navigationType=1.html", //会员中心首页
 	"http://www.dag1688.com/members_orderlist/&navigationType=2.html", //我的订单
@@ -55,7 +56,7 @@ var aLink = document.getElementsByTagName("a");
 
 if(window.location.href!=NoUrl[0]&&window.location.href!=NoUrl[1]&&window.location.href!=NoUrl[2]&&window.location.href!=NoUrl[3]&&window.location.href!=NoUrl[4]&&window.location.href!=NoUrl[5]&&window.location.href!=NoUrl[6]&&window.location.href!=NoUrl[7]&&window.location.href!=NoUrl[8]&&window.location.href!=NoUrl[9]&&window.location.href!=NoUrl[10]&&window.location.href!=NoUrl[11]&&window.location.href!=NoUrl[12]&&window.location.href!=NoUrl[13]&&window.location.href!=NoUrl[14]&&window.location.href!=NoUrl[15]&&window.location.href!=NoUrl[16]&&window.location.href!=NoUrl[17]&&window.location.href!=NoUrl[18]&&window.location.href!=NoUrl[19]&&window.location.href!=NoUrl[20]&&window.location.href!=NoUrl[21]&&window.location.href!=NoUrl[22]&&window.location.href!=NoUrl[23]&&window.location.href!=NoUrl[24]&&window.location.href!=NoUrl[25]&&window.location.href!=NoUrl[26]&&window.location.href!=NoUrl[27]&&window.location.href!=NoUrl[28]&&window.location.href!=NoUrl[29]&&window.location.href!=NoUrl[30]&&window.location.href!=NoUrl[31]&&window.location.href!=NoUrl[32]&&window.location.href!=NoUrl[33]&&window.location.href!=NoUrl[34]&&window.location.href!=NoUrl[35]&&window.location.href!=NoUrl[36]&&window.location.href!=NoUrl[37]&&window.location.href!=NoUrl[38]&&window.location.href!=NoUrl[39]&&window.location.href!=NoUrl[40]&&window.location.href!=NoUrl[41]&&window.location.href!=NoUrl[42]&&window.location.href!=NoUrl[43]&&window.location.href!=NoUrl[44]&&window.location.href!=NoUrl[45]&&window.location.href!=NoUrl[46]&&window.location.href!=NoUrl[47]){
 
-pcbody = document.getElementsByTagName("html")[0].innerHTML;   //存起来
+//pcbody = document.getElementsByTagName("html")[0].innerHTML;   //存起来
 pcMobile();
 
 }
@@ -159,7 +160,7 @@ for(var i = 0;i<allcss.length;i++){
 	allcss[i].href = "";
 }
 
-allcss[0].href="http://121.40.196.117/dag1688-templete/dag1688/product.css";
+allcss[0].href="http://120.25.236.96/dag1688-templete/dag1688/product.css";
 
 
 //为最顶部的登录注册设置样式
@@ -232,14 +233,14 @@ boxFooter.setAttribute("style","");
 //boxFooter.getElementsByTagName("div")[0].setAttribute("style","");*/
 
 boxFooter.innerHTML = "<div class=\"comptitle_99\" style=\"\"><strong class=\"titlestyle_47\"><img src=\"\/library\/resources\/images\/icons\/31.gif\">商品类别<\/strong><\/div>" + "<div id=\"category-index\"> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=24.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">五金工具<\/button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=25.html\" ><button type=\"button\" class=\"btn btn-primary btn-block\">机电设备<\/button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=21.html\" ><button type=\"button\" class=\"btn btn-primary btn-block\">发电设备<\/button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=29.html\" ><button type=\"button\" class=\"btn btn-primary btn-block\">化工产品<\/button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=4.html\" ><button type=\"button\" class=\"btn btn-primary btn-block\">仪器、仪表</button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=26.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">建筑、装饰<\/button></a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=3.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">劳保、安防</button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=28.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">消防、水暖</button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=2.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">起重、吊装</button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=20.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">电力、线缆</button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=27.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">民用五金、照明电器<\/button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=18.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">防爆产品、通风设备</button><\/a> <a href=\"http://www.dag1688.com/products_list/&amp;pmcId=17.html\"><button type=\"button\" class=\"btn btn-primary btn-block\">附件<\/button><\/a> <\/div>" + "<div id=\"address\"><address><h5>服务热线<\/h5><p><a href=\"tel:085185757788\">0851-85757788<\/a><br><a href=\"tel:085185770626\">0851-85770626<\/a><\/p><\/address><address><h5>门市电话<\/h5><p><a href=\"tel:085185757779\">0851-85757779<\/a><br><a href=\"tel:085185756800\">0851-85756800<\/a><\/p><\/address><address><h5>邮件微信<\/h5><p>gy@dag1688.com<br>公众微信ID:dagsc1688<\/p><\/address><address><h5>联系地址<\/h5><p>贵阳市沙冲中路33号大光旗舰店<br>网站:www.dag1688.com<\/p><\/address><p>Copyright © 2016 大光物资商城版权所有<br />黔ICP备14002038号<\/p><\/div>"
-fn1(boxFooter);
+//fn1(boxFooter);
 document.body.style.display = "block"; //全局恢复
 
-}else{   //这是执行电脑版本
+}/*else{   //这是执行电脑版本
 	document.getElementsByTagName("html")[0].innerHTML = pcbody;	
 	document.getElementById("Members_welcomeInfo02-001_notLogin").style.display = "block";
 	document.getElementById("Members_welcomeLink01-001_notLogin").style.display = "block";
-}
+}*/
 }
 }
 
@@ -304,7 +305,7 @@ controlIcon[sNum].setAttribute("class","fa fa-circle");
 
 
 //更换为切换到电脑板
-function fn1(boxFooter){
+/*function fn1(boxFooter){
 var welcome = document.getElementById("Members_welcomeLink01-001_notLogin");
 var pcEdition = document.createElement("span");
 pcEdition.id = "pcedition";
@@ -316,6 +317,6 @@ pcEdition.onclick = function(){
 	pcMobile();
 	
 }
-};
+};*/
 
 
