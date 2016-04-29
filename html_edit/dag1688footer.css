@@ -1,0 +1,99 @@
+.one {
+	width: 655px;
+}
+#dagmap img:hover{
+	box-shadow:black 1px 1px 10px;
+    }
+	
+#dagmap img {
+		padding: 5px;
+		position: relative;
+		right: 18px;	
+}
+
+.header-bar {
+	width: 100%;
+	background-color: gray;
+	text-align: center;
+}
+
+.header-bar h2 {
+	width: 25%;
+	background-color: #B2251D;
+	color: #fff;
+	padding: 15px 5px;
+	position: relative;
+	left: 5%;
+}
+
+#slider {
+	width: 100%;
+	margin: -20px auto 0px;
+}
+
+#pn {
+	position: relative;
+	top: 219px;
+	margin: 0px;
+	font-size: 4em;
+	font-weight: bold;
+}
+
+.fa-angle-left,fa-angle-right {
+	color: gray;
+}
+
+#slider-img {
+	width: 595px;
+	margin: 0px auto;
+}
+
+#slider-img1 {
+	width: 100%;
+	box-shadow: 1px 1px 10px;
+	filter: brightness(200%);
+	-webkit-filter: brightness(200%);
+}
+
+#slider-cation {
+	width: 595px;
+	margin: 0px auto;
+	background: rgb(178, 37, 29) none repeat scroll 0% 0%;
+	color: white;
+	padding: 15px 0px;
+	text-align: center;
+	font-size: large;
+}
+
+.dag-main {
+	padding: 10px;
+}
+
+.main-one {
+	width: 655px;
+}
+
+#daglogo{
+	float: left;
+	padding: 5px 5px 5px 0px;
+}
+
+.main-one p {
+	padding-top: 15px;
+	text-indent: 2em;
+	font-size: 1.3em;
+}
+
+.main-two {
+	width: 655px;
+}
+
+.main-two p {
+	text-indent: 2em;
+	font-size: 1.3em;
+}
+
+.main-three {
+	padding-top: 15px;
+	width: 655px;
+}
