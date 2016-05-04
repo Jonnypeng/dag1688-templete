@@ -1,0 +1,19 @@
+#nav-footer div {
+	width:20%;
+	margin: 0px;
+	float: left;
+}
+
+#brand{
+	width:90%;
+	float:left;
+	padding:0px;
+}
+
+#zixun{
+	float:left;
+}
+
+#zixun .fa{
+	font-size:1rem;
+}
