@@ -9,6 +9,11 @@ var contentHref1 = document.createElement("a");
 footerContent.appendChild(contentHref1);
 var hrefImg1 = document.createElement("img");
 contentHref1.appendChild(hrefImg1);
+
+hrefImg.style.border = "1px solid #eee";
+hrefImg.style.margin = "10px 0px";
+hrefImg1.style.border = "1px solid #eee";
+hrefImg1.style.margin = "10px 0px";
 /*尾部的第一行图片*/
 
 var arrcontent = [{url:"#",img:"http://www.dag1688.cc/img-store/dag-wuliu.jpg"},{url:"http://appstore.huawei.com/app/C10504775",img:"http://www.dag1688.cc/img-store/app-download.jpg"},{url:"http://www.dag1688.cc/dag1688-templete/zhuanti/wechat-map.html",img:"http://www.dag1688.cc/img-store/dag-location.jpg"}]; 
